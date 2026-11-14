@@ -1,0 +1,664 @@
+[
+  {
+    "id": "bonus-dev-01",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "Bảng lịch sử Python: phiên bản 1.3 tới 1.5.2 có chủ sở hữu nào, giai đoạn nào?",
+    "expected_answer": "CNRI; 1995–1999.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "1.3 thru 1.5.2    1.2              1995-1999     CNRI             yes",
+        "region": "Bảng C.1; hàng 1.3 thru 1.5.2; Owner, Year",
+        "bbox_candidates": [
+          [
+            126.219,
+            454.49592,
+            180.574946,
+            584.00952
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-02",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "Bảng lịch sử Python ghi phiên bản 2.1.2 bắt nguồn từ bản nào?",
+    "expected_answer": "2.1.1.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "2.1.2             2.1.1            2002          PSF              yes",
+        "region": "Bảng C.1; hàng 2.1.2; Derived from",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-03",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "Chú thích (1) của bảng lịch sử có nói Python được phân phối theo GPL không?",
+    "expected_answer": "Không; GPL-compatible không có nghĩa Python được phân phối theo GPL.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "(1) GPL-compatible doesn’t mean that we’re distributing Python under the GPL.",
+        "region": "Chú thích (1) dưới bảng C.1",
+        "bbox_candidates": [
+          [
+            87.781,
+            638.52592,
+            515.804492,
+            684.35352
+          ],
+          [
+            87.781,
+            692.32392,
+            515.804492,
+            726.19652
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-04",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Hàm nào chuyển đối tượng x thành chuỗi JSON trong ví dụ của tutorial?",
+    "expected_answer": "json.dumps(x).",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 65,
+        "evidence": "json.dumps(x)",
+        "region": "7.2.2; ví dụ JSON string",
+        "bbox_candidates": [
+          [
+            72.0,
+            636.65796,
+            228.01378,
+            681.48926
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=65"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-05",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Tại sao không được unpickle dữ liệu từ nguồn không tin cậy?",
+    "expected_answer": "Có thể thực thi mã tùy ý khi deserialize dữ liệu độc hại.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 66,
+        "evidence": "deserializing pickle data coming from an untrusted source can execute arbitrary code,",
+        "region": "See also pickle",
+        "bbox_candidates": [
+          [
+            72.0,
+            182.38592,
+            523.26593,
+            204.30352
+          ],
+          [
+            79.472,
+            264.40892,
+            515.803992,
+            310.23652
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=66"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-06",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "f.readline() phân biệt một dòng trống và EOF như thế nào?",
+    "expected_answer": "EOF trả chuỗi rỗng; dòng trống trả '\\n'.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 64,
+        "evidence": "if\nf.readline() returns an empty string, the end of the file has been reached, while a blank line is represented by\n'\\n',",
+        "region": "7.2.1; readline",
+        "bbox_candidates": [
+          [
+            72.0,
+            73.99292,
+            523.278901,
+            95.91052
+          ],
+          [
+            72.0,
+            208.66292,
+            472.626825,
+            218.62552
+          ],
+          [
+            72.0,
+            226.59492,
+            523.282887,
+            284.37852
+          ],
+          [
+            72.0,
+            355.90992,
+            523.276906,
+            365.87252
+          ],
+          [
+            72.0,
+            367.86592,
+            523.275892,
+            401.73852
+          ],
+          [
+            72.0,
+            413.29496,
+            281.81142,
+            482.03726
+          ],
+          [
+            72.0,
+            497.18092,
+            523.275892,
+            519.09852
+          ],
+          [
+            72.0,
+            530.65496,
+            260.2923,
+            587.44226
+          ],
+          [
+            72.0,
+            602.58492,
+            448.83565,
+            612.54752
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=64"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-07",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Generator nhớ điều gì giữa các lần next()?",
+    "expected_answer": "Giá trị biến cục bộ và trạng thái thực thi, tiếp tục từ nơi dừng.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 88,
+        "evidence": "the local variables and execution state are automatically saved between calls.",
+        "region": "9.9 Generators",
+        "bbox_candidates": [
+          [
+            72.0,
+            234.77092,
+            523.281511,
+            280.59952
+          ],
+          [
+            72.0,
+            438.36992,
+            523.283743,
+            472.24352
+          ],
+          [
+            72.0,
+            480.21292,
+            523.285042,
+            514.08652
+          ],
+          [
+            72.0,
+            602.52792,
+            523.275892,
+            648.35652
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=88"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-08",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Lệnh tạo virtual environment tên tutorial-env là gì?",
+    "expected_answer": "python -m venv tutorial-env.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 105,
+        "evidence": "python -m venv tutorial-env",
+        "region": "12.2; lệnh tạo môi trường",
+        "bbox_candidates": [
+          [
+            72.0,
+            539.75596,
+            217.25434,
+            548.72226
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=105"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-09",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "Ví dụ random dùng hàm nào để lấy mẫu không hoàn lại?",
+    "expected_answer": "random.sample(range(100), 10).",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 93,
+        "evidence": "random.sample(range(100), 10)    # sampling without replacement",
+        "region": "10.6; random.sample",
+        "bbox_candidates": [
+          [
+            72.0,
+            174.01696,
+            427.0654,
+            278.62526
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=93"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-10",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "timeit khác profile và pstats ở phạm vi đo như thế nào?",
+    "expected_answer": "timeit đo các thao tác nhỏ; profile/pstats xác định phần tốn thời gian trong khối mã lớn.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 94,
+        "evidence": "In contrast to timeit’s fine level of granularity, the profile and pstats modules provide tools for identifying\ntime critical sections in larger blocks of code.",
+        "region": "10.10 Performance Measurement",
+        "bbox_candidates": [
+          [
+            72.0,
+            100.07492,
+            523.28129,
+            133.94752
+          ],
+          [
+            72.0,
+            145.50396,
+            433.25278,
+            226.20126
+          ],
+          [
+            72.0,
+            568.57792,
+            523.275892,
+            590.49552
+          ],
+          [
+            72.0,
+            598.46592,
+            523.275892,
+            620.38352
+          ],
+          [
+            72.0,
+            703.87092,
+            523.281013,
+            725.78852
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=94"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-11",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "doctest kiểm tra các ví dụ được lưu ở đâu?",
+    "expected_answer": "Trong docstring của chương trình/module.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 95,
+        "evidence": "The doctest module provides a tool for scanning a module and validating tests embedded in a program’s docstrings.",
+        "region": "10.11 Quality Control",
+        "bbox_candidates": [
+          [
+            72.0,
+            100.07492,
+            523.26593,
+            121.99252
+          ],
+          [
+            72.0,
+            129.96292,
+            523.283419,
+            175.79052
+          ],
+          [
+            72.0,
+            319.05392,
+            523.277521,
+            340.97152
+          ],
+          [
+            87.94,
+            619.05892,
+            523.279919,
+            664.88652
+          ],
+          [
+            87.94,
+            672.85692,
+            523.285042,
+            730.64052
+          ],
+          [
+            87.94,
+            738.60992,
+            523.281127,
+            760.52852
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=95"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-12",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Ghi một đối tượng JSON vào file rồi đọc lại bằng hai hàm nào và dùng encoding nào cho text file?",
+    "expected_answer": "json.dump(x, f), json.load(f); UTF-8.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 65,
+        "evidence": "json.dump(x, f)",
+        "region": "7.2.2; ghi JSON",
+        "bbox_candidates": [
+          [
+            72.0,
+            730.10696,
+            152.687834,
+            739.07326
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=65"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 66,
+        "evidence": "x = json.load(f)",
+        "region": "7.2.2; đọc JSON",
+        "bbox_candidates": [
+          [
+            72.0,
+            80.56796,
+            158.07646,
+            89.53426
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=66"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 66,
+        "evidence": "JSON files must be encoded in UTF-8.",
+        "region": "7.2.2; note encoding",
+        "bbox_candidates": [
+          [
+            79.472,
+            139.06892,
+            515.798975,
+            160.98652
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=66"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-13",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Trên Unix, kích hoạt rồi thoát môi trường tutorial-env bằng lệnh nào?",
+    "expected_answer": "source tutorial-env/bin/activate; deactivate.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 105,
+        "evidence": "source tutorial-env/bin/activate",
+        "region": "12.2; Unix activation",
+        "bbox_candidates": [
+          [
+            72.0,
+            720.67796,
+            244.15324,
+            729.64426
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=105"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 106,
+        "evidence": "To deactivate a virtual environment, type:\n\ndeactivate",
+        "region": "12.2; deactivation",
+        "bbox_candidates": [
+          [
+            72.0,
+            238.52792,
+            234.938323,
+            248.49052
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=106"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-14",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Iterator thủ công báo hết phần tử thế nào, còn generator khi kết thúc có tự báo như vậy không?",
+    "expected_answer": "__next__ raises StopIteration; generator tự raise StopIteration khi kết thúc.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 87,
+        "evidence": "__next__() raises a StopIteration exception which tells the for loop to terminate.",
+        "region": "9.8; iterator protocol",
+        "bbox_candidates": [
+          [
+            72.0,
+            252.50292,
+            523.28011,
+            310.28652
+          ],
+          [
+            72.0,
+            512.52792,
+            523.280683,
+            546.40052
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=87"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 88,
+        "evidence": "when generators terminate, they automatically\nraise StopIteration.",
+        "region": "9.9; kết thúc generator",
+        "bbox_candidates": [
+          [
+            72.0,
+            522.05692,
+            523.281832,
+            555.92952
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=88"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-15",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Ví dụ decimal tính 5% thuế trên 70 cent cho kết quả làm tròn nào, và ví dụ 1/7 đặt precision bao nhiêu?",
+    "expected_answer": "Decimal('0.74'); precision 36 chữ số.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 102,
+        "evidence": "round(Decimal('0.70') * Decimal('1.05'), 2)\nDecimal('0.74')",
+        "region": "11.8; ví dụ thuế, đơn vị dollar",
+        "bbox_candidates": [
+          [
+            72.0,
+            474.02296,
+            324.84978,
+            530.80926
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=102"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 103,
+        "evidence": "getcontext().prec = 36",
+        "region": "11.8; ví dụ precision",
+        "bbox_candidates": [
+          [
+            72.0,
+            80.56796,
+            335.60922,
+            113.44426
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=103"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-dev-16",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, FastAPI cấu hình dependency injection bằng Depends thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "FastAPI",
+        "fastapi.Depends"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-dev-17",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, pandas.DataFrame.merge xử lý validate=\"one_to_one\" thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "DataFrame.merge",
+        "one_to_one"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-dev-18",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, PyTorch AdamW đặt weight_decay như thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "AdamW",
+        "weight_decay"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "bonus-dev-01",
+    "question": "Bảng lịch sử Python: phiên bản 1.3 tới 1.5.2 có chủ sở hữu nào, giai đoạn nào?"
+  },
+  {
+    "id": "bonus-dev-02",
+    "question": "Bảng lịch sử Python ghi phiên bản 2.1.2 bắt nguồn từ bản nào?"
+  },
+  {
+    "id": "bonus-dev-03",
+    "question": "Chú thích (1) của bảng lịch sử có nói Python được phân phối theo GPL không?"
+  },
+  {
+    "id": "bonus-dev-04",
+    "question": "Hàm nào chuyển đối tượng x thành chuỗi JSON trong ví dụ của tutorial?"
+  },
+  {
+    "id": "bonus-dev-05",
+    "question": "Tại sao không được unpickle dữ liệu từ nguồn không tin cậy?"
+  },
+  {
+    "id": "bonus-dev-06",
+    "question": "f.readline() phân biệt một dòng trống và EOF như thế nào?"
+  },
+  {
+    "id": "bonus-dev-07",
+    "question": "Generator nhớ điều gì giữa các lần next()?"
+  },
+  {
+    "id": "bonus-dev-08",
+    "question": "Lệnh tạo virtual environment tên tutorial-env là gì?"
+  },
+  {
+    "id": "bonus-dev-09",
+    "question": "Ví dụ random dùng hàm nào để lấy mẫu không hoàn lại?"
+  },
+  {
+    "id": "bonus-dev-10",
+    "question": "timeit khác profile và pstats ở phạm vi đo như thế nào?"
+  },
+  {
+    "id": "bonus-dev-11",
+    "question": "doctest kiểm tra các ví dụ được lưu ở đâu?"
+  },
+  {
+    "id": "bonus-dev-12",
+    "question": "Ghi một đối tượng JSON vào file rồi đọc lại bằng hai hàm nào và dùng encoding nào cho text file?"
+  },
+  {
+    "id": "bonus-dev-13",
+    "question": "Trên Unix, kích hoạt rồi thoát môi trường tutorial-env bằng lệnh nào?"
+  },
+  {
+    "id": "bonus-dev-14",
+    "question": "Iterator thủ công báo hết phần tử thế nào, còn generator khi kết thúc có tự báo như vậy không?"
+  },
+  {
+    "id": "bonus-dev-15",
+    "question": "Ví dụ decimal tính 5% thuế trên 70 cent cho kết quả làm tròn nào, và ví dụ 1/7 đặt precision bao nhiêu?"
+  },
+  {
+    "id": "bonus-dev-16",
+    "question": "Theo tutorial, FastAPI cấu hình dependency injection bằng Depends thế nào?"
+  },
+  {
+    "id": "bonus-dev-17",
+    "question": "Theo tutorial, pandas.DataFrame.merge xử lý validate=\"one_to_one\" thế nào?"
+  },
+  {
+    "id": "bonus-dev-18",
+    "question": "Theo tutorial, PyTorch AdamW đặt weight_decay như thế nào?"
+  }
+]

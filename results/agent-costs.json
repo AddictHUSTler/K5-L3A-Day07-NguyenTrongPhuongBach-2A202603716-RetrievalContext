@@ -1,0 +1,31 @@
+{
+  "successful_agent_model_cost_usd": 0.0604552,
+  "aborted_runs": [
+    {
+      "path": "results/agent-network-failure/baseline/traces.json",
+      "queries": 1,
+      "errors": 1,
+      "estimated_model_cost_usd": 0
+    },
+    {
+      "path": "results/agent-first-query-failure/baseline/traces.json",
+      "queries": 1,
+      "errors": 1,
+      "estimated_model_cost_usd": 0.0001224
+    },
+    {
+      "path": "results/agent-citation-format-failure/baseline/traces.json",
+      "queries": 1,
+      "errors": 1,
+      "estimated_model_cost_usd": 0.0009192000000000002
+    },
+    {
+      "path": "results/agent-schema-failure/baseline/traces.json",
+      "queries": 10,
+      "errors": 1,
+      "estimated_model_cost_usd": 0.007908400000000001
+    }
+  ],
+  "aborted_model_cost_usd": 0.008950000000000001,
+  "note": "Includes recorded successful API responses in aborted runs. Network failures without a response have no reported usage. Embedding ledger is separate; no double counting cached query vectors."
+}

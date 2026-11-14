@@ -1,0 +1,59 @@
+[
+  {
+    "query_id": "test01",
+    "reason": "Trang 23 nêu zero or more elif và else optional; đáp án đủ hai điều kiện, citation hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "test02",
+    "reason": "Trang 23 nói thứ tự xuất hiện trong sequence; đáp án và citation phù hợp.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "test03",
+    "reason": "Trang 40 ghi append và pop không index cho LIFO; đáp án đủ và citation hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "test04",
+    "reason": "Trang 46 nêu items lấy key/value đồng thời; đáp án và citation phù hợp.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "test05",
+    "reason": "Đáp án enumerate đúng kiến thức nhưng không có evidence trong context; citation chỉ chứng minh range(len(a)). Model tự thừa nhận enumerate không có trong trích dẫn và thêm nhận định chuẩn/tiện lợi không nguồn.",
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 0,
+    "context_grade": 0
+  },
+  {
+    "query_id": "absent03",
+    "reason": "Đã search rồi từ chối, không thêm hướng dẫn tracemalloc; toàn corpus thiếu API này.",
+    "citation_support": [],
+    "abstention_correct": true
+  },
+  {
+    "query_id": "absent04",
+    "reason": "Đã search rồi từ chối, không đoán chunksize; toàn corpus thiếu ProcessPoolExecutor/chunksize.",
+    "citation_support": [],
+    "abstention_correct": true
+  }
+]

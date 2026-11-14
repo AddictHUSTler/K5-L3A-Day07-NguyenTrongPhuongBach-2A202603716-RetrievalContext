@@ -1,0 +1,254 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?",
+    "expected_answer": "Comment bắt đầu bằng #, kéo dài đến hết dòng vật lý; # trong string literal chỉ là ký tự thường.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 13,
+        "evidence": "Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character."
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Vì sao -3**2 cho -9 và phải viết thế nào để bình phương số âm này được 9?",
+    "expected_answer": "** có ưu tiên cao hơn dấu trừ nên -3**2 là -(3**2); dùng (-3)**2 để được 9.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 14,
+        "evidence": "Since ** has higher precedence than -, -3**2 will be interpreted as -(3**2) and thus result in -9. To avoid this and get 9, you can use\n\n(-3)**2."
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Chỉ dùng chương 3: raw string có được kết thúc bằng một số lẻ dấu backslash không?",
+    "expected_answer": "Không; raw string không được kết thúc bằng số lẻ ký tự backslash.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 15,
+        "evidence": "There is one subtle aspect to raw strings: a raw string may not end in an odd number of \\ characters; see the FAQ\nentry for more information and workarounds."
+      }
+    ],
+    "filter": {
+      "chapter": 3
+    }
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Python tự nối hai string literal đặt cạnh nhau. Nếu một bên là biến thì phải nối bằng gì?",
+    "expected_answer": "Tự nối chỉ áp dụng cho literal; dùng + khi nối biến với literal hoặc với biến khác.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 16,
+        "evidence": "If you want to concatenate variables or a variable and a literal, use +:"
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Trong lát cắt s[i:j], cận nào được lấy và cận nào bị loại?",
+    "expected_answer": "Lấy cận đầu i, loại cận cuối j.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 17,
+        "evidence": "Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always\nequal to s:"
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Muốn lấy shallow copy của list rgba bằng slicing thì viết thế nào?",
+    "expected_answer": "Dùng rgba[:]; slicing trả về list mới chứa các phần tử được chọn, đây là shallow copy.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 19,
+        "evidence": "All slice operations return a new list containing the requested elements. This means that the following slice returns a\nshallow copy of the list:\n\n>>> correct_rgba = rgba[:]"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "range(5, 10) sinh những số nào; giá trị stop có được lấy không?",
+    "expected_answer": "Sinh 5, 6, 7, 8, 9; stop là 10 không được lấy.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 24,
+        "evidence": "The given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]"
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Tại sao range tiết kiệm bộ nhớ hơn việc tạo sẵn một list các số?",
+    "expected_answer": "range trả từng phần tử khi lặp, không thực sự tạo toàn bộ list nên tiết kiệm bộ nhớ.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 25,
+        "evidence": "In many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. It is an object which returns\nthe successive items of the desired sequence when you iterate over it, but it doesn’t really make the list, thus saving\nspace."
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Nếu có nhiều vòng lặp for hoặc while lồng nhau, break thoát khỏi vòng nào?",
+    "expected_answer": "Chỉ thoát vòng for hoặc while bao trong cùng chứa break.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 25,
+        "evidence": "The break statement breaks out of the innermost enclosing for or while loop:"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "else của vòng lặp có chạy khi vòng lặp kết thúc sớm do break, return hoặc exception không?",
+    "expected_answer": "Không; cả break, return và exception kết thúc sớm đều bỏ qua else của vòng lặp.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 26,
+        "evidence": "In either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause."
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "pass làm gì và dùng khi nào?",
+    "expected_answer": "pass không làm gì; dùng khi cú pháp cần một statement nhưng chương trình không cần hành động.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 26,
+        "evidence": "The pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action."
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Chỉ dùng chương 4: trong match, case _ có ý nghĩa gì và nếu không case nào khớp thì sao?",
+    "expected_answer": "_ là wildcard luôn khớp. Nếu không có case nào khớp thì không nhánh nào được thực thi.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 27,
+        "evidence": "Note the last block: the “variable name” _ acts as a wildcard and never fails to match. If no case matches, none of\nthe branches is executed."
+      }
+    ],
+    "filter": {
+      "chapter": 4
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Hàm dùng return không kèm biểu thức hoặc chạy đến hết thân hàm trả về gì?",
+    "expected_answer": "Cả hai trường hợp đều trả về None.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 30,
+        "evidence": "return without an expression argument returns\n       None. Falling off the end of a function also returns None."
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Vì sao default argument là list có thể giữ lại các phần tử từ những lần gọi hàm trước?",
+    "expected_answer": "Default chỉ được đánh giá một lần; nếu là mutable object như list thì nó được dùng chung và tích lũy thay đổi qua các lần gọi.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 31,
+        "evidence": "Important warning: The default value is evaluated only once. This makes a difference when the default is a mutable\nobject such as a list, dictionary, or instances of most classes. For example, the following function accumulates the\narguments passed to it on subsequent calls:"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Tham số nằm trước dấu / trong định nghĩa hàm có thể được truyền bằng keyword không?",
+    "expected_answer": "Không; đó là positional-only parameter, phải truyền theo vị trí.",
+    "answerable": true,
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 34,
+        "evidence": "If positional-only, the\nparameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed\nbefore a / (forward-slash)."
+      },
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 33,
+        "evidence": "A function definition may look like:\n\ndef f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n      -----------     ----------     ----------\n        |              |                  |\n        |         Positional or keyword   |\n        |                                 - Keyword only\n          -- Positional only\n\nwhere / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed\nto the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to\nas named parameters."
+      }
+    ]
+  },
+  {
+    "id": "absent01",
+    "split": "dev",
+    "answerable": false,
+    "question": "asyncio.TaskGroup bảo đảm hủy task còn lại thế nào khi một task lỗi?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Không có nội dung TaskGroup hoặc quy tắc hủy task trong corpus chương 3–5.",
+    "absence_check": {
+      "scope": "All 35 indexed pages, chapters 3–5",
+      "terms_not_found": [
+        "TaskGroup"
+      ],
+      "method": "Full-corpus term scan and chapter/topic review; not top-k search"
+    }
+  },
+  {
+    "id": "absent02",
+    "split": "dev",
+    "answerable": false,
+    "question": "Theo tài liệu, cấu hình isolation level của sqlite3.connect như thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Corpus không có API sqlite3.connect hoặc hướng dẫn isolation level.",
+    "absence_check": {
+      "scope": "All 35 indexed pages, chapters 3–5",
+      "terms_not_found": [
+        "sqlite3",
+        "isolation_level"
+      ],
+      "method": "Full-corpus term scan and chapter/topic review; not top-k search"
+    }
+  }
+]

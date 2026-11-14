@@ -1,5 +1,9 @@
 # Định dạng dữ liệu
 
+Dữ liệu phần 1: `chunks.json` (120 chunk Day 6), `tutorial.pdf`, `manifest.json`, `LICENSE-PYTHON.txt`. `queries_dev.json`/`queries_test.json` chỉ chứa input được phép gửi agent. Gold và nhãn nằm riêng trong `benchmark/`. Xem [chuẩn bị](../src/README.md).
+
+`bonus/` là corpus riêng của toàn bộ PDF: manifest, 149 chunk theo trang, text/layout và tọa độ block cho cả 161 trang, query runtime. Gold nằm ở `benchmark/bonus/`. [Phạm vi bonus](../report/individual/2A202603716_NguyenTrongPhuongBach.md).
+
 Các file `example_*.json` chỉ minh họa định dạng, không đủ để nộp bài. Dữ liệu thật là JSON array UTF-8; nếu dùng định dạng khác, ghi cách chuyển trong README.
 
 - **Chunk:** `id`, `text`, `source_id`, `source`, `page`, `metadata`. ID phải duy nhất; giữ phiên bản hoặc ngày nếu có.

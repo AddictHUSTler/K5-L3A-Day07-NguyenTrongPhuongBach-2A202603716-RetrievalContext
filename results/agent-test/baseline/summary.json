@@ -1,0 +1,58 @@
+{
+  "cases": 7,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 7,
+    "N": 7
+  },
+  "grounded_answer": {
+    "0": 1,
+    "1": 0,
+    "2": 4,
+    "N": 5,
+    "mean": 1.6
+  },
+  "citation_validity": {
+    "n": 4,
+    "N": 5
+  },
+  "answer_citation_coverage": {
+    "n": 5,
+    "N": 5
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 5
+  },
+  "hit1": {
+    "n": 1,
+    "N": 5,
+    "rate": 0.2
+  },
+  "hit3": {
+    "n": 4,
+    "N": 5,
+    "rate": 0.8
+  },
+  "context_hit": {
+    "n": 4,
+    "N": 5,
+    "rate": 0.8
+  },
+  "search_count_distribution": {
+    "1": 7
+  },
+  "context_review_distribution": {
+    "2": 4,
+    "0": 1
+  },
+  "median_elapsed_ms": 2705.2498600005492,
+  "total_elapsed_ms": 23015.348600001744,
+  "estimated_model_cost_usd": 0.0056592,
+  "estimated_new_embedding_cost_usd": 4.22e-06,
+  "model_calls": 14
+}

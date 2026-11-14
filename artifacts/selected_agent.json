@@ -1,0 +1,211 @@
+{
+  "selected": "expanded",
+  "configs": {
+    "baseline": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "hybrid": {
+      "method": "hybrid",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "expanded": {
+      "method": "hybrid",
+      "top_k": 6,
+      "max_searches": 2,
+      "budget": 10000,
+      "dedup_text": true
+    }
+  },
+  "frozen_at": "2026-11-14T02:33:54.675540+00:00",
+  "code_sha256": "ad8888056d080136af6922e1578d389f1f5d0f60234a07e8a4a3a2c8e8376e52",
+  "criteria": [
+    "highest reviewed grounded-answer mean",
+    "highest context evidence rate",
+    "highest correct abstention count",
+    "lowest estimated API cost",
+    "lowest median elapsed time"
+  ],
+  "dev_summaries": {
+    "baseline": {
+      "cases": 17,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 17,
+        "N": 17
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 1,
+        "2": 14,
+        "N": 15,
+        "mean": 1.9333333333333333
+      },
+      "citation_validity": {
+        "n": 18,
+        "N": 20
+      },
+      "answer_citation_coverage": {
+        "n": 15,
+        "N": 15
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 15
+      },
+      "hit1": {
+        "n": 5,
+        "N": 15,
+        "rate": 0.3333333333333333
+      },
+      "hit3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "context_hit": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "search_count_distribution": {
+        "1": 17
+      },
+      "context_review_distribution": {
+        "2": 14,
+        "1": 1
+      },
+      "median_elapsed_ms": 2893.856761000279,
+      "total_elapsed_ms": 53281.50889999415,
+      "estimated_model_cost_usd": 0.013860800000000001,
+      "estimated_new_embedding_cost_usd": 0,
+      "model_calls": 34
+    },
+    "hybrid": {
+      "cases": 17,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 17,
+        "N": 17
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 2,
+        "2": 13,
+        "N": 15,
+        "mean": 1.8666666666666667
+      },
+      "citation_validity": {
+        "n": 16,
+        "N": 18
+      },
+      "answer_citation_coverage": {
+        "n": 15,
+        "N": 15
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 15
+      },
+      "hit1": {
+        "n": 9,
+        "N": 15,
+        "rate": 0.6
+      },
+      "hit3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "context_hit": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "search_count_distribution": {
+        "1": 17
+      },
+      "context_review_distribution": {
+        "2": 14,
+        "1": 1
+      },
+      "median_elapsed_ms": 2548.863120999158,
+      "total_elapsed_ms": 44490.63460400248,
+      "estimated_model_cost_usd": 0.013894,
+      "estimated_new_embedding_cost_usd": 0,
+      "model_calls": 34
+    },
+    "expanded": {
+      "cases": 17,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 17,
+        "N": 17
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 1,
+        "2": 14,
+        "N": 15,
+        "mean": 1.9333333333333333
+      },
+      "citation_validity": {
+        "n": 14,
+        "N": 15
+      },
+      "answer_citation_coverage": {
+        "n": 15,
+        "N": 15
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 15
+      },
+      "hit1": {
+        "n": 9,
+        "N": 15,
+        "rate": 0.6
+      },
+      "hit3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "context_hit": {
+        "n": 15,
+        "N": 15,
+        "rate": 1.0
+      },
+      "search_count_distribution": {
+        "1": 17
+      },
+      "context_review_distribution": {
+        "2": 15
+      },
+      "median_elapsed_ms": 2656.4691019993916,
+      "total_elapsed_ms": 44091.40102400124,
+      "estimated_model_cost_usd": 0.019276,
+      "estimated_new_embedding_cost_usd": 0,
+      "model_calls": 34
+    }
+  },
+  "reason": "Expanded ties baseline grounded mean, wins context evidence 15/15 versus 14/15. No test read or run before freeze."
+}

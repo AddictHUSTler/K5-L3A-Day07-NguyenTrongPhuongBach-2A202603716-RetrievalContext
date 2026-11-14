@@ -1,0 +1,74 @@
+{
+  "dense": {
+    "queries": 17,
+    "answerable": 15,
+    "errors": 0,
+    "hit1": {
+      "n": 5,
+      "N": 15,
+      "rate": 0.3333333333333333
+    },
+    "hit3": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "context_hit": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "median_search_ms": 1.5780859994265484,
+    "total_search_ms": 1162.3916740027198,
+    "avg_context_chars": 1985.0588235294117,
+    "new_retrieval_service_cost_usd": 0
+  },
+  "tfidf": {
+    "queries": 17,
+    "answerable": 15,
+    "errors": 0,
+    "hit1": {
+      "n": 7,
+      "N": 15,
+      "rate": 0.4666666666666667
+    },
+    "hit3": {
+      "n": 12,
+      "N": 15,
+      "rate": 0.8
+    },
+    "context_hit": {
+      "n": 12,
+      "N": 15,
+      "rate": 0.8
+    },
+    "median_search_ms": 0.15303800137189683,
+    "total_search_ms": 2.6036120052594924,
+    "avg_context_chars": 2230.470588235294,
+    "new_retrieval_service_cost_usd": 0
+  },
+  "hybrid": {
+    "queries": 17,
+    "answerable": 15,
+    "errors": 0,
+    "hit1": {
+      "n": 9,
+      "N": 15,
+      "rate": 0.6
+    },
+    "hit3": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "context_hit": {
+      "n": 14,
+      "N": 15,
+      "rate": 0.9333333333333333
+    },
+    "median_search_ms": 2.204307000283734,
+    "total_search_ms": 40.07846100284951,
+    "avg_context_chars": 2230.235294117647,
+    "new_retrieval_service_cost_usd": 0
+  }
+}

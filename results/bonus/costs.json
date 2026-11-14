@@ -1,0 +1,29 @@
+{
+  "runs": [
+    {
+      "run": "agent-dev-initial",
+      "model_cost_usd": 0.035386400000000005,
+      "errors": 1
+    },
+    {
+      "run": "agent-dev",
+      "model_cost_usd": 0.036891200000000006,
+      "errors": 2
+    },
+    {
+      "run": "agent-test",
+      "model_cost_usd": 0.0464984,
+      "errors": 0
+    },
+    {
+      "run": "agent-extension",
+      "model_cost_usd": 0.01284,
+      "errors": 0
+    }
+  ],
+  "document_embedding_cost_usd": 0.00174888,
+  "query_embedding_cost_usd": 1.03e-05,
+  "total_recorded_cost_usd": 0.13337518,
+  "currency": "USD",
+  "limitation": "HTTP errors without usage have unknown provider cost. Recorded total includes only returned usage."
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "test01",
+    "split": "test",
+    "answerable": true,
+    "question": "Trong câu lệnh if, có thể có bao nhiêu phần elif và có bắt buộc else không?",
+    "expected_answer": "Có thể có từ 0 phần elif trở lên; else không bắt buộc.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 23,
+        "evidence": "There can be zero or more elif parts, and the else part is optional."
+      }
+    ]
+  },
+  {
+    "id": "test02",
+    "split": "test",
+    "answerable": true,
+    "question": "Vòng for của Python duyệt các phần tử của một sequence theo thứ tự nào?",
+    "expected_answer": "Theo thứ tự các phần tử xuất hiện trong sequence.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 23,
+        "evidence": "Python’s for statement iterates over the items of any sequence (a list or a string),\nin the order that they appear in the sequence."
+      }
+    ]
+  },
+  {
+    "id": "test03",
+    "split": "test",
+    "answerable": true,
+    "question": "Dùng list làm stack LIFO: thêm vào đỉnh và lấy khỏi đỉnh bằng thao tác nào?",
+    "expected_answer": "Thêm bằng append(); lấy bằng pop() không truyền index. Phần tử thêm cuối được lấy trước.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 40,
+        "evidence": "To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index."
+      }
+    ]
+  },
+  {
+    "id": "test04",
+    "split": "test",
+    "answerable": true,
+    "question": "Khi duyệt dictionary, phương thức nào lấy đồng thời key và value?",
+    "expected_answer": "Dùng phương thức items().",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 46,
+        "evidence": "When looping through dictionaries, the key and corresponding value can be retrieved at the same time using the\nitems() method."
+      }
+    ]
+  },
+  {
+    "id": "test05",
+    "split": "test",
+    "answerable": true,
+    "question": "Hàm nào lấy đồng thời vị trí index và giá trị khi duyệt sequence?",
+    "expected_answer": "Dùng enumerate().",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11",
+        "page": 46,
+        "evidence": "When looping through a sequence, the position index and corresponding value can be retrieved at the same time using\nthe enumerate() function."
+      }
+    ]
+  },
+  {
+    "id": "absent03",
+    "split": "test",
+    "answerable": false,
+    "question": "Theo tài liệu, dùng tracemalloc để đo peak memory của một list như thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Corpus có list nhưng không có API tracemalloc để đo peak memory.",
+    "absence_check": {
+      "scope": "All 35 indexed pages, chapters 3–5",
+      "terms_not_found": [
+        "tracemalloc"
+      ],
+      "method": "Full-corpus term scan and chapter/topic review; not top-k search"
+    }
+  },
+  {
+    "id": "absent04",
+    "split": "test",
+    "answerable": false,
+    "question": "Theo tài liệu, ProcessPoolExecutor.map đặt chunksize thế nào để tăng tốc?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Corpus không có ProcessPoolExecutor hoặc hướng dẫn chunksize của executor.",
+    "absence_check": {
+      "scope": "All 35 indexed pages, chapters 3–5",
+      "terms_not_found": [
+        "ProcessPoolExecutor",
+        "chunksize"
+      ],
+      "method": "Full-corpus term scan and chapter/topic review; not top-k search"
+    }
+  }
+]

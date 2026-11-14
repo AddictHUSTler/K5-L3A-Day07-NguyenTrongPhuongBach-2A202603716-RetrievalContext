@@ -1,0 +1,174 @@
+[
+  {
+    "query_id": "q01",
+    "question": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "error",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_4ylQfrEGXSy27PSThv9Akcxm",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 13,
+            "text": "# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n",
+            "metadata": {
+              "chapter": 3,
+              "start_char": 1121,
+              "end_char": 1286
+            },
+            "score": 0.46281501633560174,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 13,
+            "text": "In the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n",
+            "metadata": {
+              "chapter": 3,
+              "start_char": 202,
+              "end_char": 1121
+            },
+            "score": 0.3829398061625441,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 15,
+            "text": "3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+            "metadata": {
+              "chapter": 3,
+              "start_char": 0,
+              "end_char": 914
+            },
+            "score": 0.378148233394596,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?",
+        "candidate_stages": null,
+        "context": "[7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea | data/tutorial.pdf | page 13]\n# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n\n\n[76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf | data/tutorial.pdf | page 13]\nIn the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n\n\n[40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280 | data/tutorial.pdf | page 15]\n3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+        "context_ids": [
+          "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+          "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+          "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280"
+        ],
+        "elapsed_ms": 860.3011989998777
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_96da6905ee59480a85ed0d4a10e90559",
+        "usage": {
+          "prompt_tokens": 271,
+          "completion_tokens": 37,
+          "total_tokens": 308,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.00016760000000000004,
+        "elapsed_ms": 2129.2891439989035,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_4ylQfrEGXSy27PSThv9Akcxm",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_8ffad6ba885c4fd4abff9c11edf32b7c",
+        "usage": {
+          "prompt_tokens": 1143,
+          "completion_tokens": 184,
+          "total_tokens": 1327,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0007516000000000002,
+        "elapsed_ms": 2115.722045999064,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"answered\",\"answer\":\"Trong Python, comment bắt đầu bằng ký tự # và kết thúc ở cuối dòng vật lý (physical line). Comment có thể xuất hiện ở đầu dòng hoặc sau khoảng trắng hoặc mã lệnh, nhưng không thể nằm trong chuỗi ký tự (string literal). Ký tự # bên trong chuỗi ký tự chỉ được coi là ký tự bình thường, không phải là comment. Ví dụ: \\\"# This is not a comment because it's inside quotes.\\\" là một chuỗi, không phải comment.\\n\",\"citations\":[\"7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea\",\"76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf\"]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea | data/tutorial.pdf | page 13]\n# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n\n\n[76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf | data/tutorial.pdf | page 13]\nIn the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n\n\n[40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280 | data/tutorial.pdf | page 15]\n3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+    "context_ids": [
+      "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+      "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+      "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280"
+    ],
+    "answer": "",
+    "citations": [],
+    "error": "Answer citations missing from context or answer",
+    "elapsed_ms": 5105.913295999926,
+    "estimated_model_cost_usd": 0.0009192000000000002
+  }
+]

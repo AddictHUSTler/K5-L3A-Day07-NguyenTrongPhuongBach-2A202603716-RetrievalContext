@@ -1,0 +1,59 @@
+{
+  "dense": {
+    "complete_hit1": {
+      "n": 6,
+      "N": 15
+    },
+    "complete_hit3": {
+      "n": 10,
+      "N": 15
+    },
+    "complete_hit6": {
+      "n": 11,
+      "N": 15
+    },
+    "context_complete": {
+      "n": 11,
+      "N": 15
+    },
+    "search_elapsed_ms": 791.5740719981841
+  },
+  "tfidf": {
+    "complete_hit1": {
+      "n": 7,
+      "N": 15
+    },
+    "complete_hit3": {
+      "n": 13,
+      "N": 15
+    },
+    "complete_hit6": {
+      "n": 14,
+      "N": 15
+    },
+    "context_complete": {
+      "n": 14,
+      "N": 15
+    },
+    "search_elapsed_ms": 3.980134006269509
+  },
+  "hybrid": {
+    "complete_hit1": {
+      "n": 7,
+      "N": 15
+    },
+    "complete_hit3": {
+      "n": 12,
+      "N": 15
+    },
+    "complete_hit6": {
+      "n": 13,
+      "N": 15
+    },
+    "context_complete": {
+      "n": 13,
+      "N": 15
+    },
+    "search_elapsed_ms": 33.08550599467708
+  }
+}

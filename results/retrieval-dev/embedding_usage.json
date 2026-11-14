@@ -1,0 +1,27 @@
+{
+  "shared_by": [
+    "dense",
+    "hybrid"
+  ],
+  "records": [
+    {
+      "model": "text-embedding-3-small",
+      "dimensions": 1536,
+      "inputs": 17,
+      "cache_hits": 0,
+      "api_requests": 1,
+      "new_tokens": 552,
+      "estimated_new_cost_usd": 1.1040000000000001e-05,
+      "price_usd_per_million_tokens": 0.02,
+      "price_source": "artifacts/embedding_model.json",
+      "request_id": "req_67d53b2c37db4bdbb255e71889fef951",
+      "usage": {
+        "prompt_tokens": 552,
+        "total_tokens": 552
+      },
+      "elapsed_ms": 2533.9190089998738
+    }
+  ],
+  "error": null,
+  "note": "Query embedding preparation is shared once, excluded from search timing; zero new cost on cache reuse."
+}

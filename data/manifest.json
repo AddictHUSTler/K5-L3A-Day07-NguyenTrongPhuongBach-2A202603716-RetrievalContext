@@ -1,0 +1,377 @@
+{
+  "source_id": "python-tutorial-3.12.11",
+  "title": "Python Tutorial — Chapters 3–5",
+  "author": "Guido van Rossum and the Python development team",
+  "topic": "Python fundamentals: built-in types, control flow, functions and data structures",
+  "source_path_or_url": "data/tutorial.pdf",
+  "reference_url": "https://docs.python.org/3.12/tutorial/",
+  "origin_note": "User-supplied local PDF; original download URL/date unknown. Included snapshot is authoritative.",
+  "license_or_permission": "PSF License Version 2; documentation code additionally licensed under 0BSD",
+  "license_evidence": {
+    "pdf_pages": [
+      140,
+      143,
+      157
+    ],
+    "notices": "data/LICENSE-PYTHON.txt",
+    "reference_url": "https://docs.python.org/3.12/license.html"
+  },
+  "accessed_at": "2026-11-13",
+  "version": "3.12.11",
+  "snapshot_date_as_printed": "2025-09-29",
+  "sha256": "7ed5678593803de4560b4094e4aa2e4b873bd79d65f7270acedb9e203c5a3669",
+  "file_size_bytes": 677501,
+  "physical_page_count": 161,
+  "useful_page_count": 35,
+  "page_counting_rule": "1-based PDF physical pages 13–21 and 23–48 (printed 7–15 and 17–42). Count each once; page 22 has no body text. Other pages are outside the selected topic, including cover, contents, appendices and index.",
+  "excluded_page_ranges": [
+    {
+      "start": 1,
+      "end": 12,
+      "reason": "Front matter and chapters 1–2, outside selected chapters"
+    },
+    {
+      "start": 22,
+      "end": 22,
+      "reason": "Only running header/footer, no useful content"
+    },
+    {
+      "start": 49,
+      "end": 161,
+      "reason": "Chapters 6 onward, appendices/licenses and index; outside selected chapters"
+    }
+  ],
+  "normalization": "pdftotext -layout UTF-8; Unicode NFC; remove running header/footer and trailing line spaces; collapse extra blank lines; preserve code indentation. char_count = Python len(text), including whitespace, excluding JSON serialization.",
+  "reader": "pdftotext version 24.02.0",
+  "total_char_count": 77615,
+  "pages": [
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 13,
+      "printed_page": 7,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 2170
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 14,
+      "printed_page": 8,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 1908
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 15,
+      "printed_page": 9,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 2687
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 16,
+      "printed_page": 10,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 1819
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 17,
+      "printed_page": 11,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 2137
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 18,
+      "printed_page": 12,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 1722
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 19,
+      "printed_page": 13,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 1914
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 20,
+      "printed_page": 14,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 1608
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 21,
+      "printed_page": 15,
+      "chapter": 3,
+      "chapter_title": "An Informal Introduction to Python",
+      "char_count": 1708
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 23,
+      "printed_page": 17,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 1970
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 24,
+      "printed_page": 18,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 1423
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 25,
+      "printed_page": 19,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 1928
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 26,
+      "printed_page": 20,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2114
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 27,
+      "printed_page": 21,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2264
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 28,
+      "printed_page": 22,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2311
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 29,
+      "printed_page": 23,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2482
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 30,
+      "printed_page": 24,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 3646
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 31,
+      "printed_page": 25,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 1882
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 32,
+      "printed_page": 26,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2830
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 33,
+      "printed_page": 27,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2014
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 34,
+      "printed_page": 28,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2004
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 35,
+      "printed_page": 29,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2125
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 36,
+      "printed_page": 30,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2845
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 37,
+      "printed_page": 31,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2923
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 38,
+      "printed_page": 32,
+      "chapter": 4,
+      "chapter_title": "More Control Flow Tools",
+      "char_count": 2338
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 39,
+      "printed_page": 33,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 2212
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 40,
+      "printed_page": 34,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 1891
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 41,
+      "printed_page": 35,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 2512
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 42,
+      "printed_page": 36,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 2002
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 43,
+      "printed_page": 37,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 1650
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 44,
+      "printed_page": 38,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 2758
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 45,
+      "printed_page": 39,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 3176
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 46,
+      "printed_page": 40,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 1492
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 47,
+      "printed_page": 41,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 1760
+    },
+    {
+      "document_id": "python-tutorial-3.12.11",
+      "source": "data/tutorial.pdf",
+      "page": 48,
+      "printed_page": 42,
+      "chapter": 5,
+      "chapter_title": "Data Structures",
+      "char_count": 3390
+    }
+  ],
+  "filter_metadata": {
+    "field": "chapter",
+    "type": "integer",
+    "values": [
+      3,
+      4,
+      5
+    ],
+    "source": "PDF chapter headings and table of contents; ranges verified against physical pages",
+    "use": "Limit retrieval to a chapter explicitly requested by the user; never infer from gold evidence."
+  },
+  "chunking_suitability": "Contains numbered headings, prose, paragraphs and code for fixed-size versus heading/paragraph chunking.",
+  "modifications": "Original PDF unchanged. Derived corpus selects chapters 3–5 and normalizes extracted text as described."
+}

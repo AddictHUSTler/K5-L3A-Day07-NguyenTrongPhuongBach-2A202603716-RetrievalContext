@@ -1,0 +1,19 @@
+[
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 18,
+    "cache_hits": 0,
+    "api_requests": 1,
+    "new_tokens": 515,
+    "estimated_new_cost_usd": 1.0300000000000001e-05,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "request_id": "req_65ebeae8b407464ca3adaa976ad80847",
+    "usage": {
+      "prompt_tokens": 515,
+      "total_tokens": 515
+    },
+    "elapsed_ms": 644.6298170012597
+  }
+]

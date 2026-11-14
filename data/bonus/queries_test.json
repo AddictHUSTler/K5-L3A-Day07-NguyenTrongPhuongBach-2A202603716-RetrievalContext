@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bonus-test-01",
+    "question": "Bảng lịch sử Python: bản 1.6 phát hành năm nào và chủ sở hữu nào?"
+  },
+  {
+    "id": "bonus-test-02",
+    "question": "Trong bảng lịch sử, Python 2.0 có chủ sở hữu nào và có GPL-compatible không?"
+  },
+  {
+    "id": "bonus-test-03",
+    "question": "Python 1.6.1 có dấu (2) ở cột GPL-compatible: bảng ghi gì và Stallman với CNRI bất đồng thế nào?"
+  },
+  {
+    "id": "bonus-test-04",
+    "question": "Bảng lịch sử: Python 2.1 bắt nguồn từ những bản nào và cột GPL-compatible ghi gì?"
+  },
+  {
+    "id": "bonus-test-05",
+    "question": "Theo bảng lịch sử, Python 2.0.1 và 2.1.1 có cùng năm phát hành không và năm nào?"
+  },
+  {
+    "id": "bonus-test-06",
+    "question": "Trong bảng số nguyên, bình phương và lập phương ở mục định dạng chuỗi, hàng x=7 có hai giá trị nào?"
+  },
+  {
+    "id": "bonus-test-07",
+    "question": "Một module đã import rồi được sửa thì dùng hàm nào để nạp lại trong phiên tương tác?"
+  },
+  {
+    "id": "bonus-test-08",
+    "question": "Cú pháp nào chỉ rõ một exception là hệ quả trực tiếp của exception khác?"
+  },
+  {
+    "id": "bonus-test-09",
+    "question": "str() và repr() hướng tới cách biểu diễn khác nhau thế nào?"
+  },
+  {
+    "id": "bonus-test-10",
+    "question": "pprint làm gì khi kết quả biểu diễn dài hơn một dòng?"
+  },
+  {
+    "id": "bonus-test-11",
+    "question": "Theo quy tắc scope và ví dụ scope_test, global thay binding ở đâu và vì sao dòng After global assignment vẫn là nonlocal spam?"
+  },
+  {
+    "id": "bonus-test-12",
+    "question": "sys.path khởi tạo từ những nơi nào, và vì sao file cùng tên module thư viện trong thư mục script có thể che module đó?"
+  },
+  {
+    "id": "bonus-test-13",
+    "question": "Khi gọi Complex(3.0, -4.5), constructor nhận tham số ra sao và x.r, x.i trong ví dụ bằng bao nhiêu?"
+  },
+  {
+    "id": "bonus-test-14",
+    "question": "Để đọc file nhị phân bằng built-in open sau khi import os, nên import os theo kiểu nào để tránh che open, thêm ký tự nào vào mode và có được chỉ định encoding không?"
+  },
+  {
+    "id": "bonus-test-15",
+    "question": "Theo tutorial, Django QuerySet.select_related chống N+1 query thế nào?"
+  },
+  {
+    "id": "bonus-test-16",
+    "question": "Theo tutorial, NumPy einsum tối ưu contraction path bằng optimize như thế nào?"
+  },
+  {
+    "id": "bonus-test-17",
+    "question": "Theo tutorial, asyncio.TaskGroup hủy task con khi task khác lỗi thế nào?"
+  },
+  {
+    "id": "bonus-test-18",
+    "question": "Theo tutorial, tracemalloc.get_traced_memory trả peak memory theo đơn vị nào?"
+  },
+  {
+    "id": "bonus-test-19",
+    "question": "Theo tutorial, ProcessPoolExecutor.map điều chỉnh chunksize như thế nào?"
+  },
+  {
+    "id": "bonus-test-20",
+    "question": "Theo tutorial, SQLAlchemy Session.begin_nested quản lý SAVEPOINT thế nào?"
+  }
+]

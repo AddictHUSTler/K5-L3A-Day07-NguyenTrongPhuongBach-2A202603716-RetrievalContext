@@ -1,0 +1,1128 @@
+[
+  {
+    "query_id": "q01",
+    "question": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1133.9942810009234,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 13,
+        "text": "# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1121,
+          "end_char": 1286
+        },
+        "score": 0.46281501633560174,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 13,
+        "text": "In the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 202,
+          "end_char": 1121
+        },
+        "score": 0.3829398061625441,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 15,
+        "text": "3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 914
+        },
+        "score": 0.378148233394596,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea | data/tutorial.pdf | page 13]\n# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n\n\n[76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf | data/tutorial.pdf | page 13]\nIn the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n\n\n[40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280 | data/tutorial.pdf | page 15]\n3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+    "context_ids": [
+      "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+      "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+      "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q02",
+    "question": "Vì sao -3**2 cho -9 và phải viết thế nào để bình phương số âm này được 9?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 2.0947690009052167,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "f23efb5ae9bdb9a59566b026a4a46907eccd7f2de592236c9bebd8ca2db972d1",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 14,
+        "text": "113.0625\n>>> round(_, 2)\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1280,
+          "end_char": 1305
+        },
+        "score": 0.3002451458850173,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "54616354456aefc6ecdab568878407737ae5e034e8019f3aa7d3fe0739acb8e5",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 13,
+        "text": "3.1.1 Numbers\nThe interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression\nsyntax is straightforward: the operators +, -, * and / can be used to perform arithmetic; parentheses (()) can be\nused for grouping. For example:\n\n>>> 2 + 2\n4\n>>> 50 - 5*6\n20\n>>> (50 - 5*6) / 4\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1445,
+          "end_char": 1771
+        },
+        "score": 0.28489289993870026,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "c2a2c18be0a445090fc8767b2d59a51be2f89293163d0e4eb1174c0c32cdfc65",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 14,
+        "text": "113.06\n\nThis variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an\nindependent local variable with the same name masking the built-in variable with its magic behavior.\nIn addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python\nalso has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).\n    1 Since ** has higher precedence than -, -3**2 will be interpreted as -(3**2) and thus result in -9. To avoid this and get 9, you can use\n\n(-3)**2.",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1305,
+          "end_char": 1908
+        },
+        "score": 0.266666075280576,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[f23efb5ae9bdb9a59566b026a4a46907eccd7f2de592236c9bebd8ca2db972d1 | data/tutorial.pdf | page 14]\n113.0625\n>>> round(_, 2)\n\n\n[54616354456aefc6ecdab568878407737ae5e034e8019f3aa7d3fe0739acb8e5 | data/tutorial.pdf | page 13]\n3.1.1 Numbers\nThe interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression\nsyntax is straightforward: the operators +, -, * and / can be used to perform arithmetic; parentheses (()) can be\nused for grouping. For example:\n\n>>> 2 + 2\n4\n>>> 50 - 5*6\n20\n>>> (50 - 5*6) / 4\n\n\n[c2a2c18be0a445090fc8767b2d59a51be2f89293163d0e4eb1174c0c32cdfc65 | data/tutorial.pdf | page 14]\n113.06\n\nThis variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an\nindependent local variable with the same name masking the built-in variable with its magic behavior.\nIn addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python\nalso has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).\n    1 Since ** has higher precedence than -, -3**2 will be interpreted as -(3**2) and thus result in -9. To avoid this and get 9, you can use\n\n(-3)**2.",
+    "context_ids": [
+      "f23efb5ae9bdb9a59566b026a4a46907eccd7f2de592236c9bebd8ca2db972d1",
+      "54616354456aefc6ecdab568878407737ae5e034e8019f3aa7d3fe0739acb8e5",
+      "c2a2c18be0a445090fc8767b2d59a51be2f89293163d0e4eb1174c0c32cdfc65"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q03",
+    "question": "Chỉ dùng chương 3: raw string có được kết thúc bằng một số lẻ dấu backslash không?",
+    "method": "dense",
+    "filter": {
+      "chapter": 3
+    },
+    "filter_origin": "explicit user query",
+    "top_k": 3,
+    "search_ms": 3.0155509994074237,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "7d0f046b1fda23f496be7d237238eb8477d5af533043ee168bd3ac86eb59247b",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 15,
+        "text": "There is one subtle aspect to raw strings: a raw string may not end in an odd number of \\ characters; see the FAQ\nentry for more information and workarounds.\nString literals can span multiple lines. One way is using triple-quotes: \"\"\"...\"\"\" or '''...'''. End-of-line\ncharacters are automatically included in the string, but it’s possible to prevent this by adding a \\ at the end of the line.\nIn the following example, the initial newline is not included:\n\n>>> print(\"\"\"\\\n... Usage: thingy [OPTIONS]\n...      -h                                                 Display this usage message\n                                                                                                                        (continues on next page)\n   2 Unlike other languages, special characters such as \\n have the same meaning with both single ('...') and double (\"...\") quotes. The\n\nonly difference between the two is that within single quotes you don’t need to escape \" (but you have to escape \\') and vice versa.",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1687,
+          "end_char": 2687
+        },
+        "score": 0.49975104107648327,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "e91a87c8987c86cb6f08dcaeb085d3569c392738d817746ab729cb2e73b29b29",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 15,
+        "text": "In the Python shell, the string definition and output string can look different. The print() function produces a more\nreadable output, by omitting the enclosing quotes and by printing escaped and special characters:\n\n>>> s = 'First line.\\nSecond line.' # \\n means newline\n>>> s # without print(), special characters are included in the string\n'First line.\\nSecond line.'\n>>> print(s) # with print(), special characters are interpreted, so \\n produces␣\n ,→new line\n\nFirst line.\nSecond line.\n\nIf you don’t want characters prefaced by \\ to be interpreted as special characters, you can use raw strings by adding\nan r before the first quote:\n\n>>> print('C:\\some\\name') # here \\n means newline!\nC:\\some\name\n>>> print(r'C:\\some\\name') # note the r before the quote\nC:\\some\\name\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 914,
+          "end_char": 1687
+        },
+        "score": 0.36066233273742204,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 15,
+        "text": "3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 914
+        },
+        "score": 0.31053081154048934,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[7d0f046b1fda23f496be7d237238eb8477d5af533043ee168bd3ac86eb59247b | data/tutorial.pdf | page 15]\nThere is one subtle aspect to raw strings: a raw string may not end in an odd number of \\ characters; see the FAQ\nentry for more information and workarounds.\nString literals can span multiple lines. One way is using triple-quotes: \"\"\"...\"\"\" or '''...'''. End-of-line\ncharacters are automatically included in the string, but it’s possible to prevent this by adding a \\ at the end of the line.\nIn the following example, the initial newline is not included:\n\n>>> print(\"\"\"\\\n... Usage: thingy [OPTIONS]\n...      -h                                                 Display this usage message\n                                                                                                                        (continues on next page)\n   2 Unlike other languages, special characters such as \\n have the same meaning with both single ('...') and double (\"...\") quotes. The\n\nonly difference between the two is that within single quotes you don’t need to escape \" (but you have to escape \\') and vice versa.\n\n[e91a87c8987c86cb6f08dcaeb085d3569c392738d817746ab729cb2e73b29b29 | data/tutorial.pdf | page 15]\nIn the Python shell, the string definition and output string can look different. The print() function produces a more\nreadable output, by omitting the enclosing quotes and by printing escaped and special characters:\n\n>>> s = 'First line.\\nSecond line.' # \\n means newline\n>>> s # without print(), special characters are included in the string\n'First line.\\nSecond line.'\n>>> print(s) # with print(), special characters are interpreted, so \\n produces␣\n ,→new line\n\nFirst line.\nSecond line.\n\nIf you don’t want characters prefaced by \\ to be interpreted as special characters, you can use raw strings by adding\nan r before the first quote:\n\n>>> print('C:\\some\\name') # here \\n means newline!\nC:\\some\name\n>>> print(r'C:\\some\\name') # note the r before the quote\nC:\\some\\name\n\n\n\n[40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280 | data/tutorial.pdf | page 15]\n3.1.2 Text\nPython can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters\n“!”, words “rabbit”, names “Paris”, sentences “Got your back.”, etc. “Yay! :)”. They can be enclosed in\nsingle quotes ('...') or double quotes (\"...\") with the same result2 .\n\n>>> 'spam eggs' # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\" # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975' # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to “escape” it, by preceding it with \\. Alternatively, we can use the other type of quotation\nmarks:\n\n>>> 'doesn\\'t' # use \\' to escape the single quote...\n\"doesn't\"\n>>> \"doesn't\" # ...or use double quotes instead\n\"doesn't\"\n>>> '\"Yes,\" they said.'\n'\"Yes,\" they said.'\n>>> \"\\\"Yes,\\\" they said.\"\n'\"Yes,\" they said.'\n>>> '\"Isn\\'t,\" they said.'\n'\"Isn\\'t,\" they said.'\n\n",
+    "context_ids": [
+      "7d0f046b1fda23f496be7d237238eb8477d5af533043ee168bd3ac86eb59247b",
+      "e91a87c8987c86cb6f08dcaeb085d3569c392738d817746ab729cb2e73b29b29",
+      "40fdd86726e8cc2bbaf1c8c8a8e16d4787006a838b51ae5c5b8d0e2b6581d280"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q04",
+    "question": "Python tự nối hai string literal đặt cạnh nhau. Nếu một bên là biến thì phải nối bằng gì?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.6263439993053908,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "f161b44d827987b5a421a062fa3f6525c911356b0a6c79a62255fb6d309b3b8f",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 16,
+        "text": "(continued from previous page)\n...      -H hostname                              Hostname to connect to\n... \"\"\")\nUsage: thingy [OPTIONS]\n     -h                                     Display this usage message\n     -H hostname                            Hostname to connect to\n\n>>>\n\nStrings can be concatenated (glued together) with the + operator, and repeated with *:\n\n>>> # 3 times 'un', followed by 'ium'\n>>> 3 * 'un' + 'ium'\n'unununium'\n\nTwo or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.\n\n>>> 'Py' 'thon'\n'Python'\n\nThis feature is particularly useful when you want to break long strings:\n\n>>> text = ('Put several strings within parentheses '\n...         'to have them joined together.')\n>>> text\n'Put several strings within parentheses to have them joined together.'\n\nThis only works with two literals though, not with variables or expressions:\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 919
+        },
+        "score": 0.4110105922415104,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "6db7c82f9aba667237f0e4a8e519cc85b1e2f0dfbc14193f53bbeb2b4819e4f9",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 48,
+        "text": "The Boolean operators and and or are so-called short-circuit operators: their arguments are evaluated from left to\nright, and evaluation stops as soon as the outcome is determined. For example, if A and C are true but B is false, A\nand B and C does not evaluate the expression C. When used as a general value and not as a Boolean, the return\nvalue of a short-circuit operator is the last evaluated argument.\nIt is possible to assign the result of a comparison or other Boolean expression to a variable. For example,\n\n>>> string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'\n>>> non_null = string1 or string2 or string3\n>>> non_null\n'Trondheim'\n\nNote that in Python, unlike C, assignment inside expressions must be done explicitly with the walrus operator :=.\nThis avoids a common class of problems encountered in C programs: typing = in an expression when == was intended.\n\n",
+        "metadata": {
+          "chapter": 5,
+          "start_char": 1035,
+          "end_char": 1916
+        },
+        "score": 0.3705573776582119,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 16,
+        "text": ">>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 919,
+          "end_char": 1819
+        },
+        "score": 0.33481466083677813,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[f161b44d827987b5a421a062fa3f6525c911356b0a6c79a62255fb6d309b3b8f | data/tutorial.pdf | page 16]\n(continued from previous page)\n...      -H hostname                              Hostname to connect to\n... \"\"\")\nUsage: thingy [OPTIONS]\n     -h                                     Display this usage message\n     -H hostname                            Hostname to connect to\n\n>>>\n\nStrings can be concatenated (glued together) with the + operator, and repeated with *:\n\n>>> # 3 times 'un', followed by 'ium'\n>>> 3 * 'un' + 'ium'\n'unununium'\n\nTwo or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.\n\n>>> 'Py' 'thon'\n'Python'\n\nThis feature is particularly useful when you want to break long strings:\n\n>>> text = ('Put several strings within parentheses '\n...         'to have them joined together.')\n>>> text\n'Put several strings within parentheses to have them joined together.'\n\nThis only works with two literals though, not with variables or expressions:\n\n\n\n[6db7c82f9aba667237f0e4a8e519cc85b1e2f0dfbc14193f53bbeb2b4819e4f9 | data/tutorial.pdf | page 48]\nThe Boolean operators and and or are so-called short-circuit operators: their arguments are evaluated from left to\nright, and evaluation stops as soon as the outcome is determined. For example, if A and C are true but B is false, A\nand B and C does not evaluate the expression C. When used as a general value and not as a Boolean, the return\nvalue of a short-circuit operator is the last evaluated argument.\nIt is possible to assign the result of a comparison or other Boolean expression to a variable. For example,\n\n>>> string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'\n>>> non_null = string1 or string2 or string3\n>>> non_null\n'Trondheim'\n\nNote that in Python, unlike C, assignment inside expressions must be done explicitly with the walrus operator :=.\nThis avoids a common class of problems encountered in C programs: typing = in an expression when == was intended.\n\n\n\n[2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346 | data/tutorial.pdf | page 16]\n>>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+    "context_ids": [
+      "f161b44d827987b5a421a062fa3f6525c911356b0a6c79a62255fb6d309b3b8f",
+      "6db7c82f9aba667237f0e4a8e519cc85b1e2f0dfbc14193f53bbeb2b4819e4f9",
+      "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q05",
+    "question": "Trong lát cắt s[i:j], cận nào được lấy và cận nào bị loại?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.6095819992187899,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "0a0ecfe9ec2f97db30d03212c321c6cfdb257afe091414b52127d54778a715b1",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 43,
+        "text": "5.2 The del statement\nThere is a way to remove an item from a list given its index instead of its value: the del statement. This differs from\nthe pop() method which returns a value. The del statement can also be used to remove slices from a list or clear\nthe entire list (which we did earlier by assignment of an empty list to the slice). For example:\n\n>>> a = [-1, 1, 66.25, 333, 333, 1234.5]\n>>> del a[0]\n>>> a\n[1, 66.25, 333, 333, 1234.5]\n>>> del a[2:4]\n>>> a\n[1, 66.25, 1234.5]\n>>> del a[:]\n>>> a\n[]\n\ndel can also be used to delete entire variables:\n\n>>> del a\n\nReferencing the name a hereafter is an error (at least until another value is assigned to it). We’ll find other uses for\ndel later.",
+        "metadata": {
+          "chapter": 5,
+          "start_char": 953,
+          "end_char": 1650
+        },
+        "score": 0.11237048758898109,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "f7d4812db55a8772bb7d2f62ac94d861c93e2d7529ba41a2efa886595e306424",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 36,
+        "text": ">>> def parrot(voltage, state='a stiff', action='voom'):\n...      print(\"-- This parrot wouldn't\", action, end=' ')\n...      print(\"if you put\", voltage, \"volts through it.\", end=' ')\n...      print(\"E's\", state, \"!\")\n...\n>>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"}\n>>> parrot(**d)\n-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin\n ,→' demised !\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1771,
+          "end_char": 2191
+        },
+        "score": 0.11058924062486575,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "908947470658cde12115974b1f0b61c016ee7360ed88db05ba2020d104027059",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 29,
+        "text": "• Sequence patterns support extended unpacking: [x, y, *rest] and (x, y, *rest) work similar to un-\n      packing assignments. The name after * may also be _, so (x, y, *_) matches a sequence of at least two\n      items without binding the remaining items.\n    • Mapping patterns: {\"bandwidth\": b, \"latency\": l} captures the \"bandwidth\" and \"latency\" val-\n      ues from a dictionary. Unlike sequence patterns, extra keys are ignored. An unpacking like **rest is also\n      supported. (But **_ would be redundant, so it is not allowed.)\n    • Subpatterns may be captured using the as keyword:\n\n      case (Point(x1, y1), Point(x2, y2) as p2): ...\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 648
+        },
+        "score": 0.10544191657225821,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[0a0ecfe9ec2f97db30d03212c321c6cfdb257afe091414b52127d54778a715b1 | data/tutorial.pdf | page 43]\n5.2 The del statement\nThere is a way to remove an item from a list given its index instead of its value: the del statement. This differs from\nthe pop() method which returns a value. The del statement can also be used to remove slices from a list or clear\nthe entire list (which we did earlier by assignment of an empty list to the slice). For example:\n\n>>> a = [-1, 1, 66.25, 333, 333, 1234.5]\n>>> del a[0]\n>>> a\n[1, 66.25, 333, 333, 1234.5]\n>>> del a[2:4]\n>>> a\n[1, 66.25, 1234.5]\n>>> del a[:]\n>>> a\n[]\n\ndel can also be used to delete entire variables:\n\n>>> del a\n\nReferencing the name a hereafter is an error (at least until another value is assigned to it). We’ll find other uses for\ndel later.\n\n[f7d4812db55a8772bb7d2f62ac94d861c93e2d7529ba41a2efa886595e306424 | data/tutorial.pdf | page 36]\n>>> def parrot(voltage, state='a stiff', action='voom'):\n...      print(\"-- This parrot wouldn't\", action, end=' ')\n...      print(\"if you put\", voltage, \"volts through it.\", end=' ')\n...      print(\"E's\", state, \"!\")\n...\n>>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"}\n>>> parrot(**d)\n-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin\n ,→' demised !\n\n\n\n[908947470658cde12115974b1f0b61c016ee7360ed88db05ba2020d104027059 | data/tutorial.pdf | page 29]\n• Sequence patterns support extended unpacking: [x, y, *rest] and (x, y, *rest) work similar to un-\n      packing assignments. The name after * may also be _, so (x, y, *_) matches a sequence of at least two\n      items without binding the remaining items.\n    • Mapping patterns: {\"bandwidth\": b, \"latency\": l} captures the \"bandwidth\" and \"latency\" val-\n      ues from a dictionary. Unlike sequence patterns, extra keys are ignored. An unpacking like **rest is also\n      supported. (But **_ would be redundant, so it is not allowed.)\n    • Subpatterns may be captured using the as keyword:\n\n      case (Point(x1, y1), Point(x2, y2) as p2): ...\n\n",
+    "context_ids": [
+      "0a0ecfe9ec2f97db30d03212c321c6cfdb257afe091414b52127d54778a715b1",
+      "f7d4812db55a8772bb7d2f62ac94d861c93e2d7529ba41a2efa886595e306424",
+      "908947470658cde12115974b1f0b61c016ee7360ed88db05ba2020d104027059"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q06",
+    "question": "Muốn lấy shallow copy của list rgba bằng slicing thì viết thế nào?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.6007270005502505,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "18300320fdb9aca486eec6e81df4732aab20e13bd4d054404fbec41064004912",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 19,
+        "text": "Simple assignment in Python never copies data. When you assign a list to a variable, the variable refers to the existing\nlist. Any changes you make to the list through one variable will be seen through all other variables that refer to it.:\n\n>>> rgb = [\"Red\", \"Green\", \"Blue\"]\n>>> rgba = rgb\n>>> id(rgb) == id(rgba) # they reference the same object\nTrue\n>>> rgba.append(\"Alph\")\n>>> rgb\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAll slice operations return a new list containing the requested elements. This means that the following slice returns a\nshallow copy of the list:\n\n>>> correct_rgba = rgba[:]\n>>> correct_rgba[-1] = \"Alpha\"\n>>> correct_rgba\n[\"Red\", \"Green\", \"Blue\", \"Alpha\"]\n>>> rgba\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAssignment to slices is also possible, and this can even change the size of the list or clear it entirely:\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 790,
+          "end_char": 1617
+        },
+        "score": 0.5213633334683405,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 40,
+        "text": "list.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n",
+        "metadata": {
+          "chapter": 5,
+          "start_char": 0,
+          "end_char": 696
+        },
+        "score": 0.44772062290954195,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "0a0ecfe9ec2f97db30d03212c321c6cfdb257afe091414b52127d54778a715b1",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 43,
+        "text": "5.2 The del statement\nThere is a way to remove an item from a list given its index instead of its value: the del statement. This differs from\nthe pop() method which returns a value. The del statement can also be used to remove slices from a list or clear\nthe entire list (which we did earlier by assignment of an empty list to the slice). For example:\n\n>>> a = [-1, 1, 66.25, 333, 333, 1234.5]\n>>> del a[0]\n>>> a\n[1, 66.25, 333, 333, 1234.5]\n>>> del a[2:4]\n>>> a\n[1, 66.25, 1234.5]\n>>> del a[:]\n>>> a\n[]\n\ndel can also be used to delete entire variables:\n\n>>> del a\n\nReferencing the name a hereafter is an error (at least until another value is assigned to it). We’ll find other uses for\ndel later.",
+        "metadata": {
+          "chapter": 5,
+          "start_char": 953,
+          "end_char": 1650
+        },
+        "score": 0.27222714338462844,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[18300320fdb9aca486eec6e81df4732aab20e13bd4d054404fbec41064004912 | data/tutorial.pdf | page 19]\nSimple assignment in Python never copies data. When you assign a list to a variable, the variable refers to the existing\nlist. Any changes you make to the list through one variable will be seen through all other variables that refer to it.:\n\n>>> rgb = [\"Red\", \"Green\", \"Blue\"]\n>>> rgba = rgb\n>>> id(rgb) == id(rgba) # they reference the same object\nTrue\n>>> rgba.append(\"Alph\")\n>>> rgb\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAll slice operations return a new list containing the requested elements. This means that the following slice returns a\nshallow copy of the list:\n\n>>> correct_rgba = rgba[:]\n>>> correct_rgba[-1] = \"Alpha\"\n>>> correct_rgba\n[\"Red\", \"Green\", \"Blue\", \"Alpha\"]\n>>> rgba\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAssignment to slices is also possible, and this can even change the size of the list or clear it entirely:\n\n\n\n[21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681 | data/tutorial.pdf | page 40]\nlist.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n\n\n[0a0ecfe9ec2f97db30d03212c321c6cfdb257afe091414b52127d54778a715b1 | data/tutorial.pdf | page 43]\n5.2 The del statement\nThere is a way to remove an item from a list given its index instead of its value: the del statement. This differs from\nthe pop() method which returns a value. The del statement can also be used to remove slices from a list or clear\nthe entire list (which we did earlier by assignment of an empty list to the slice). For example:\n\n>>> a = [-1, 1, 66.25, 333, 333, 1234.5]\n>>> del a[0]\n>>> a\n[1, 66.25, 333, 333, 1234.5]\n>>> del a[2:4]\n>>> a\n[1, 66.25, 1234.5]\n>>> del a[:]\n>>> a\n[]\n\ndel can also be used to delete entire variables:\n\n>>> del a\n\nReferencing the name a hereafter is an error (at least until another value is assigned to it). We’ll find other uses for\ndel later.",
+    "context_ids": [
+      "18300320fdb9aca486eec6e81df4732aab20e13bd4d054404fbec41064004912",
+      "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681",
+      "0a0ecfe9ec2f97db30d03212c321c6cfdb257afe091414b52127d54778a715b1"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q07",
+    "question": "range(5, 10) sinh những số nào; giá trị stop có được lấy không?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5780859994265484,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 24,
+        "text": "4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 400,
+          "end_char": 1270
+        },
+        "score": 0.28867955983427784,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "f23efb5ae9bdb9a59566b026a4a46907eccd7f2de592236c9bebd8ca2db972d1",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 14,
+        "text": "113.0625\n>>> round(_, 2)\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1280,
+          "end_char": 1305
+        },
+        "score": 0.28543175381857344,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 14,
+        "text": "12.5625\n>>> price + _\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1258,
+          "end_char": 1280
+        },
+        "score": 0.2695588212131612,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0 | data/tutorial.pdf | page 24]\n4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n\n\n[f23efb5ae9bdb9a59566b026a4a46907eccd7f2de592236c9bebd8ca2db972d1 | data/tutorial.pdf | page 14]\n113.0625\n>>> round(_, 2)\n\n\n[239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7 | data/tutorial.pdf | page 14]\n12.5625\n>>> price + _\n",
+    "context_ids": [
+      "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+      "f23efb5ae9bdb9a59566b026a4a46907eccd7f2de592236c9bebd8ca2db972d1",
+      "239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q08",
+    "question": "Tại sao range tiết kiệm bộ nhớ hơn việc tạo sẵn một list các số?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5711539999756496,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "627318b10883e49bb127bee91a379f4a78c9669a16624d1c5d42c640360d3dde",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 24,
+        "text": "In most such cases, however, it is convenient to use the enumerate() function, see Looping Techniques.\nA strange thing happens if you just print a range:",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1270,
+          "end_char": 1423
+        },
+        "score": 0.323540713151634,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "0c63f37ee5db0efce446e4aa9458b29713f411c82697d4c067e2f13fc35d3340",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "text": ">>> range(10)\nrange(0, 10)\n\nIn many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. It is an object which returns\nthe successive items of the desired sequence when you iterate over it, but it doesn’t really make the list, thus saving\nspace.\nWe say such an object is iterable, that is, suitable as a target for functions and constructs that expect something from\nwhich they can obtain successive items until the supply is exhausted. We have seen that the for statement is such a\nconstruct, while an example of a function that takes an iterable is sum():\n\n>>> sum(range(4))          # 0 + 1 + 2 + 3\n6\n\nLater we will see more functions that return iterables and take iterables as arguments. In chapter Data Structures, we\nwill discuss in more detail about list().\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 800
+        },
+        "score": 0.3126083978740035,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "f2a6a1e162bb9b5be5e46fe9d965ea80ed8beeb4b5463b3598f64bf6dec4f948",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 31,
+        "text": "example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent\n       to result = result + [a], but more efficient.\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 170
+        },
+        "score": 0.3006281293069684,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[627318b10883e49bb127bee91a379f4a78c9669a16624d1c5d42c640360d3dde | data/tutorial.pdf | page 24]\nIn most such cases, however, it is convenient to use the enumerate() function, see Looping Techniques.\nA strange thing happens if you just print a range:\n\n[0c63f37ee5db0efce446e4aa9458b29713f411c82697d4c067e2f13fc35d3340 | data/tutorial.pdf | page 25]\n>>> range(10)\nrange(0, 10)\n\nIn many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. It is an object which returns\nthe successive items of the desired sequence when you iterate over it, but it doesn’t really make the list, thus saving\nspace.\nWe say such an object is iterable, that is, suitable as a target for functions and constructs that expect something from\nwhich they can obtain successive items until the supply is exhausted. We have seen that the for statement is such a\nconstruct, while an example of a function that takes an iterable is sum():\n\n>>> sum(range(4))          # 0 + 1 + 2 + 3\n6\n\nLater we will see more functions that return iterables and take iterables as arguments. In chapter Data Structures, we\nwill discuss in more detail about list().\n\n\n\n[f2a6a1e162bb9b5be5e46fe9d965ea80ed8beeb4b5463b3598f64bf6dec4f948 | data/tutorial.pdf | page 31]\nexample is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent\n       to result = result + [a], but more efficient.\n\n",
+    "context_ids": [
+      "627318b10883e49bb127bee91a379f4a78c9669a16624d1c5d42c640360d3dde",
+      "0c63f37ee5db0efce446e4aa9458b29713f411c82697d4c067e2f13fc35d3340",
+      "f2a6a1e162bb9b5be5e46fe9d965ea80ed8beeb4b5463b3598f64bf6dec4f948"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q09",
+    "question": "Nếu có nhiều vòng lặp for hoặc while lồng nhau, break thoát khỏi vòng nào?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5537849994871067,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "text": "4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1557,
+          "end_char": 1928
+        },
+        "score": 0.4094122930248097,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "01a24bb812e3e7432302dfea67d3c2005d3a83d9c627a21b6580706759934c5f",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "text": "4.4 break and continue Statements\nThe break statement breaks out of the innermost enclosing for or while loop:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(f\"{n} equals {x} * {n//x}\")\n...             break\n...\n4 equals 2 * 2\n6 equals 2 * 3\n8 equals 2 * 4\n9 equals 3 * 3\n\nThe continue statement continues with the next iteration of the loop:\n\n>>> for num in range(2, 10):\n...     if num % 2 == 0:\n...         print(f\"Found an even number {num}\")\n...         continue\n...     print(f\"Found an odd number {num}\")\n...\nFound an even number 2\nFound an odd number 3\nFound an even number 4\nFound an odd number 5\nFound an even number 6\nFound an odd number 7\nFound an even number 8\nFound an odd number 9\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 800,
+          "end_char": 1557
+        },
+        "score": 0.3998914360315028,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "627318b10883e49bb127bee91a379f4a78c9669a16624d1c5d42c640360d3dde",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 24,
+        "text": "In most such cases, however, it is convenient to use the enumerate() function, see Looping Techniques.\nA strange thing happens if you just print a range:",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1270,
+          "end_char": 1423
+        },
+        "score": 0.3464051196447771,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[01a24bb812e3e7432302dfea67d3c2005d3a83d9c627a21b6580706759934c5f | data/tutorial.pdf | page 25]\n4.4 break and continue Statements\nThe break statement breaks out of the innermost enclosing for or while loop:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(f\"{n} equals {x} * {n//x}\")\n...             break\n...\n4 equals 2 * 2\n6 equals 2 * 3\n8 equals 2 * 4\n9 equals 3 * 3\n\nThe continue statement continues with the next iteration of the loop:\n\n>>> for num in range(2, 10):\n...     if num % 2 == 0:\n...         print(f\"Found an even number {num}\")\n...         continue\n...     print(f\"Found an odd number {num}\")\n...\nFound an even number 2\nFound an odd number 3\nFound an even number 4\nFound an odd number 5\nFound an even number 6\nFound an odd number 7\nFound an even number 8\nFound an odd number 9\n\n\n\n[627318b10883e49bb127bee91a379f4a78c9669a16624d1c5d42c640360d3dde | data/tutorial.pdf | page 24]\nIn most such cases, however, it is convenient to use the enumerate() function, see Looping Techniques.\nA strange thing happens if you just print a range:",
+    "context_ids": [
+      "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+      "01a24bb812e3e7432302dfea67d3c2005d3a83d9c627a21b6580706759934c5f",
+      "627318b10883e49bb127bee91a379f4a78c9669a16624d1c5d42c640360d3dde"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q10",
+    "question": "else của vòng lặp có chạy khi vòng lặp kết thúc sớm do break, return hoặc exception không?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.553832000354305,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "text": "4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1557,
+          "end_char": 1928
+        },
+        "score": 0.3740073082599593,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "text": "In either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.\nThis is exemplified in the following for loop, which searches for prime numbers:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 723
+        },
+        "score": 0.3630215176106628,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "text": "(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 723,
+          "end_char": 1500
+        },
+        "score": 0.34756930832775473,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b | data/tutorial.pdf | page 26]\nIn either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.\nThis is exemplified in the following for loop, which searches for prime numbers:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n\n\n[555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c | data/tutorial.pdf | page 26]\n(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n",
+    "context_ids": [
+      "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+      "dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b",
+      "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q11",
+    "question": "pass làm gì và dùng khi nào?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5783710005052853,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "text": "4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1500,
+          "end_char": 2114
+        },
+        "score": 0.21952872791642997,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "5f6a48e68ad43a138cc65b2364f03193f18991b8a87e25bf3d16d9e64198da75",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 36,
+        "text": "4.9.6 Lambda Expressions\nSmall anonymous functions can be created with the lambda keyword. This function returns the sum of its two\narguments: lambda a, b: a+b. Lambda functions can be used wherever function objects are required. They\nare syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function\ndefinition. Like nested function definitions, lambda functions can reference variables from the containing scope:\n\n>>> def make_incrementor(n):\n...     return lambda x: x + n\n                                                                                                     (continues on next page)",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 2191,
+          "end_char": 2845
+        },
+        "score": 0.2048627141087531,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "f1e6ff7b4b2ea9d4241c3f0bb862cf7837ee28c02aeed0e2f64e8c89236eec75",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 37,
+        "text": "(continued from previous page)\n...\n>>> f = make_incrementor(42)\n>>> f(0)\n42\n>>> f(1)\n43\n\nThe above example uses a lambda expression to return a function. Another use is to pass a small function as an\nargument:\n\n>>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n>>> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 379
+        },
+        "score": 0.18291763715770304,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd | data/tutorial.pdf | page 26]\n4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...\n\n[5f6a48e68ad43a138cc65b2364f03193f18991b8a87e25bf3d16d9e64198da75 | data/tutorial.pdf | page 36]\n4.9.6 Lambda Expressions\nSmall anonymous functions can be created with the lambda keyword. This function returns the sum of its two\narguments: lambda a, b: a+b. Lambda functions can be used wherever function objects are required. They\nare syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function\ndefinition. Like nested function definitions, lambda functions can reference variables from the containing scope:\n\n>>> def make_incrementor(n):\n...     return lambda x: x + n\n                                                                                                     (continues on next page)\n\n[f1e6ff7b4b2ea9d4241c3f0bb862cf7837ee28c02aeed0e2f64e8c89236eec75 | data/tutorial.pdf | page 37]\n(continued from previous page)\n...\n>>> f = make_incrementor(42)\n>>> f(0)\n42\n>>> f(1)\n43\n\nThe above example uses a lambda expression to return a function. Another use is to pass a small function as an\nargument:\n\n>>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n>>> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]\n\n",
+    "context_ids": [
+      "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+      "5f6a48e68ad43a138cc65b2364f03193f18991b8a87e25bf3d16d9e64198da75",
+      "f1e6ff7b4b2ea9d4241c3f0bb862cf7837ee28c02aeed0e2f64e8c89236eec75"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q12",
+    "question": "Chỉ dùng chương 4: trong match, case _ có ý nghĩa gì và nếu không case nào khớp thì sao?",
+    "method": "dense",
+    "filter": {
+      "chapter": 4
+    },
+    "filter_origin": "explicit user query",
+    "top_k": 3,
+    "search_ms": 2.8438360004656715,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 27,
+        "text": "4.7 match Statements\nA match statement takes an expression and compares its value to successive patterns given as one or more case\nblocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s\nmore similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed\nand it can also extract components (sequence elements or object attributes) from the value into variables.\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 820
+        },
+        "score": 0.3632475420647297,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "1d79dd9e9dd186ea730d961091d90397cbf061b2f3ec5fea6fc0d325801dcf11",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 28,
+        "text": "We can add an if clause to a pattern, known as a “guard”. If the guard is false, match goes on to try the next case\nblock. Note that value capture happens before the guard is evaluated:\n\nmatch point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")\n\nSeveral other key features of this statement:\n     • Like unpacking assignments, tuple and list patterns have exactly the same meaning and actually match arbitrary\n       sequences. An important exception is that they don’t match iterators or strings.",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1738,
+          "end_char": 2311
+        },
+        "score": 0.33644054749442287,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "7347842cfdb3370b37a063b3339d1ccb6d68825c3aa40fbd76ccd1dc796b0a8d",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 27,
+        "text": "Note the last block: the “variable name” _ acts as a wildcard and never fails to match. If no case matches, none of\nthe branches is executed.\nYou can combine several literals in a single pattern using | (“or”):\n\ncase 401 | 403 | 404:\n    return \"Not allowed\"\n\nPatterns can look like unpacking assignments, and can be used to bind variables:\n\n# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 820,
+          "end_char": 1426
+        },
+        "score": 0.32505895800771545,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f | data/tutorial.pdf | page 27]\n4.7 match Statements\nA match statement takes an expression and compares its value to successive patterns given as one or more case\nblocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s\nmore similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed\nand it can also extract components (sequence elements or object attributes) from the value into variables.\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\n\n\n[1d79dd9e9dd186ea730d961091d90397cbf061b2f3ec5fea6fc0d325801dcf11 | data/tutorial.pdf | page 28]\nWe can add an if clause to a pattern, known as a “guard”. If the guard is false, match goes on to try the next case\nblock. Note that value capture happens before the guard is evaluated:\n\nmatch point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")\n\nSeveral other key features of this statement:\n     • Like unpacking assignments, tuple and list patterns have exactly the same meaning and actually match arbitrary\n       sequences. An important exception is that they don’t match iterators or strings.\n\n[7347842cfdb3370b37a063b3339d1ccb6d68825c3aa40fbd76ccd1dc796b0a8d | data/tutorial.pdf | page 27]\nNote the last block: the “variable name” _ acts as a wildcard and never fails to match. If no case matches, none of\nthe branches is executed.\nYou can combine several literals in a single pattern using | (“or”):\n\ncase 401 | 403 | 404:\n    return \"Not allowed\"\n\nPatterns can look like unpacking assignments, and can be used to bind variables:\n\n# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")\n\n",
+    "context_ids": [
+      "86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f",
+      "1d79dd9e9dd186ea730d961091d90397cbf061b2f3ec5fea6fc0d325801dcf11",
+      "7347842cfdb3370b37a063b3339d1ccb6d68825c3aa40fbd76ccd1dc796b0a8d"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q13",
+    "question": "Hàm dùng return không kèm biểu thức hoặc chạy đến hết thân hàm trả về gì?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5777250009705313,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "2d23dbfaa467c490356b58561ba7893b2f52f1d2e37770c4bd40b819b09e123b",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 30,
+        "text": "This example, as usual, demonstrates some new Python features:\n     • The return statement returns with a value from a function. return without an expression argument returns\n       None. Falling off the end of a function also returns None.\n     • The statement result.append(a) calls a method of the list object result. A method is a function that\n       ‘belongs’ to an object and is named obj.methodname, where obj is some object (this may be an expression),\n       and methodname is the name of a method that is defined by the object’s type. Different types define different\n       methods. Methods of different types may have the same name without causing ambiguity. (It is possible to\n       define your own object types and methods, using classes, see Classes) The method append() shown in the\n  1 Actually, call by object reference would be a better description, since if a mutable object is passed, the caller will see any changes the callee\n\nmakes to it (items inserted into a list).",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 2653,
+          "end_char": 3646
+        },
+        "score": 0.28653258635094986,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "text": "4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1500,
+          "end_char": 2114
+        },
+        "score": 0.28142406353825644,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "7317960513d3369e928ebabe7e714f9fb091c1807242f3d8110927e9bdbd74f7",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 40,
+        "text": "You might have noticed that methods like insert, remove or sort that only modify the list have no return value\nprinted – they return the default None.1 This is a design principle for all mutable data structures in Python.\nAnother thing you might notice is that not all data can be sorted or compared. For instance, [None, 'hello',\n10] doesn’t sort because integers can’t be compared to strings and None can’t be compared to other types. Also, there\nare some types that don’t have a defined ordering relation. For example, 3+4j < 5+7j isn’t a valid comparison.\n\n",
+        "metadata": {
+          "chapter": 5,
+          "start_char": 696,
+          "end_char": 1257
+        },
+        "score": 0.2600300927568113,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[2d23dbfaa467c490356b58561ba7893b2f52f1d2e37770c4bd40b819b09e123b | data/tutorial.pdf | page 30]\nThis example, as usual, demonstrates some new Python features:\n     • The return statement returns with a value from a function. return without an expression argument returns\n       None. Falling off the end of a function also returns None.\n     • The statement result.append(a) calls a method of the list object result. A method is a function that\n       ‘belongs’ to an object and is named obj.methodname, where obj is some object (this may be an expression),\n       and methodname is the name of a method that is defined by the object’s type. Different types define different\n       methods. Methods of different types may have the same name without causing ambiguity. (It is possible to\n       define your own object types and methods, using classes, see Classes) The method append() shown in the\n  1 Actually, call by object reference would be a better description, since if a mutable object is passed, the caller will see any changes the callee\n\nmakes to it (items inserted into a list).\n\n[6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd | data/tutorial.pdf | page 26]\n4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...\n\n[7317960513d3369e928ebabe7e714f9fb091c1807242f3d8110927e9bdbd74f7 | data/tutorial.pdf | page 40]\nYou might have noticed that methods like insert, remove or sort that only modify the list have no return value\nprinted – they return the default None.1 This is a design principle for all mutable data structures in Python.\nAnother thing you might notice is that not all data can be sorted or compared. For instance, [None, 'hello',\n10] doesn’t sort because integers can’t be compared to strings and None can’t be compared to other types. Also, there\nare some types that don’t have a defined ordering relation. For example, 3+4j < 5+7j isn’t a valid comparison.\n\n",
+    "context_ids": [
+      "2d23dbfaa467c490356b58561ba7893b2f52f1d2e37770c4bd40b819b09e123b",
+      "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+      "7317960513d3369e928ebabe7e714f9fb091c1807242f3d8110927e9bdbd74f7"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q14",
+    "question": "Vì sao default argument là list có thể giữ lại các phần tử từ những lần gọi hàm trước?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5617629996995674,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "3fae96cf93a0d8eced5c9b80c60b7337d90c1e7c1e9b3d6b8045307f7e97efbe",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 32,
+        "text": "[1]\n[1, 2]\n[1, 2, 3]\n\nIf you don’t want the default to be shared between subsequent calls, you can write the function like this instead:\n\ndef f(a, L=None):\n    if L is None:\n        L = []\n    L.append(a)\n    return L\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 219
+        },
+        "score": 0.3832745524182605,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 36,
+        "text": "4.9.5 Unpacking Argument Lists\nThe reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call\nrequiring separate positional arguments. For instance, the built-in range() function expects separate start and stop\narguments. If they are not available separately, write the function call with the *-operator to unpack the arguments\nout of a list or tuple:\n\n>>> list(range(3, 6))                          # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))                           # call with arguments unpacked from a list\n[3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with the **-operator:\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1055,
+          "end_char": 1771
+        },
+        "score": 0.38064694275492816,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "2f7b4972d201637f4e62a527070af469586cac7955252df47ea91ad09d7c5713",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 31,
+        "text": "This example also introduces the in keyword. This tests whether or not a sequence contains a certain value.\nThe default values are evaluated at the point of function definition in the defining scope, so that\n\ni = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()\n\nwill print 5.\nImportant warning: The default value is evaluated only once. This makes a difference when the default is a mutable\nobject such as a list, dictionary, or instances of most classes. For example, the following function accumulates the\narguments passed to it on subsequent calls:\n\ndef f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))\n\nThis will print",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1236,
+          "end_char": 1882
+        },
+        "score": 0.37730270257048926,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[3fae96cf93a0d8eced5c9b80c60b7337d90c1e7c1e9b3d6b8045307f7e97efbe | data/tutorial.pdf | page 32]\n[1]\n[1, 2]\n[1, 2, 3]\n\nIf you don’t want the default to be shared between subsequent calls, you can write the function like this instead:\n\ndef f(a, L=None):\n    if L is None:\n        L = []\n    L.append(a)\n    return L\n\n\n\n[a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0 | data/tutorial.pdf | page 36]\n4.9.5 Unpacking Argument Lists\nThe reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call\nrequiring separate positional arguments. For instance, the built-in range() function expects separate start and stop\narguments. If they are not available separately, write the function call with the *-operator to unpack the arguments\nout of a list or tuple:\n\n>>> list(range(3, 6))                          # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))                           # call with arguments unpacked from a list\n[3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with the **-operator:\n\n\n\n[2f7b4972d201637f4e62a527070af469586cac7955252df47ea91ad09d7c5713 | data/tutorial.pdf | page 31]\nThis example also introduces the in keyword. This tests whether or not a sequence contains a certain value.\nThe default values are evaluated at the point of function definition in the defining scope, so that\n\ni = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()\n\nwill print 5.\nImportant warning: The default value is evaluated only once. This makes a difference when the default is a mutable\nobject such as a list, dictionary, or instances of most classes. For example, the following function accumulates the\narguments passed to it on subsequent calls:\n\ndef f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))\n\nThis will print",
+    "context_ids": [
+      "3fae96cf93a0d8eced5c9b80c60b7337d90c1e7c1e9b3d6b8045307f7e97efbe",
+      "a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0",
+      "2f7b4972d201637f4e62a527070af469586cac7955252df47ea91ad09d7c5713"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q15",
+    "question": "Tham số nằm trước dấu / trong định nghĩa hàm có thể được truyền bằng keyword không?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5455960001418134,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "935f124a71fcdac65a3d94c544a8ef5c586e969233dd49a0bd8e6a9f9c4a3abf",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 33,
+        "text": "Positional-or-Keyword Arguments\nIf / and * are not present in the function definition, arguments may be passed to a function by position or by keyword.",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1863,
+          "end_char": 2014
+        },
+        "score": 0.39785957590719145,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "26d9a091006a5accb4ead86ef6cd6947f7a96739904b97cb29deaf107eb35589",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 34,
+        "text": "Positional-Only Parameters\nLooking at this in a bit more detail, it is possible to mark certain parameters as positional-only. If positional-only, the\nparameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed\nbefore a / (forward-slash). The / is used to logically separate the positional-only parameters from the rest of the\nparameters. If there is no / in the function definition, there are no positional-only parameters.\nParameters following the / may be positional-or-keyword or keyword-only.\n\nKeyword-Only Arguments\nTo mark parameters as keyword-only, indicating the parameters must be passed by keyword argument, place an * in\nthe arguments list just before the first keyword-only parameter.\n\nFunction Examples\nConsider the following example function definitions paying close attention to the markers / and *:\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 871
+        },
+        "score": 0.3288190642310806,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 16,
+        "text": ">>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 919,
+          "end_char": 1819
+        },
+        "score": 0.30573034413687233,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[935f124a71fcdac65a3d94c544a8ef5c586e969233dd49a0bd8e6a9f9c4a3abf | data/tutorial.pdf | page 33]\nPositional-or-Keyword Arguments\nIf / and * are not present in the function definition, arguments may be passed to a function by position or by keyword.\n\n[26d9a091006a5accb4ead86ef6cd6947f7a96739904b97cb29deaf107eb35589 | data/tutorial.pdf | page 34]\nPositional-Only Parameters\nLooking at this in a bit more detail, it is possible to mark certain parameters as positional-only. If positional-only, the\nparameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed\nbefore a / (forward-slash). The / is used to logically separate the positional-only parameters from the rest of the\nparameters. If there is no / in the function definition, there are no positional-only parameters.\nParameters following the / may be positional-or-keyword or keyword-only.\n\nKeyword-Only Arguments\nTo mark parameters as keyword-only, indicating the parameters must be passed by keyword argument, place an * in\nthe arguments list just before the first keyword-only parameter.\n\nFunction Examples\nConsider the following example function definitions paying close attention to the markers / and *:\n\n\n\n[2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346 | data/tutorial.pdf | page 16]\n>>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+    "context_ids": [
+      "935f124a71fcdac65a3d94c544a8ef5c586e969233dd49a0bd8e6a9f9c4a3abf",
+      "26d9a091006a5accb4ead86ef6cd6947f7a96739904b97cb29deaf107eb35589",
+      "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "absent01",
+    "question": "asyncio.TaskGroup bảo đảm hủy task còn lại thế nào khi một task lỗi?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5413300006912323,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 23,
+        "text": "CHAPTER\n\n                                                                                                                FOUR\n\n                                                                MORE CONTROL FLOW TOOLS\n\nAs well as the while statement just introduced, Python uses a few more that we will encounter in this chapter.\n\n",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 328
+        },
+        "score": 0.161522291286815,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "text": "4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1557,
+          "end_char": 1928
+        },
+        "score": 0.13633666486266088,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "text": "4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1500,
+          "end_char": 2114
+        },
+        "score": 0.13234835384983276,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d | data/tutorial.pdf | page 23]\nCHAPTER\n\n                                                                                                                FOUR\n\n                                                                MORE CONTROL FLOW TOOLS\n\nAs well as the while statement just introduced, Python uses a few more that we will encounter in this chapter.\n\n\n\n[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd | data/tutorial.pdf | page 26]\n4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+    "context_ids": [
+      "6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d",
+      "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+      "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "absent02",
+    "question": "Theo tài liệu, cấu hình isolation level của sqlite3.connect như thế nào?",
+    "method": "dense",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 1.5449420006916625,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "e2728d77ef4fa83c5ce22fc91c9a297506e9e962e001b5554e2eb79dffe73223",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 13,
+        "text": "CHAPTER\n\n                                                                                                             THREE\n\n                                         AN INFORMAL INTRODUCTION TO PYTHON\n\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 202
+        },
+        "score": 0.20302884878848818,
+        "rank": 1,
+        "strategy": "dense"
+      },
+      {
+        "id": "f7490aa23c9fc57dfdf53ef59a84fcc6f1b178de008db9de90a86888aae481d3",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 39,
+        "text": "CHAPTER\n\n                                                                                                             FIVE\n\n                                                                                 DATA STRUCTURES\n\nThis chapter describes some things you’ve learned about already in more detail, and adds some new things as well.\n\n",
+        "metadata": {
+          "chapter": 5,
+          "start_char": 0,
+          "end_char": 337
+        },
+        "score": 0.17904054979319095,
+        "rank": 2,
+        "strategy": "dense"
+      },
+      {
+        "id": "6cce9e24aa991d9c6cfbe46011d90235353f1b34c2465567cde5bc9e1918f373",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 14,
+        "text": ">>> 17 / 3 # classic division returns a float\n",
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 46
+        },
+        "score": 0.16708761841666595,
+        "rank": 3,
+        "strategy": "dense"
+      }
+    ],
+    "context": "[e2728d77ef4fa83c5ce22fc91c9a297506e9e962e001b5554e2eb79dffe73223 | data/tutorial.pdf | page 13]\nCHAPTER\n\n                                                                                                             THREE\n\n                                         AN INFORMAL INTRODUCTION TO PYTHON\n\n\n\n[f7490aa23c9fc57dfdf53ef59a84fcc6f1b178de008db9de90a86888aae481d3 | data/tutorial.pdf | page 39]\nCHAPTER\n\n                                                                                                             FIVE\n\n                                                                                 DATA STRUCTURES\n\nThis chapter describes some things you’ve learned about already in more detail, and adds some new things as well.\n\n\n\n[6cce9e24aa991d9c6cfbe46011d90235353f1b34c2465567cde5bc9e1918f373 | data/tutorial.pdf | page 14]\n>>> 17 / 3 # classic division returns a float\n",
+    "context_ids": [
+      "e2728d77ef4fa83c5ce22fc91c9a297506e9e962e001b5554e2eb79dffe73223",
+      "f7490aa23c9fc57dfdf53ef59a84fcc6f1b178de008db9de90a86888aae481d3",
+      "6cce9e24aa991d9c6cfbe46011d90235353f1b34c2465567cde5bc9e1918f373"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  }
+]

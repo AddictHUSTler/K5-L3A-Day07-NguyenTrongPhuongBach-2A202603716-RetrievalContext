@@ -1,0 +1,896 @@
+[
+  {
+    "id": "bonus-test-01",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "Bảng lịch sử Python: bản 1.6 phát hành năm nào và chủ sở hữu nào?",
+    "expected_answer": "Năm 2000; CNRI.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "1.6               1.5.2            2000          CNRI             no",
+        "region": "Bảng C.1; hàng 1.6; Year, Owner",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-02",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "Trong bảng lịch sử, Python 2.0 có chủ sở hữu nào và có GPL-compatible không?",
+    "expected_answer": "BeOpen.com; no.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "2.0               1.6              2000          BeOpen.com       no",
+        "region": "Bảng C.1; hàng 2.0; Owner, GPL-compatible",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-03",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "Python 1.6.1 có dấu (2) ở cột GPL-compatible: bảng ghi gì và Stallman với CNRI bất đồng thế nào?",
+    "expected_answer": "yes (2); Stallman cho là không tương thích vì choice-of-law clause; CNRI nói không bất tương thích.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "1.6.1             1.6              2001          CNRI             yes (2)",
+        "region": "Bảng C.1; hàng 1.6.1; GPL-compatible",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "(2) According to Richard Stallman, 1.6.1 is not GPL-compatible, because its license has a choice of law clause.\n        According to CNRI, however, Stallman’s lawyer has told CNRI’s lawyer that 1.6.1 is “not incompatible”\n        with the GPL.",
+        "region": "Chú thích (2) dưới bảng",
+        "bbox_candidates": [
+          [
+            72.0,
+            257.88292,
+            523.27585,
+            291.75552
+          ],
+          [
+            72.0,
+            329.61392,
+            523.276199,
+            387.39752
+          ],
+          [
+            87.781,
+            638.52592,
+            515.804492,
+            684.35352
+          ],
+          [
+            87.781,
+            692.32392,
+            515.804492,
+            726.19652
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-04",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "Bảng lịch sử: Python 2.1 bắt nguồn từ những bản nào và cột GPL-compatible ghi gì?",
+    "expected_answer": "2.0+1.6.1; no.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "2.1               2.0+1.6.1        2001          PSF              no",
+        "region": "Bảng C.1; hàng 2.1; Derived from, GPL-compatible",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-05",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "Theo bảng lịch sử, Python 2.0.1 và 2.1.1 có cùng năm phát hành không và năm nào?",
+    "expected_answer": "Có; cùng 2001.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "2.0.1             2.0+1.6.1        2001          PSF              yes",
+        "region": "Bảng C.1; hàng 2.0.1; Year",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 139,
+        "evidence": "2.1.1             2.1+2.0.1        2001          PSF              yes",
+        "region": "Bảng C.1; hàng 2.1.1; Year",
+        "bbox_candidates": [],
+        "page_url": "data/tutorial.pdf#page=139"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-06",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "Trong bảng số nguyên, bình phương và lập phương ở mục định dạng chuỗi, hàng x=7 có hai giá trị nào?",
+    "expected_answer": "Bình phương 49, lập phương 343; số không có đơn vị.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 62,
+        "evidence": "7 49 343",
+        "region": "7.1.2; bảng output, hàng 7, cột 2 và 3",
+        "bbox_candidates": [
+          [
+            72.0,
+            145.93096,
+            389.40734,
+            298.35926
+          ],
+          [
+            72.0,
+            382.21996,
+            394.78778,
+            558.55826
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=62"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-07",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "Một module đã import rồi được sửa thì dùng hàm nào để nạp lại trong phiên tương tác?",
+    "expected_answer": "importlib.reload(modulename).",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 51,
+        "evidence": "use\n  importlib.reload(), e.g. import importlib; importlib.reload(modulename).",
+        "region": "6.1; Note reload",
+        "bbox_candidates": [
+          [
+            79.472,
+            162.97892,
+            515.803992,
+            196.85152
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=51"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-08",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "Cú pháp nào chỉ rõ một exception là hệ quả trực tiếp của exception khác?",
+    "expected_answer": "raise RuntimeError from exc (raise ... from exc).",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 71,
+        "evidence": "raise RuntimeError from exc",
+        "region": "8.5; Exception Chaining",
+        "bbox_candidates": [
+          [
+            72.0,
+            431.95296,
+            292.57098,
+            452.87426
+          ],
+          [
+            72.0,
+            488.83796,
+            405.54734,
+            629.31126
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=71"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-09",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "str() và repr() hướng tới cách biểu diễn khác nhau thế nào?",
+    "expected_answer": "str cho người đọc; repr hướng tới biểu diễn interpreter có thể đọc lại, hoặc SyntaxError nếu không có cú pháp tương ứng.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 59,
+        "evidence": "The str() function is meant to return representations of values which are fairly human-readable, while repr()\nis meant to generate representations which can be read by the interpreter",
+        "region": "7.1; str và repr",
+        "bbox_candidates": [
+          [
+            72.0,
+            228.41392,
+            523.275892,
+            250.33152
+          ],
+          [
+            72.0,
+            297.48492,
+            523.279217,
+            331.35752
+          ],
+          [
+            72.0,
+            339.32792,
+            523.275892,
+            361.24552
+          ],
+          [
+            87.94,
+            369.21592,
+            523.281942,
+            403.08852
+          ],
+          [
+            87.94,
+            474.61992,
+            523.276392,
+            508.49352
+          ],
+          [
+            96.907,
+            591.97992,
+            523.28062,
+            625.85352
+          ],
+          [
+            87.94,
+            633.82292,
+            523.276392,
+            667.69652
+          ],
+          [
+            72.0,
+            675.66592,
+            523.275892,
+            697.58452
+          ],
+          [
+            72.0,
+            705.55392,
+            523.285022,
+            763.33752
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=59"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-10",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "pprint làm gì khi kết quả biểu diễn dài hơn một dòng?",
+    "expected_answer": "Thêm xuống dòng và thụt lề để làm rõ cấu trúc dữ liệu.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 97,
+        "evidence": "When the result is longer than one line, the “pretty printer” adds line breaks and\nindentation to more clearly reveal data structure:",
+        "region": "11.1; pprint",
+        "bbox_candidates": [
+          [
+            72.0,
+            378.97892,
+            523.276935,
+            412.85152
+          ],
+          [
+            72.0,
+            577.63396,
+            464.72382,
+            694.19626
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=97"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-11",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Theo quy tắc scope và ví dụ scope_test, global thay binding ở đâu và vì sao dòng After global assignment vẫn là nonlocal spam?",
+    "expected_answer": "global thay binding ở module; binding của scope_test vẫn là nonlocal spam do do_nonlocal trước đó.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 78,
+        "evidence": "all references and assignments go directly to the next-to-last scope containing the\nmodule’s global names.",
+        "region": "9.2; global scope",
+        "bbox_candidates": [
+          [
+            72.0,
+            115.83592,
+            523.284112,
+            173.61852
+          ],
+          [
+            72.0,
+            235.38692,
+            523.275947,
+            305.12552
+          ],
+          [
+            72.0,
+            313.09592,
+            523.275892,
+            346.96852
+          ],
+          [
+            72.0,
+            354.93892,
+            523.280312,
+            376.85652
+          ],
+          [
+            87.94,
+            462.53592,
+            350.475095,
+            472.49852
+          ],
+          [
+            87.94,
+            480.46792,
+            405.129919,
+            490.43052
+          ],
+          [
+            72.0,
+            498.40092,
+            523.275892,
+            544.22952
+          ],
+          [
+            72.0,
+            552.19892,
+            523.275892,
+            586.07252
+          ],
+          [
+            72.0,
+            594.04192,
+            523.275892,
+            651.82552
+          ],
+          [
+            72.0,
+            659.79592,
+            523.282546,
+            717.57952
+          ],
+          [
+            72.0,
+            725.97392,
+            523.279571,
+            754.09102
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=78"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 79,
+        "evidence": "After global assignment: nonlocal spam\nIn global scope: global spam",
+        "region": "9.2.1; output scope_test",
+        "bbox_candidates": [
+          [
+            93.519,
+            322.03696,
+            314.081494,
+            402.73426
+          ],
+          [
+            72.0,
+            475.26296,
+            287.1912,
+            520.09426
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=79"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-12",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "sys.path khởi tạo từ những nơi nào, và vì sao file cùng tên module thư viện trong thư mục script có thể che module đó?",
+    "expected_answer": "Thư mục script (hoặc current directory), PYTHONPATH, mặc định cài đặt; thư mục script đứng trước thư viện chuẩn.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 51,
+        "evidence": "The directory containing the input script (or the current directory when no file is specified).",
+        "region": "6.1.2; danh sách sys.path",
+        "bbox_candidates": [
+          [
+            72.0,
+            369.85792,
+            523.275892,
+            391.77552
+          ],
+          [
+            72.0,
+            496.98092,
+            523.275892,
+            518.89952
+          ],
+          [
+            72.0,
+            556.13492,
+            523.282334,
+            590.00752
+          ],
+          [
+            87.94,
+            597.97792,
+            453.976547,
+            607.94052
+          ],
+          [
+            79.472,
+            716.05492,
+            515.803992,
+            737.97252
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=51"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 51,
+        "evidence": "PYTHONPATH (a list of directory names, with the same syntax as the shell variable PATH).",
+        "region": "6.1.2; PYTHONPATH",
+        "bbox_candidates": [
+          [
+            72.0,
+            288.36392,
+            523.276951,
+            310.28152
+          ],
+          [
+            72.0,
+            556.13492,
+            523.282334,
+            590.00752
+          ],
+          [
+            87.94,
+            615.90992,
+            446.704196,
+            625.87252
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=51"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 51,
+        "evidence": "The installation-dependent default",
+        "region": "6.1.2; default",
+        "bbox_candidates": [
+          [
+            87.94,
+            633.84292,
+            523.27512,
+            655.76052
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=51"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 52,
+        "evidence": "The directory containing the script being run is placed\nat the beginning of the search path, ahead of the standard library path.",
+        "region": "6.1.2; thứ tự ưu tiên",
+        "bbox_candidates": [
+          [
+            72.0,
+            73.99292,
+            523.278318,
+            119.82052
+          ],
+          [
+            72.0,
+            157.05592,
+            523.281621,
+            214.83952
+          ],
+          [
+            72.0,
+            222.80992,
+            523.275892,
+            256.68252
+          ],
+          [
+            87.94,
+            336.38392,
+            523.282423,
+            394.16652
+          ],
+          [
+            87.94,
+            402.13692,
+            523.275545,
+            424.05452
+          ],
+          [
+            87.94,
+            449.95792,
+            448.11965,
+            459.92052
+          ],
+          [
+            72.0,
+            507.07392,
+            523.282089,
+            588.76752
+          ],
+          [
+            72.0,
+            738.00792,
+            523.281776,
+            771.88052
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=52"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-13",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Khi gọi Complex(3.0, -4.5), constructor nhận tham số ra sao và x.r, x.i trong ví dụ bằng bao nhiêu?",
+    "expected_answer": "__init__ tự được gọi, nhận realpart=3.0, imagpart=-4.5; x.r,x.i=(3.0,-4.5).",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 80,
+        "evidence": "arguments given to the\nclass instantiation operator are passed on to __init__().",
+        "region": "9.3.2; truyền tham số constructor",
+        "bbox_candidates": [
+          [
+            72.0,
+            103.88092,
+            523.275892,
+            137.75352
+          ],
+          [
+            72.0,
+            145.72392,
+            523.275892,
+            179.59652
+          ],
+          [
+            72.0,
+            187.56692,
+            523.280688,
+            233.39452
+          ],
+          [
+            72.0,
+            288.56292,
+            523.276471,
+            322.43552
+          ],
+          [
+            72.0,
+            417.87792,
+            523.278453,
+            451.75052
+          ],
+          [
+            72.0,
+            459.72092,
+            523.267119,
+            481.63852
+          ],
+          [
+            72.0,
+            517.30492,
+            383.56165,
+            527.26752
+          ],
+          [
+            72.0,
+            535.23792,
+            523.275892,
+            569.11052
+          ],
+          [
+            72.0,
+            616.73192,
+            523.281475,
+            638.64952
+          ],
+          [
+            72.0,
+            674.31592,
+            523.283646,
+            696.23452
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=80"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 81,
+        "evidence": "x = Complex(3.0, -4.5)\n>>> x.r, x.i\n(3.0, -4.5)",
+        "region": "9.3.2; output Complex",
+        "bbox_candidates": [
+          [
+            72.0,
+            88.34696,
+            211.87478,
+            133.17826
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=81"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-14",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Để đọc file nhị phân bằng built-in open sau khi import os, nên import os theo kiểu nào để tránh che open, thêm ký tự nào vào mode và có được chỉ định encoding không?",
+    "expected_answer": "Dùng import os; thêm 'b' vào mode (ví dụ 'rb'); không chỉ định encoding trong binary mode.",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 63,
+        "evidence": "Appending a 'b' to the mode opens the file in binary mode.",
+        "region": "7.2; binary mode",
+        "bbox_candidates": [
+          [
+            72.0,
+            361.18992,
+            523.284818,
+            418.97352
+          ],
+          [
+            72.0,
+            426.94392,
+            523.279481,
+            484.72752
+          ],
+          [
+            72.0,
+            492.69692,
+            523.278313,
+            538.52552
+          ],
+          [
+            72.0,
+            546.49592,
+            523.285083,
+            580.36852
+          ],
+          [
+            72.0,
+            675.64292,
+            523.280346,
+            697.56052
+          ],
+          [
+            79.472,
+            740.81892,
+            515.805211,
+            762.73652
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=63"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 63,
+        "evidence": "You can not specify encoding when opening file in binary mode.",
+        "region": "7.2; giới hạn encoding",
+        "bbox_candidates": [
+          [
+            72.0,
+            361.18992,
+            523.284818,
+            418.97352
+          ],
+          [
+            72.0,
+            426.94392,
+            523.279481,
+            484.72752
+          ],
+          [
+            72.0,
+            492.69692,
+            523.278313,
+            538.52552
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=63"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 91,
+        "evidence": "This will keep os.open() from shadowing\nthe built-in open() function which operates much differently.",
+        "region": "10.1; import style",
+        "bbox_candidates": [
+          [
+            72.0,
+            363.28792,
+            523.281959,
+            385.20552
+          ]
+        ],
+        "page_url": "data/tutorial.pdf#page=91"
+      }
+    ],
+    "evidence_policy": "all_required",
+    "reason": "Đối chiếu đoạn/vùng nêu trong gold trên trang PDF gốc."
+  },
+  {
+    "id": "bonus-test-15",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, Django QuerySet.select_related chống N+1 query thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "select_related",
+        "QuerySet"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-test-16",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, NumPy einsum tối ưu contraction path bằng optimize như thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "einsum"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-test-17",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, asyncio.TaskGroup hủy task con khi task khác lỗi thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "TaskGroup"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-test-18",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, tracemalloc.get_traced_memory trả peak memory theo đơn vị nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "get_traced_memory"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-test-19",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, ProcessPoolExecutor.map điều chỉnh chunksize như thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "ProcessPoolExecutor",
+        "chunksize"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  },
+  {
+    "id": "bonus-test-20",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "Theo tutorial, SQLAlchemy Session.begin_nested quản lý SAVEPOINT thế nào?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "API cụ thể không được trình bày trong toàn bộ tutorial.",
+    "absence_check": {
+      "scope": "All 161 physical PDF pages",
+      "terms_not_found": [
+        "SQLAlchemy",
+        "begin_nested"
+      ],
+      "method": "Full-document term scan and tutorial topic review."
+    }
+  }
+]

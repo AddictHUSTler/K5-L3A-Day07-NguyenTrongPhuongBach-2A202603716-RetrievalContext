@@ -1,0 +1,10 @@
+{
+  "split": "dev",
+  "baseline": "baseline",
+  "selection_order": ["highest reviewed grounded-answer mean", "highest context evidence rate", "highest correct abstention count", "lowest estimated API cost", "lowest median elapsed time"],
+  "hypotheses": {
+    "hybrid": "RRF improves first-rank evidence over dense; same top-3, budget and one-search limit isolate retrieval change.",
+    "expanded": "Top-6, 10000 characters, text deduplication and up to two model-directed searches recover missing conditions at extra latency and cost. This is a combined pipeline experiment, not a causal ablation."
+  },
+  "test_policy": "Freeze the selected configuration and code hash after dev review; then evaluate baseline and selected on all seven test queries. Do not tune using test."
+}

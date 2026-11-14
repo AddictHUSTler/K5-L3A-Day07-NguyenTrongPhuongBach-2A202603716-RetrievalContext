@@ -1,0 +1,241 @@
+[
+  {
+    "query_id": "bonus-test-01",
+    "passed": true,
+    "reason": "Đủ năm 2000 và owner CNRI, đúng hàng 1.6/cột Year, Owner trang 139.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": true,
+        "reason": "Đủ năm 2000 và owner CNRI, đúng hàng 1.6/cột Year, Owner trang 139."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-02",
+    "passed": true,
+    "reason": "Đủ owner BeOpen.com và GPL-compatible=no, hàng 2.0 trang 139.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": true,
+        "reason": "Đủ owner BeOpen.com và GPL-compatible=no, hàng 2.0 trang 139."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-03",
+    "passed": false,
+    "reason": "Có giải thích đúng hai quan điểm ở chú thích (2), nhưng thiếu giá trị yes (2) mà bảng ghi. Câu hỏi yêu cầu cả giá trị ô và chú thích; chấm không đạt vì chưa đủ.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": false,
+        "reason": "Có giải thích đúng hai quan điểm ở chú thích (2), nhưng thiếu giá trị yes (2) mà bảng ghi. Câu hỏi yêu cầu cả giá trị ô và chú thích; chấm không đạt vì chưa đủ."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-04",
+    "passed": true,
+    "reason": "Đúng Derived from=2.0+1.6.1 và GPL-compatible=no, hàng 2.1 trang 139.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": true,
+        "reason": "Đúng Derived from=2.0+1.6.1 và GPL-compatible=no, hàng 2.1 trang 139."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-05",
+    "passed": true,
+    "reason": "Đúng hai hàng 2.0.1 và 2.1.1 cùng năm 2001; trang 139 hỗ trợ đủ.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": true,
+        "reason": "Đúng hai hàng 2.0.1 và 2.1.1 cùng năm 2001; trang 139 hỗ trợ đủ."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-06",
+    "passed": true,
+    "reason": "Đúng hàng x=7: bình phương 49, lập phương 343; cite bảng trang 62.",
+    "citation_review": [
+      {
+        "id": "948576525cc57f96ed64aa6315d19e8b7431f963242d69c791cb3197ad4690c0",
+        "page": 62,
+        "supports_complete_claim": true,
+        "reason": "Đúng hàng x=7: bình phương 49, lập phương 343; cite bảng trang 62."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-07",
+    "passed": false,
+    "reason": "Trả importlib.reload đúng nhưng cite trang 50 chỉ mô tả import; note reload ở trang 51 không được cite.",
+    "citation_review": [
+      {
+        "id": "491b91f872d640bbc9e466b8c9bf2bbd46ef5d7873a68573d3f34a2abc6a2f78",
+        "page": 50,
+        "supports_complete_claim": false,
+        "reason": "Trả importlib.reload đúng nhưng cite trang 50 chỉ mô tả import; note reload ở trang 51 không được cite."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-08",
+    "passed": false,
+    "reason": "Cú pháp raise ... from exc đúng, nhưng câu cuối đảo quan hệ nguyên nhân: exception trước là nguyên nhân trực tiếp của exception sau. Chấm không đạt vì có khẳng định sai.",
+    "citation_review": [
+      {
+        "id": "571bb982b793f25f136464c50b44844cd368c1b80f4ec797cf6f3a5f4f9b604e",
+        "page": 71,
+        "supports_complete_claim": false,
+        "reason": "Cú pháp raise ... from exc đúng, nhưng câu cuối đảo quan hệ nguyên nhân: exception trước là nguyên nhân trực tiếp của exception sau. Chấm không đạt vì có khẳng định sai."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-09",
+    "passed": false,
+    "reason": "Đáp án đúng định nghĩa nhưng cite trang 60 chỉ có ví dụ; điều kiện repr đọc lại bởi interpreter/SyntaxError ở trang 59 không được cite.",
+    "citation_review": [
+      {
+        "id": "9367e3eae9156175cdd7fbb7feb630bea09bef7f17a78b3afdc424638a6b327e",
+        "page": 60,
+        "supports_complete_claim": false,
+        "reason": "Đáp án đúng định nghĩa nhưng cite trang 60 chỉ có ví dụ; điều kiện repr đọc lại bởi interpreter/SyntaxError ở trang 59 không được cite."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-10",
+    "passed": true,
+    "reason": "pprint thêm line break và indentation khi nhiều dòng, đúng mục 11.1 trang 97.",
+    "citation_review": [
+      {
+        "id": "a3737948ff8a42603218007a9a11fdb4c8fa50502078301d5d77a8d7f70bf805",
+        "page": 97,
+        "supports_complete_claim": true,
+        "reason": "pprint thêm line break và indentation khi nhiều dòng, đúng mục 11.1 trang 97."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-11",
+    "passed": true,
+    "reason": "Trang 79 chứa cả giải thích binding global/nonlocal và output; citation hỗ trợ đủ. Tuy nhiên câu này không thực sự bắt buộc hai trang: thiếu sót thiết kế benchmark, không tính là bằng chứng đáp ứng quota multi-hop.",
+    "citation_review": [
+      {
+        "id": "5de7b26fddc05a3e44eef266ecd0c62cba4118a918a60985fbaa3e4784fefa37",
+        "page": 79,
+        "supports_complete_claim": true,
+        "reason": "Trang 79 chứa cả giải thích binding global/nonlocal và output; citation hỗ trợ đủ. Tuy nhiên câu này không thực sự bắt buộc hai trang: thiếu sót thiết kế benchmark, không tính là bằng chứng đáp ứng quota multi-hop."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID.",
+    "benchmark_issue": "Single page 79 suffices; only 3/4 intended multi-hop questions require multiple pages."
+  },
+  {
+    "query_id": "bonus-test-12",
+    "passed": false,
+    "reason": "Nội dung sys.path đúng nhưng cite trang 52 không chứa đủ danh sách khởi tạo gồm current-directory fallback và site-packages ở trang 51.",
+    "citation_review": [
+      {
+        "id": "e352cf086d0c668b1a7de29c1fe896a9237ff9920a6d0faee525b188adb99e09",
+        "page": 52,
+        "supports_complete_claim": false,
+        "reason": "Nội dung sys.path đúng nhưng cite trang 52 không chứa đủ danh sách khởi tạo gồm current-directory fallback và site-packages ở trang 51."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-13",
+    "passed": false,
+    "reason": "Nêu đúng giá trị x.r,x.i từ trang 81 nhưng không giải thích __init__ tự được gọi và ánh xạ realpart/imagpart ở trang 80. Thiếu phần constructor và citation cần thiết.",
+    "citation_review": [
+      {
+        "id": "a7544365ab9222df95d6bfc6f8c3be62d604b7b508e1200e82809a01c4c5d0b3",
+        "page": 81,
+        "supports_complete_claim": false,
+        "reason": "Nêu đúng giá trị x.r,x.i từ trang 81 nhưng không giải thích __init__ tự được gọi và ánh xạ realpart/imagpart ở trang 80. Thiếu phần constructor và citation cần thiết."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-14",
+    "passed": false,
+    "reason": "Nội dung đúng nhưng chỉ cite trang 91 cho import style; binary mode và cấm encoding ở trang 63 không được cite.",
+    "citation_review": [
+      {
+        "id": "663ce041f47b9b354195042269f17514204133854ab233385cca17f8e92cd474",
+        "page": 91,
+        "supports_complete_claim": false,
+        "reason": "Nội dung đúng nhưng chỉ cite trang 91 cho import style; binary mode và cấm encoding ở trang 63 không được cite."
+      }
+    ],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-15",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm hướng dẫn/khẳng định ngoài evidence. API cụ thể không được trình bày trong toàn PDF; kiểm tra term scan và phạm vi chủ đề trong nhãn benchmark.",
+    "citation_review": [],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-16",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm hướng dẫn/khẳng định ngoài evidence. API cụ thể không được trình bày trong toàn PDF; kiểm tra term scan và phạm vi chủ đề trong nhãn benchmark.",
+    "citation_review": [],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-17",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm hướng dẫn/khẳng định ngoài evidence. API cụ thể không được trình bày trong toàn PDF; kiểm tra term scan và phạm vi chủ đề trong nhãn benchmark.",
+    "citation_review": [],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-18",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm hướng dẫn/khẳng định ngoài evidence. API cụ thể không được trình bày trong toàn PDF; kiểm tra term scan và phạm vi chủ đề trong nhãn benchmark.",
+    "citation_review": [],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-19",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm hướng dẫn/khẳng định ngoài evidence. API cụ thể không được trình bày trong toàn PDF; kiểm tra term scan và phạm vi chủ đề trong nhãn benchmark.",
+    "citation_review": [],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  },
+  {
+    "query_id": "bonus-test-20",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm hướng dẫn/khẳng định ngoài evidence. API cụ thể không được trình bày trong toàn PDF; kiểm tra term scan và phạm vi chủ đề trong nhãn benchmark.",
+    "citation_review": [],
+    "source_check": "Đối chiếu PDF gốc qua render và text theo số trang; không chỉ kiểm tra citation ID."
+  }
+]

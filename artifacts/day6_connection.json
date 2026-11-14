@@ -1,0 +1,13 @@
+{
+  "day6_root": "/home/f/K5-L3A-DAY06-NguyenTrongPhuongBach-2A202603716-DataIngestion",
+  "backend": "Qdrant local",
+  "path": ".local/qdrant",
+  "collection": "python_C",
+  "distance": "cosine",
+  "qdrant_client_version": "1.20.0",
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "query_processing": "Unprefixed question text, same model and dimensions as documents",
+  "source_sha256": "7ed5678593803de4560b4094e4aa2e4b873bd79d65f7270acedb9e203c5a3669",
+  "index_rebuilt": false
+}

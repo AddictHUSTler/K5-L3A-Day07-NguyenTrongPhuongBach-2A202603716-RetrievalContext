@@ -1,0 +1,18 @@
+{
+  "split": "dev",
+  "top_k": 3,
+  "candidates_per_retriever": 20,
+  "rrf_k": 60,
+  "budget_chars": 6000,
+  "context_policy": "ranked whole chunks, deduplicate by ID; skip blocks that do not fit",
+  "query_processing": "original question, no rewrite or inferred filter",
+  "lexical_tokenizer": "Unicode NFC, casefold, regex word tokens; no Vietnamese segmentation",
+  "filter_policy": "explicit chapter from runtime query, applied before cutoff",
+  "collection": "python_C",
+  "index_rebuilt": false,
+  "corpus_sha256": "967bf6b8b517727ec7d67ccb97da41b109affad86de0a75e7220e0ad2adef01e",
+  "queries_sha256": "cf682035ceec3ca55301d3bdda7d92c15b0adab016930e2efb90f35b589836ef",
+  "started_at": "2026-11-14T02:17:22.298706+00:00",
+  "lexical_index_build_ms": 8.632008999484242,
+  "timing_note": "Search excludes embedding and lexical index build; first dense query includes local Qdrant opening."
+}

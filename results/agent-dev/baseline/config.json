@@ -1,0 +1,13 @@
+{
+  "name": "baseline",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "method": "dense",
+  "top_k": 3,
+  "max_searches": 1,
+  "budget": 6000,
+  "dedup_text": false,
+  "started_at": "2026-11-14T02:31:13.104734+00:00",
+  "code_sha256": "ad8888056d080136af6922e1578d389f1f5d0f60234a07e8a4a3a2c8e8376e52",
+  "corpus_sha256": "967bf6b8b517727ec7d67ccb97da41b109affad86de0a75e7220e0ad2adef01e",
+  "query_sha256": "cf682035ceec3ca55301d3bdda7d92c15b0adab016930e2efb90f35b589836ef"
+}

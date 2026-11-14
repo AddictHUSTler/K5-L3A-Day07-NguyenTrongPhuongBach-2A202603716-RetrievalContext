@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bonus-extension-01",
+    "question": "Trong sơ đồ các ô ký tự Python, hai hàng số chỉ vị trí bên trong ô hay ranh giới giữa các ô? Ranh giới phải cuối cùng mang chỉ số dương nào?"
+  },
+  {
+    "id": "bonus-extension-02",
+    "question": "Trong sơ đồ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2), các nhánh nối ba nhóm tham số với những kiểu truyền đối số nào?"
+  },
+  {
+    "id": "bonus-extension-03",
+    "question": "Trong cây traceback ExceptionGroup có nhãn there were problems, nhánh 1 và nhánh 2 chứa loại exception cùng thông báo nào?"
+  },
+  {
+    "id": "bonus-extension-04",
+    "question": "Trong cây traceback còn lại sau hai except*, đường đi từ group1 qua group2 kết thúc bằng exception nào và giá trị nào?"
+  },
+  {
+    "id": "bonus-extension-05",
+    "question": "Trong cây We have some problems, có bao nhiêu nhánh con, chúng có cùng loại lỗi nào và ghi chú iteration phân biệt chúng ra sao?"
+  },
+  {
+    "id": "bonus-extension-06",
+    "question": "Trong ví dụ AsyncZip, lớp dùng lệnh nào để nén file trong run(), và chương trình chính dùng lệnh nào để đợi tác vụ nền hoàn tất?"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "q01",
+    "question": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?"
+  },
+  {
+    "id": "q02",
+    "question": "Vì sao -3**2 cho -9 và phải viết thế nào để bình phương số âm này được 9?"
+  },
+  {
+    "id": "q03",
+    "question": "Chỉ dùng chương 3: raw string có được kết thúc bằng một số lẻ dấu backslash không?",
+    "filter": {
+      "chapter": 3
+    }
+  },
+  {
+    "id": "q04",
+    "question": "Python tự nối hai string literal đặt cạnh nhau. Nếu một bên là biến thì phải nối bằng gì?"
+  },
+  {
+    "id": "q05",
+    "question": "Trong lát cắt s[i:j], cận nào được lấy và cận nào bị loại?"
+  },
+  {
+    "id": "q06",
+    "question": "Muốn lấy shallow copy của list rgba bằng slicing thì viết thế nào?"
+  },
+  {
+    "id": "q07",
+    "question": "range(5, 10) sinh những số nào; giá trị stop có được lấy không?"
+  },
+  {
+    "id": "q08",
+    "question": "Tại sao range tiết kiệm bộ nhớ hơn việc tạo sẵn một list các số?"
+  },
+  {
+    "id": "q09",
+    "question": "Nếu có nhiều vòng lặp for hoặc while lồng nhau, break thoát khỏi vòng nào?"
+  },
+  {
+    "id": "q10",
+    "question": "else của vòng lặp có chạy khi vòng lặp kết thúc sớm do break, return hoặc exception không?"
+  },
+  {
+    "id": "q11",
+    "question": "pass làm gì và dùng khi nào?"
+  },
+  {
+    "id": "q12",
+    "question": "Chỉ dùng chương 4: trong match, case _ có ý nghĩa gì và nếu không case nào khớp thì sao?",
+    "filter": {
+      "chapter": 4
+    }
+  },
+  {
+    "id": "q13",
+    "question": "Hàm dùng return không kèm biểu thức hoặc chạy đến hết thân hàm trả về gì?"
+  },
+  {
+    "id": "q14",
+    "question": "Vì sao default argument là list có thể giữ lại các phần tử từ những lần gọi hàm trước?"
+  },
+  {
+    "id": "q15",
+    "question": "Tham số nằm trước dấu / trong định nghĩa hàm có thể được truyền bằng keyword không?"
+  },
+  {
+    "id": "absent01",
+    "question": "asyncio.TaskGroup bảo đảm hủy task còn lại thế nào khi một task lỗi?"
+  },
+  {
+    "id": "absent02",
+    "question": "Theo tài liệu, cấu hình isolation level của sqlite3.connect như thế nào?"
+  }
+]

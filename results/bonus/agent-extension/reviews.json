@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "bonus-extension-01",
+    "passed": false,
+    "reason": "Từ chối dù sơ đồ và đáp án có ở trang 17; context không chứa trang này."
+  },
+  {
+    "query_id": "bonus-extension-02",
+    "passed": false,
+    "reason": "Nội dung phân nhóm đúng nhưng citation trỏ trang 35, không phải sơ đồ trang 33; câu trả lời còn ghi sai trang của citation. Không xác định đúng vùng evidence được hỏi."
+  },
+  {
+    "query_id": "bonus-extension-03",
+    "passed": true,
+    "reason": "Đối chiếu crop exception-branches trang 74: nhánh 1 OSError: error 1, nhánh 2 SystemError: error 2; đáp án và citation đúng."
+  },
+  {
+    "query_id": "bonus-extension-04",
+    "passed": true,
+    "reason": "Đối chiếu crop nested-exception trang 75: group1 → group2 → RecursionError: 4; citation đúng trang."
+  },
+  {
+    "query_id": "bonus-extension-05",
+    "passed": true,
+    "reason": "Đối chiếu crop exception-notes trang 76: ba nhánh OSError: operation failed, ghi chú iteration 1, 2, 3; đáp án/citation đầy đủ."
+  },
+  {
+    "query_id": "bonus-extension-06",
+    "passed": false,
+    "reason": "Câu trả lời chỉ cite trang 100 cho background.join(); thiếu citation trang 99 cho f.write(self.infile) và không nêu cấu hình ZipFile/ZIP_DEFLATED. Chưa đủ evidence đa trang."
+  }
+]

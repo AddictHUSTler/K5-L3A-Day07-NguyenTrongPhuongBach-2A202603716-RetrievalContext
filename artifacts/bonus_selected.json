@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-11-14T02:59:22.400260+00:00",
+  "config": {
+    "method": "tfidf",
+    "top_k": 6,
+    "max_searches": 2,
+    "budget": 24000,
+    "dedup_text": true
+  },
+  "hashes": {
+    "src/bonus.py": "a8fe3350a7db4682198151412698727430012e193ec0eae5e4b34d38efad5bd1",
+    "src/agent.py": "ad8888056d080136af6922e1578d389f1f5d0f60234a07e8a4a3a2c8e8376e52",
+    "src/retrieval.py": "6b2e89d89314deecca8860985f6c7c47b97dc40b881789e748cab0ecc033c64e",
+    "starter/baseline.py": "03b8b16c42be7d19c820e506f4cea2a7496c462a00c77d1cfc9e7fc972301fdf",
+    "data/bonus/chunks.json": "b6775a99eadab024627dae3e8cb935430628ffbb493ac6b5b91960ab00766298",
+    "data/bonus/queries_dev.json": "55eb23eea01d5b1f5098aea7e487cce6a91e1f2037ded965cf1a3b35c5cce845",
+    "data/bonus/queries_test.json": "e4c77aaafd73bff54a30a15915080e75eba8902c5c70db3b74e00f8639b3ad14"
+  },
+  "model": "gpt-4.1-mini-2025-04-14",
+  "dev_errors": 2,
+  "reason": "TF-IDF top-6 retrieved complete evidence for 14/15 dev cases, versus hybrid 13/15 and dense 11/15. Full pages retain table headers/rows; two searches permit missing-page follow-up.",
+  "scope": "Supported subset, not a qualifying advanced benchmark."
+}

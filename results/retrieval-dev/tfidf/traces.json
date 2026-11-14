@@ -1,0 +1,1062 @@
+[
+  {
+    "query_id": "q01",
+    "question": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.2923240008385619,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+        "text": "# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 13,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1121,
+          "end_char": 1286
+        },
+        "score": 0.6598210148897136,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+        "text": "In the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 13,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 202,
+          "end_char": 1121
+        },
+        "score": 0.11016575058645205,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "91fd971f3d71bfb846d0481e12723119773b02f622a7675e1a276464e37a19a2",
+        "text": "  textseq\n        Strings are examples of sequence types, and support the common operations supported by such types.\n  string-methods\n        Strings support a large number of methods for basic transformations and searching.\n  f-strings\n         String literals that have embedded expressions.\n  formatstrings\n       Information about string formatting with str.format().\n  old-string-formatting\n        The old formatting operations invoked when strings are the left operand of the % operator are described in\n        more detail here.\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 18,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 725,
+          "end_char": 1263
+        },
+        "score": 0.06592946160682449,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea | data/tutorial.pdf | page 13]\n# this is the first comment\nspam = 1 # and this is the second comment\n          # ... and now a third!\ntext = \"# This is not a comment because it's inside quotes.\"\n\n\n\n[76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf | data/tutorial.pdf | page 13]\nIn the following examples, input and output are distinguished by the presence or absence of prompts (»> and …):\nto repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin\nwith a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means\nyou must type a blank line; this is used to end a multi-line command.\nMany of the examples in this manual, even those entered at the interactive prompt, include comments. Comments\nin Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the\nstart of a line or following whitespace or code, but not within a string literal. A hash character within a string literal\nis just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted\nwhen typing in examples.\nSome examples:\n\n\n\n[91fd971f3d71bfb846d0481e12723119773b02f622a7675e1a276464e37a19a2 | data/tutorial.pdf | page 18]\n  textseq\n        Strings are examples of sequence types, and support the common operations supported by such types.\n  string-methods\n        Strings support a large number of methods for basic transformations and searching.\n  f-strings\n         String literals that have embedded expressions.\n  formatstrings\n       Information about string formatting with str.format().\n  old-string-formatting\n        The old formatting operations invoked when strings are the left operand of the % operator are described in\n        more detail here.\n\n",
+    "context_ids": [
+      "7d04281f45631da8a857f857bbc814da52964b0deb3cf78ed1015a74b6c5a8ea",
+      "76813974866ecee308df7d1f16033455fb41f3f91e188e069e9b285e56355acf",
+      "91fd971f3d71bfb846d0481e12723119773b02f622a7675e1a276464e37a19a2"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q02",
+    "question": "Vì sao -3**2 cho -9 và phải viết thế nào để bình phương số âm này được 9?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.20076600048923865,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "78305a8849f30c011efc7072f1a5455e1b29649b33203b696f6ef7d379253497",
+        "text": "[1, 2, 3, 4, 5, 6, 7, 8, 9]\n\nList comprehensions can contain complex expressions and nested functions:\n\n>>> from math import pi\n>>> [str(round(pi, i)) for i in range(1, 6)]\n['3.1', '3.14', '3.142', '3.1416', '3.14159']\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 42,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 1281,
+          "end_char": 1501
+        },
+        "score": 0.26154268926533514,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "c2a2c18be0a445090fc8767b2d59a51be2f89293163d0e4eb1174c0c32cdfc65",
+        "text": "113.06\n\nThis variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an\nindependent local variable with the same name masking the built-in variable with its magic behavior.\nIn addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python\nalso has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).\n    1 Since ** has higher precedence than -, -3**2 will be interpreted as -(3**2) and thus result in -9. To avoid this and get 9, you can use\n\n(-3)**2.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 14,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1305,
+          "end_char": 1908
+        },
+        "score": 0.2277877525321566,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "5efddd129878610dd3a0ddef8ee7c583972982e28f827e5f4771bac7a01bfebe",
+        "text": "(1, 2, 3)              < (1, 2, 4)\n[1, 2, 3]              < [1, 2, 4]\n'ABC' < 'C' < 'Pascal' < 'Python'\n(1, 2, 3, 4)           < (1, 2, 4)\n(1, 2)                 < (1, 2, -1)\n(1, 2, 3)             == (1.0, 2.0, 3.0)\n(1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4)\n\nNote that comparing objects of different types with < or > is legal provided that the objects have appropriate com-\nparison methods. For example, mixed numeric types are compared according to their numeric value, so 0 equals 0.0,\netc. Otherwise, rather than providing an arbitrary ordering, the interpreter will raise a TypeError exception.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 48,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 2784,
+          "end_char": 3390
+        },
+        "score": 0.21275031459239938,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[78305a8849f30c011efc7072f1a5455e1b29649b33203b696f6ef7d379253497 | data/tutorial.pdf | page 42]\n[1, 2, 3, 4, 5, 6, 7, 8, 9]\n\nList comprehensions can contain complex expressions and nested functions:\n\n>>> from math import pi\n>>> [str(round(pi, i)) for i in range(1, 6)]\n['3.1', '3.14', '3.142', '3.1416', '3.14159']\n\n\n\n[c2a2c18be0a445090fc8767b2d59a51be2f89293163d0e4eb1174c0c32cdfc65 | data/tutorial.pdf | page 14]\n113.06\n\nThis variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an\nindependent local variable with the same name masking the built-in variable with its magic behavior.\nIn addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python\nalso has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).\n    1 Since ** has higher precedence than -, -3**2 will be interpreted as -(3**2) and thus result in -9. To avoid this and get 9, you can use\n\n(-3)**2.\n\n[5efddd129878610dd3a0ddef8ee7c583972982e28f827e5f4771bac7a01bfebe | data/tutorial.pdf | page 48]\n(1, 2, 3)              < (1, 2, 4)\n[1, 2, 3]              < [1, 2, 4]\n'ABC' < 'C' < 'Pascal' < 'Python'\n(1, 2, 3, 4)           < (1, 2, 4)\n(1, 2)                 < (1, 2, -1)\n(1, 2, 3)             == (1.0, 2.0, 3.0)\n(1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4)\n\nNote that comparing objects of different types with < or > is legal provided that the objects have appropriate com-\nparison methods. For example, mixed numeric types are compared according to their numeric value, so 0 equals 0.0,\netc. Otherwise, rather than providing an arbitrary ordering, the interpreter will raise a TypeError exception.",
+    "context_ids": [
+      "78305a8849f30c011efc7072f1a5455e1b29649b33203b696f6ef7d379253497",
+      "c2a2c18be0a445090fc8767b2d59a51be2f89293163d0e4eb1174c0c32cdfc65",
+      "5efddd129878610dd3a0ddef8ee7c583972982e28f827e5f4771bac7a01bfebe"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q03",
+    "question": "Chỉ dùng chương 3: raw string có được kết thúc bằng một số lẻ dấu backslash không?",
+    "method": "tfidf",
+    "filter": {
+      "chapter": 3
+    },
+    "filter_origin": "explicit user query",
+    "top_k": 3,
+    "search_ms": 0.1913030009745853,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "7d0f046b1fda23f496be7d237238eb8477d5af533043ee168bd3ac86eb59247b",
+        "text": "There is one subtle aspect to raw strings: a raw string may not end in an odd number of \\ characters; see the FAQ\nentry for more information and workarounds.\nString literals can span multiple lines. One way is using triple-quotes: \"\"\"...\"\"\" or '''...'''. End-of-line\ncharacters are automatically included in the string, but it’s possible to prevent this by adding a \\ at the end of the line.\nIn the following example, the initial newline is not included:\n\n>>> print(\"\"\"\\\n... Usage: thingy [OPTIONS]\n...      -h                                                 Display this usage message\n                                                                                                                        (continues on next page)\n   2 Unlike other languages, special characters such as \\n have the same meaning with both single ('...') and double (\"...\") quotes. The\n\nonly difference between the two is that within single quotes you don’t need to escape \" (but you have to escape \\') and vice versa.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 15,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1687,
+          "end_char": 2687
+        },
+        "score": 0.2627265570542173,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "91fd971f3d71bfb846d0481e12723119773b02f622a7675e1a276464e37a19a2",
+        "text": "  textseq\n        Strings are examples of sequence types, and support the common operations supported by such types.\n  string-methods\n        Strings support a large number of methods for basic transformations and searching.\n  f-strings\n         String literals that have embedded expressions.\n  formatstrings\n       Information about string formatting with str.format().\n  old-string-formatting\n        The old formatting operations invoked when strings are the left operand of the % operator are described in\n        more detail here.\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 18,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 725,
+          "end_char": 1263
+        },
+        "score": 0.16368370131658652,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "e91a87c8987c86cb6f08dcaeb085d3569c392738d817746ab729cb2e73b29b29",
+        "text": "In the Python shell, the string definition and output string can look different. The print() function produces a more\nreadable output, by omitting the enclosing quotes and by printing escaped and special characters:\n\n>>> s = 'First line.\\nSecond line.' # \\n means newline\n>>> s # without print(), special characters are included in the string\n'First line.\\nSecond line.'\n>>> print(s) # with print(), special characters are interpreted, so \\n produces␣\n ,→new line\n\nFirst line.\nSecond line.\n\nIf you don’t want characters prefaced by \\ to be interpreted as special characters, you can use raw strings by adding\nan r before the first quote:\n\n>>> print('C:\\some\\name') # here \\n means newline!\nC:\\some\name\n>>> print(r'C:\\some\\name') # note the r before the quote\nC:\\some\\name\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 15,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 914,
+          "end_char": 1687
+        },
+        "score": 0.14346207732843014,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[7d0f046b1fda23f496be7d237238eb8477d5af533043ee168bd3ac86eb59247b | data/tutorial.pdf | page 15]\nThere is one subtle aspect to raw strings: a raw string may not end in an odd number of \\ characters; see the FAQ\nentry for more information and workarounds.\nString literals can span multiple lines. One way is using triple-quotes: \"\"\"...\"\"\" or '''...'''. End-of-line\ncharacters are automatically included in the string, but it’s possible to prevent this by adding a \\ at the end of the line.\nIn the following example, the initial newline is not included:\n\n>>> print(\"\"\"\\\n... Usage: thingy [OPTIONS]\n...      -h                                                 Display this usage message\n                                                                                                                        (continues on next page)\n   2 Unlike other languages, special characters such as \\n have the same meaning with both single ('...') and double (\"...\") quotes. The\n\nonly difference between the two is that within single quotes you don’t need to escape \" (but you have to escape \\') and vice versa.\n\n[91fd971f3d71bfb846d0481e12723119773b02f622a7675e1a276464e37a19a2 | data/tutorial.pdf | page 18]\n  textseq\n        Strings are examples of sequence types, and support the common operations supported by such types.\n  string-methods\n        Strings support a large number of methods for basic transformations and searching.\n  f-strings\n         String literals that have embedded expressions.\n  formatstrings\n       Information about string formatting with str.format().\n  old-string-formatting\n        The old formatting operations invoked when strings are the left operand of the % operator are described in\n        more detail here.\n\n\n\n[e91a87c8987c86cb6f08dcaeb085d3569c392738d817746ab729cb2e73b29b29 | data/tutorial.pdf | page 15]\nIn the Python shell, the string definition and output string can look different. The print() function produces a more\nreadable output, by omitting the enclosing quotes and by printing escaped and special characters:\n\n>>> s = 'First line.\\nSecond line.' # \\n means newline\n>>> s # without print(), special characters are included in the string\n'First line.\\nSecond line.'\n>>> print(s) # with print(), special characters are interpreted, so \\n produces␣\n ,→new line\n\nFirst line.\nSecond line.\n\nIf you don’t want characters prefaced by \\ to be interpreted as special characters, you can use raw strings by adding\nan r before the first quote:\n\n>>> print('C:\\some\\name') # here \\n means newline!\nC:\\some\name\n>>> print(r'C:\\some\\name') # note the r before the quote\nC:\\some\\name\n\n",
+    "context_ids": [
+      "7d0f046b1fda23f496be7d237238eb8477d5af533043ee168bd3ac86eb59247b",
+      "91fd971f3d71bfb846d0481e12723119773b02f622a7675e1a276464e37a19a2",
+      "e91a87c8987c86cb6f08dcaeb085d3569c392738d817746ab729cb2e73b29b29"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q04",
+    "question": "Python tự nối hai string literal đặt cạnh nhau. Nếu một bên là biến thì phải nối bằng gì?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.15261299995472655,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "2e86599f32a94137c3897dfb7ace852bb1ccd14711c8a67051a82a4e5e77a8a0",
+        "text": "the first line of the string determines the amount of indentation for the entire documentation string. (We can’t use\nthe first line since it is generally adjacent to the string’s opening quotes so its indentation is not apparent in the string\nliteral.) Whitespace “equivalent” to this indentation is then stripped from the start of all lines of the string. Lines\nthat are indented less should not occur, but if they occur all their leading whitespace should be stripped. Equivalence\nof whitespace should be tested after expansion of tabs (to 8 spaces, normally).\nHere is an example of a multi-line docstring:\n\n>>> def my_function():\n...     \"\"\"Do nothing, but document it.\n...\n...     No, really, it doesn't do anything.\n...     \"\"\"\n...     pass\n...\n>>> print(my_function.__doc__)\nDo nothing, but document it.\n\n     No, really, it doesn't do anything.\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 37,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1344,
+          "end_char": 2197
+        },
+        "score": 0.19944272619170011,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346",
+        "text": ">>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 16,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 919,
+          "end_char": 1819
+        },
+        "score": 0.19718129492605724,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "e66933605dac056285e18c50b75a8b7b6f3130a2fcf756302328bcd7afe54bb4",
+        "text": "4.8 Defining Functions\nWe can create a function that writes the Fibonacci series to an arbitrary boundary:\n\n>>> def fib(n):     # write Fibonacci series less than n\n...     \"\"\"Print a Fibonacci series less than n.\"\"\"\n...     a, b = 0, 1\n...     while a < n:\n...         print(a, end=' ')\n...         a, b = b, a+b\n...     print()\n...\n>>> # Now call the function we just defined:\n>>> fib(2000)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597\n\nThe keyword def introduces a function definition. It must be followed by the function name and the parenthesized list\nof formal parameters. The statements that form the body of the function start at the next line, and must be indented.\nThe first statement of the function body can optionally be a string literal; this string literal is the function’s documen-\ntation string, or docstring. (More about docstrings can be found in the section Documentation Strings.) There are",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 29,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1561,
+          "end_char": 2482
+        },
+        "score": 0.19438840296869392,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[2e86599f32a94137c3897dfb7ace852bb1ccd14711c8a67051a82a4e5e77a8a0 | data/tutorial.pdf | page 37]\nthe first line of the string determines the amount of indentation for the entire documentation string. (We can’t use\nthe first line since it is generally adjacent to the string’s opening quotes so its indentation is not apparent in the string\nliteral.) Whitespace “equivalent” to this indentation is then stripped from the start of all lines of the string. Lines\nthat are indented less should not occur, but if they occur all their leading whitespace should be stripped. Equivalence\nof whitespace should be tested after expansion of tabs (to 8 spaces, normally).\nHere is an example of a multi-line docstring:\n\n>>> def my_function():\n...     \"\"\"Do nothing, but document it.\n...\n...     No, really, it doesn't do anything.\n...     \"\"\"\n...     pass\n...\n>>> print(my_function.__doc__)\nDo nothing, but document it.\n\n     No, really, it doesn't do anything.\n\n\n\n[2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346 | data/tutorial.pdf | page 16]\n>>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)\n\n[e66933605dac056285e18c50b75a8b7b6f3130a2fcf756302328bcd7afe54bb4 | data/tutorial.pdf | page 29]\n4.8 Defining Functions\nWe can create a function that writes the Fibonacci series to an arbitrary boundary:\n\n>>> def fib(n):     # write Fibonacci series less than n\n...     \"\"\"Print a Fibonacci series less than n.\"\"\"\n...     a, b = 0, 1\n...     while a < n:\n...         print(a, end=' ')\n...         a, b = b, a+b\n...     print()\n...\n>>> # Now call the function we just defined:\n>>> fib(2000)\n0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597\n\nThe keyword def introduces a function definition. It must be followed by the function name and the parenthesized list\nof formal parameters. The statements that form the body of the function start at the next line, and must be indented.\nThe first statement of the function body can optionally be a string literal; this string literal is the function’s documen-\ntation string, or docstring. (More about docstrings can be found in the section Documentation Strings.) There are",
+    "context_ids": [
+      "2e86599f32a94137c3897dfb7ace852bb1ccd14711c8a67051a82a4e5e77a8a0",
+      "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346",
+      "e66933605dac056285e18c50b75a8b7b6f3130a2fcf756302328bcd7afe54bb4"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q05",
+    "question": "Trong lát cắt s[i:j], cận nào được lấy và cận nào bị loại?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.14920300054654945,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "4edfb749428e826d75db8d684a09922dc6b9a195fcbb7cd834ea7a654002ec50",
+        "text": "The first row of numbers gives the position of the indices 0…6 in the string; the second row gives the corresponding\nnegative indices. The slice from i to j consists of all characters between the edges labeled i and j, respectively.\nFor non-negative indices, the length of a slice is the difference of the indices, if both are within bounds. For example,\nthe length of word[1:3] is 2.\nAttempting to use an index that is too large will result in an error:\n\n>>> word[42] # the word only has 6 characters\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nIndexError: string index out of range\n\nHowever, out of range slice indexes are handled gracefully when used for slicing:",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 17,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1442,
+          "end_char": 2137
+        },
+        "score": 0.19997560769692388,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "b5cac53111efeac388236015ff6eded6fbf475f18a394b8b95a7b94ffacea225",
+        "text": ">>> word[4:42]\n'on'\n>>> word[42:]\n''\n\nPython strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string\nresults in an error:\n\n>>> word[0] = 'J'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment\n>>> word[2:] = 'py'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment\n\nIf you need a different string, you should create a new one:\n\n>>> 'J' + word[1:]\n'Jython'\n>>> word[:2] + 'py'\n'Pypy'\n\nThe built-in function len() returns the length of a string:\n\n>>> s = 'supercalifragilisticexpialidocious'\n>>> len(s)\n34\n\n  µ See also\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 18,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 725
+        },
+        "score": 0.18234194087039396,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2",
+        "text": "     >>> i = 256*256\n     >>> print('The value of i is', i)\n     The value of i is 65536\n\n     The keyword argument end can be used to avoid the newline after the output, or end the output with a different\n     string:\n\n     >>> a, b = 0, 1\n     >>> while a < 1000:\n     ...     print(a, end=',')\n     ...     a, b = b, a+b\n     ...\n     0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 21,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 1321,
+          "end_char": 1708
+        },
+        "score": 0.17949597921061317,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[4edfb749428e826d75db8d684a09922dc6b9a195fcbb7cd834ea7a654002ec50 | data/tutorial.pdf | page 17]\nThe first row of numbers gives the position of the indices 0…6 in the string; the second row gives the corresponding\nnegative indices. The slice from i to j consists of all characters between the edges labeled i and j, respectively.\nFor non-negative indices, the length of a slice is the difference of the indices, if both are within bounds. For example,\nthe length of word[1:3] is 2.\nAttempting to use an index that is too large will result in an error:\n\n>>> word[42] # the word only has 6 characters\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nIndexError: string index out of range\n\nHowever, out of range slice indexes are handled gracefully when used for slicing:\n\n[b5cac53111efeac388236015ff6eded6fbf475f18a394b8b95a7b94ffacea225 | data/tutorial.pdf | page 18]\n>>> word[4:42]\n'on'\n>>> word[42:]\n''\n\nPython strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string\nresults in an error:\n\n>>> word[0] = 'J'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment\n>>> word[2:] = 'py'\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'str' object does not support item assignment\n\nIf you need a different string, you should create a new one:\n\n>>> 'J' + word[1:]\n'Jython'\n>>> word[:2] + 'py'\n'Pypy'\n\nThe built-in function len() returns the length of a string:\n\n>>> s = 'supercalifragilisticexpialidocious'\n>>> len(s)\n34\n\n  µ See also\n\n\n\n[a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2 | data/tutorial.pdf | page 21]\n     >>> i = 256*256\n     >>> print('The value of i is', i)\n     The value of i is 65536\n\n     The keyword argument end can be used to avoid the newline after the output, or end the output with a different\n     string:\n\n     >>> a, b = 0, 1\n     >>> while a < 1000:\n     ...     print(a, end=',')\n     ...     a, b = b, a+b\n     ...\n     0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,",
+    "context_ids": [
+      "4edfb749428e826d75db8d684a09922dc6b9a195fcbb7cd834ea7a654002ec50",
+      "b5cac53111efeac388236015ff6eded6fbf475f18a394b8b95a7b94ffacea225",
+      "a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q06",
+    "question": "Muốn lấy shallow copy của list rgba bằng slicing thì viết thế nào?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.18601300143927801,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "18300320fdb9aca486eec6e81df4732aab20e13bd4d054404fbec41064004912",
+        "text": "Simple assignment in Python never copies data. When you assign a list to a variable, the variable refers to the existing\nlist. Any changes you make to the list through one variable will be seen through all other variables that refer to it.:\n\n>>> rgb = [\"Red\", \"Green\", \"Blue\"]\n>>> rgba = rgb\n>>> id(rgb) == id(rgba) # they reference the same object\nTrue\n>>> rgba.append(\"Alph\")\n>>> rgb\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAll slice operations return a new list containing the requested elements. This means that the following slice returns a\nshallow copy of the list:\n\n>>> correct_rgba = rgba[:]\n>>> correct_rgba[-1] = \"Alpha\"\n>>> correct_rgba\n[\"Red\", \"Green\", \"Blue\", \"Alpha\"]\n>>> rgba\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAssignment to slices is also possible, and this can even change the size of the list or clear it entirely:\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 19,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 790,
+          "end_char": 1617
+        },
+        "score": 0.3290716926533717,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f",
+        "text": "5.1 More on Lists\nThe list data type has some more methods. Here are all of the methods of list objects:\nlist.append(x)\n      Add an item to the end of the list. Similar to a[len(a):] = [x].\nlist.extend(iterable)\n      Extend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\nlist.insert(i, x)\n      Insert an item at a given position. The first argument is the index of the element before which to insert, so a.\n      insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\nlist.remove(x)\n      Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.\n            []\nlist.pop( i )\n      Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and\n      returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list\n      range.\nlist.clear()\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 39,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 337,
+          "end_char": 1321
+        },
+        "score": 0.09909654346472059,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "01fb247aecb846c2009cea505ef2bc623eb2538c928a65b5c667027fcb1b619e",
+        "text": "      Remove all items from the list. Similar to del a[:].\n                 [     [\nlist.index(x , start , end    ]])\n      Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there\n      is no such item.\n      The optional arguments start and end are interpreted as in the slice notation and are used to limit the search\n      to a particular subsequence of the list. The returned index is computed relative to the beginning of the full\n      sequence rather than the start argument.\nlist.count(x)\n      Return the number of times x appears in the list.\nlist.sort(* (Keyword-only parameters separator (PEP 3102)), key=None, reverse=False)\n      Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their\n      explanation).\nlist.reverse()\n      Reverse the elements of the list in place.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 39,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 1321,
+          "end_char": 2212
+        },
+        "score": 0.08601320826107804,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[18300320fdb9aca486eec6e81df4732aab20e13bd4d054404fbec41064004912 | data/tutorial.pdf | page 19]\nSimple assignment in Python never copies data. When you assign a list to a variable, the variable refers to the existing\nlist. Any changes you make to the list through one variable will be seen through all other variables that refer to it.:\n\n>>> rgb = [\"Red\", \"Green\", \"Blue\"]\n>>> rgba = rgb\n>>> id(rgb) == id(rgba) # they reference the same object\nTrue\n>>> rgba.append(\"Alph\")\n>>> rgb\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAll slice operations return a new list containing the requested elements. This means that the following slice returns a\nshallow copy of the list:\n\n>>> correct_rgba = rgba[:]\n>>> correct_rgba[-1] = \"Alpha\"\n>>> correct_rgba\n[\"Red\", \"Green\", \"Blue\", \"Alpha\"]\n>>> rgba\n[\"Red\", \"Green\", \"Blue\", \"Alph\"]\n\nAssignment to slices is also possible, and this can even change the size of the list or clear it entirely:\n\n\n\n[389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f | data/tutorial.pdf | page 39]\n5.1 More on Lists\nThe list data type has some more methods. Here are all of the methods of list objects:\nlist.append(x)\n      Add an item to the end of the list. Similar to a[len(a):] = [x].\nlist.extend(iterable)\n      Extend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\nlist.insert(i, x)\n      Insert an item at a given position. The first argument is the index of the element before which to insert, so a.\n      insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\nlist.remove(x)\n      Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.\n            []\nlist.pop( i )\n      Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and\n      returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list\n      range.\nlist.clear()\n\n\n[01fb247aecb846c2009cea505ef2bc623eb2538c928a65b5c667027fcb1b619e | data/tutorial.pdf | page 39]\n      Remove all items from the list. Similar to del a[:].\n                 [     [\nlist.index(x , start , end    ]])\n      Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there\n      is no such item.\n      The optional arguments start and end are interpreted as in the slice notation and are used to limit the search\n      to a particular subsequence of the list. The returned index is computed relative to the beginning of the full\n      sequence rather than the start argument.\nlist.count(x)\n      Return the number of times x appears in the list.\nlist.sort(* (Keyword-only parameters separator (PEP 3102)), key=None, reverse=False)\n      Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their\n      explanation).\nlist.reverse()\n      Reverse the elements of the list in place.",
+    "context_ids": [
+      "18300320fdb9aca486eec6e81df4732aab20e13bd4d054404fbec41064004912",
+      "389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f",
+      "01fb247aecb846c2009cea505ef2bc623eb2538c928a65b5c667027fcb1b619e"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q07",
+    "question": "range(5, 10) sinh những số nào; giá trị stop có được lấy không?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.16194899944821373,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+        "text": "4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 24,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 400,
+          "end_char": 1270
+        },
+        "score": 0.3999160457299089,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0",
+        "text": "4.9.5 Unpacking Argument Lists\nThe reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call\nrequiring separate positional arguments. For instance, the built-in range() function expects separate start and stop\narguments. If they are not available separately, write the function call with the *-operator to unpack the arguments\nout of a list or tuple:\n\n>>> list(range(3, 6))                          # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))                           # call with arguments unpacked from a list\n[3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with the **-operator:\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 36,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1055,
+          "end_char": 1771
+        },
+        "score": 0.20954894887415074,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "0c63f37ee5db0efce446e4aa9458b29713f411c82697d4c067e2f13fc35d3340",
+        "text": ">>> range(10)\nrange(0, 10)\n\nIn many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. It is an object which returns\nthe successive items of the desired sequence when you iterate over it, but it doesn’t really make the list, thus saving\nspace.\nWe say such an object is iterable, that is, suitable as a target for functions and constructs that expect something from\nwhich they can obtain successive items until the supply is exhausted. We have seen that the for statement is such a\nconstruct, while an example of a function that takes an iterable is sum():\n\n>>> sum(range(4))          # 0 + 1 + 2 + 3\n6\n\nLater we will see more functions that return iterables and take iterables as arguments. In chapter Data Structures, we\nwill discuss in more detail about list().\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 800
+        },
+        "score": 0.1674292705869726,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0 | data/tutorial.pdf | page 24]\n4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n\n\n[a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0 | data/tutorial.pdf | page 36]\n4.9.5 Unpacking Argument Lists\nThe reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call\nrequiring separate positional arguments. For instance, the built-in range() function expects separate start and stop\narguments. If they are not available separately, write the function call with the *-operator to unpack the arguments\nout of a list or tuple:\n\n>>> list(range(3, 6))                          # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))                           # call with arguments unpacked from a list\n[3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with the **-operator:\n\n\n\n[0c63f37ee5db0efce446e4aa9458b29713f411c82697d4c067e2f13fc35d3340 | data/tutorial.pdf | page 25]\n>>> range(10)\nrange(0, 10)\n\nIn many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. It is an object which returns\nthe successive items of the desired sequence when you iterate over it, but it doesn’t really make the list, thus saving\nspace.\nWe say such an object is iterable, that is, suitable as a target for functions and constructs that expect something from\nwhich they can obtain successive items until the supply is exhausted. We have seen that the for statement is such a\nconstruct, while an example of a function that takes an iterable is sum():\n\n>>> sum(range(4))          # 0 + 1 + 2 + 3\n6\n\nLater we will see more functions that return iterables and take iterables as arguments. In chapter Data Structures, we\nwill discuss in more detail about list().\n\n",
+    "context_ids": [
+      "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+      "a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0",
+      "0c63f37ee5db0efce446e4aa9458b29713f411c82697d4c067e2f13fc35d3340"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q08",
+    "question": "Tại sao range tiết kiệm bộ nhớ hơn việc tạo sẵn một list các số?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.12735900054394733,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+        "text": "4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 24,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 400,
+          "end_char": 1270
+        },
+        "score": 0.4536510532544766,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0",
+        "text": "4.9.5 Unpacking Argument Lists\nThe reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call\nrequiring separate positional arguments. For instance, the built-in range() function expects separate start and stop\narguments. If they are not available separately, write the function call with the *-operator to unpack the arguments\nout of a list or tuple:\n\n>>> list(range(3, 6))                          # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))                           # call with arguments unpacked from a list\n[3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with the **-operator:\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 36,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1055,
+          "end_char": 1771
+        },
+        "score": 0.29714481306322793,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f",
+        "text": "5.1 More on Lists\nThe list data type has some more methods. Here are all of the methods of list objects:\nlist.append(x)\n      Add an item to the end of the list. Similar to a[len(a):] = [x].\nlist.extend(iterable)\n      Extend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\nlist.insert(i, x)\n      Insert an item at a given position. The first argument is the index of the element before which to insert, so a.\n      insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\nlist.remove(x)\n      Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.\n            []\nlist.pop( i )\n      Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and\n      returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list\n      range.\nlist.clear()\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 39,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 337,
+          "end_char": 1321
+        },
+        "score": 0.2874532040383328,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0 | data/tutorial.pdf | page 24]\n4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n\n\n[a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0 | data/tutorial.pdf | page 36]\n4.9.5 Unpacking Argument Lists\nThe reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call\nrequiring separate positional arguments. For instance, the built-in range() function expects separate start and stop\narguments. If they are not available separately, write the function call with the *-operator to unpack the arguments\nout of a list or tuple:\n\n>>> list(range(3, 6))                          # normal call with separate arguments\n[3, 4, 5]\n>>> args = [3, 6]\n>>> list(range(*args))                           # call with arguments unpacked from a list\n[3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with the **-operator:\n\n\n\n[389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f | data/tutorial.pdf | page 39]\n5.1 More on Lists\nThe list data type has some more methods. Here are all of the methods of list objects:\nlist.append(x)\n      Add an item to the end of the list. Similar to a[len(a):] = [x].\nlist.extend(iterable)\n      Extend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\nlist.insert(i, x)\n      Insert an item at a given position. The first argument is the index of the element before which to insert, so a.\n      insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\nlist.remove(x)\n      Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.\n            []\nlist.pop( i )\n      Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and\n      returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list\n      range.\nlist.clear()\n",
+    "context_ids": [
+      "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+      "a01203068aacc2841fcaaae82b6c894f04fe9ab68f7b2c74d93bdfe6d3e61bc0",
+      "389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q09",
+    "question": "Nếu có nhiều vòng lặp for hoặc while lồng nhau, break thoát khỏi vòng nào?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.18557200019131415,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+        "text": "4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1557,
+          "end_char": 1928
+        },
+        "score": 0.3306047596263342,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "01a24bb812e3e7432302dfea67d3c2005d3a83d9c627a21b6580706759934c5f",
+        "text": "4.4 break and continue Statements\nThe break statement breaks out of the innermost enclosing for or while loop:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(f\"{n} equals {x} * {n//x}\")\n...             break\n...\n4 equals 2 * 2\n6 equals 2 * 3\n8 equals 2 * 4\n9 equals 3 * 3\n\nThe continue statement continues with the next iteration of the loop:\n\n>>> for num in range(2, 10):\n...     if num % 2 == 0:\n...         print(f\"Found an even number {num}\")\n...         continue\n...     print(f\"Found an odd number {num}\")\n...\nFound an even number 2\nFound an odd number 3\nFound an even number 4\nFound an odd number 5\nFound an even number 6\nFound an odd number 7\nFound an even number 8\nFound an odd number 9\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 800,
+          "end_char": 1557
+        },
+        "score": 0.1589528943857654,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b",
+        "text": "In either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.\nThis is exemplified in the following for loop, which searches for prime numbers:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 723
+        },
+        "score": 0.12895557335770289,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[01a24bb812e3e7432302dfea67d3c2005d3a83d9c627a21b6580706759934c5f | data/tutorial.pdf | page 25]\n4.4 break and continue Statements\nThe break statement breaks out of the innermost enclosing for or while loop:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(f\"{n} equals {x} * {n//x}\")\n...             break\n...\n4 equals 2 * 2\n6 equals 2 * 3\n8 equals 2 * 4\n9 equals 3 * 3\n\nThe continue statement continues with the next iteration of the loop:\n\n>>> for num in range(2, 10):\n...     if num % 2 == 0:\n...         print(f\"Found an even number {num}\")\n...         continue\n...     print(f\"Found an odd number {num}\")\n...\nFound an even number 2\nFound an odd number 3\nFound an even number 4\nFound an odd number 5\nFound an even number 6\nFound an odd number 7\nFound an even number 8\nFound an odd number 9\n\n\n\n[dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b | data/tutorial.pdf | page 26]\nIn either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.\nThis is exemplified in the following for loop, which searches for prime numbers:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n",
+    "context_ids": [
+      "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+      "01a24bb812e3e7432302dfea67d3c2005d3a83d9c627a21b6580706759934c5f",
+      "dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q10",
+    "question": "else của vòng lặp có chạy khi vòng lặp kết thúc sớm do break, return hoặc exception không?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.17211899830726907,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+        "text": "4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 25,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1557,
+          "end_char": 1928
+        },
+        "score": 0.3197049521549727,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c",
+        "text": "(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 723,
+          "end_char": 1500
+        },
+        "score": 0.29343598074233934,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b",
+        "text": "In either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.\nThis is exemplified in the following for loop, which searches for prime numbers:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 723
+        },
+        "score": 0.197489443286988,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c | data/tutorial.pdf | page 26]\n(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n\n\n[dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b | data/tutorial.pdf | page 26]\nIn either kind of loop, the else clause is not executed if the loop was terminated by a break. Of course, other ways\nof ending the loop early, such as a return or a raised exception, will also skip execution of the else clause.\nThis is exemplified in the following for loop, which searches for prime numbers:\n\n>>> for n in range(2, 10):\n...     for x in range(2, n):\n...         if n % x == 0:\n...             print(n, 'equals', x, '*', n//x)\n...             break\n...     else:\n...         # loop fell through without finding a factor\n...         print(n, 'is a prime number')\n...\n2 is a prime number\n3 is a prime number\n4 equals 2 * 2\n5 is a prime number\n6 equals 2 * 3\n7 is a prime number\n8 equals 2 * 4\n9 equals 3 * 3\n\n",
+    "context_ids": [
+      "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+      "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c",
+      "dfba7aac58021a34e16464d0a6771f0952da8b968ca111fec6f980198488994b"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q11",
+    "question": "pass làm gì và dùng khi nào?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.08698000056028832,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+        "text": "4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1500,
+          "end_char": 2114
+        },
+        "score": 0.6396839006526805,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "f1e6ff7b4b2ea9d4241c3f0bb862cf7837ee28c02aeed0e2f64e8c89236eec75",
+        "text": "(continued from previous page)\n...\n>>> f = make_incrementor(42)\n>>> f(0)\n42\n>>> f(1)\n43\n\nThe above example uses a lambda expression to return a function. Another use is to pass a small function as an\nargument:\n\n>>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n>>> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 37,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 379
+        },
+        "score": 0.13024961361702,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "c128329fde9cffb1e1ea1179f78f3cf3e60001806d4f29c8b1f04940f898a462",
+        "text": "In a function call, keyword arguments must follow positional arguments. All the keyword arguments passed must\nmatch one of the arguments accepted by the function (e.g. actor is not a valid argument for the parrot function),\nand their order is not important. This also includes non-optional arguments (e.g. parrot(voltage=1000) is valid\ntoo). No argument may receive a value more than once. Here’s an example that fails due to this restriction:\n\n>>> def function(a):\n...     pass\n...\n>>> function(0, a=0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: function() got multiple values for argument 'a'\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 32,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1729,
+          "end_char": 2366
+        },
+        "score": 0.10718455859580442,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd | data/tutorial.pdf | page 26]\n4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...\n\n[f1e6ff7b4b2ea9d4241c3f0bb862cf7837ee28c02aeed0e2f64e8c89236eec75 | data/tutorial.pdf | page 37]\n(continued from previous page)\n...\n>>> f = make_incrementor(42)\n>>> f(0)\n42\n>>> f(1)\n43\n\nThe above example uses a lambda expression to return a function. Another use is to pass a small function as an\nargument:\n\n>>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]\n>>> pairs.sort(key=lambda pair: pair[1])\n>>> pairs\n[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]\n\n\n\n[c128329fde9cffb1e1ea1179f78f3cf3e60001806d4f29c8b1f04940f898a462 | data/tutorial.pdf | page 32]\nIn a function call, keyword arguments must follow positional arguments. All the keyword arguments passed must\nmatch one of the arguments accepted by the function (e.g. actor is not a valid argument for the parrot function),\nand their order is not important. This also includes non-optional arguments (e.g. parrot(voltage=1000) is valid\ntoo). No argument may receive a value more than once. Here’s an example that fails due to this restriction:\n\n>>> def function(a):\n...     pass\n...\n>>> function(0, a=0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: function() got multiple values for argument 'a'\n\n",
+    "context_ids": [
+      "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+      "f1e6ff7b4b2ea9d4241c3f0bb862cf7837ee28c02aeed0e2f64e8c89236eec75",
+      "c128329fde9cffb1e1ea1179f78f3cf3e60001806d4f29c8b1f04940f898a462"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q12",
+    "question": "Chỉ dùng chương 4: trong match, case _ có ý nghĩa gì và nếu không case nào khớp thì sao?",
+    "method": "tfidf",
+    "filter": {
+      "chapter": 4
+    },
+    "filter_origin": "explicit user query",
+    "top_k": 3,
+    "search_ms": 0.18168600036005955,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "7347842cfdb3370b37a063b3339d1ccb6d68825c3aa40fbd76ccd1dc796b0a8d",
+        "text": "Note the last block: the “variable name” _ acts as a wildcard and never fails to match. If no case matches, none of\nthe branches is executed.\nYou can combine several literals in a single pattern using | (“or”):\n\ncase 401 | 403 | 404:\n    return \"Not allowed\"\n\nPatterns can look like unpacking assignments, and can be used to bind variables:\n\n# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 27,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 820,
+          "end_char": 1426
+        },
+        "score": 0.4568035138469713,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f",
+        "text": "4.7 match Statements\nA match statement takes an expression and compares its value to successive patterns given as one or more case\nblocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s\nmore similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed\nand it can also extract components (sequence elements or object attributes) from the value into variables.\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 27,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 820
+        },
+        "score": 0.3934924052595027,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "1d79dd9e9dd186ea730d961091d90397cbf061b2f3ec5fea6fc0d325801dcf11",
+        "text": "We can add an if clause to a pattern, known as a “guard”. If the guard is false, match goes on to try the next case\nblock. Note that value capture happens before the guard is evaluated:\n\nmatch point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")\n\nSeveral other key features of this statement:\n     • Like unpacking assignments, tuple and list patterns have exactly the same meaning and actually match arbitrary\n       sequences. An important exception is that they don’t match iterators or strings.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 28,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1738,
+          "end_char": 2311
+        },
+        "score": 0.30837651613410766,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[7347842cfdb3370b37a063b3339d1ccb6d68825c3aa40fbd76ccd1dc796b0a8d | data/tutorial.pdf | page 27]\nNote the last block: the “variable name” _ acts as a wildcard and never fails to match. If no case matches, none of\nthe branches is executed.\nYou can combine several literals in a single pattern using | (“or”):\n\ncase 401 | 403 | 404:\n    return \"Not allowed\"\n\nPatterns can look like unpacking assignments, and can be used to bind variables:\n\n# point is an (x, y) tuple\nmatch point:\n    case (0, 0):\n        print(\"Origin\")\n    case (0, y):\n        print(f\"Y={y}\")\n    case (x, 0):\n        print(f\"X={x}\")\n    case (x, y):\n        print(f\"X={x}, Y={y}\")\n    case _:\n        raise ValueError(\"Not a point\")\n\n\n\n[86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f | data/tutorial.pdf | page 27]\n4.7 match Statements\nA match statement takes an expression and compares its value to successive patterns given as one or more case\nblocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s\nmore similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed\nand it can also extract components (sequence elements or object attributes) from the value into variables.\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\n\n\n[1d79dd9e9dd186ea730d961091d90397cbf061b2f3ec5fea6fc0d325801dcf11 | data/tutorial.pdf | page 28]\nWe can add an if clause to a pattern, known as a “guard”. If the guard is false, match goes on to try the next case\nblock. Note that value capture happens before the guard is evaluated:\n\nmatch point:\n    case Point(x, y) if x == y:\n        print(f\"Y=X at {x}\")\n    case Point(x, y):\n        print(f\"Not on the diagonal\")\n\nSeveral other key features of this statement:\n     • Like unpacking assignments, tuple and list patterns have exactly the same meaning and actually match arbitrary\n       sequences. An important exception is that they don’t match iterators or strings.",
+    "context_ids": [
+      "7347842cfdb3370b37a063b3339d1ccb6d68825c3aa40fbd76ccd1dc796b0a8d",
+      "86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f",
+      "1d79dd9e9dd186ea730d961091d90397cbf061b2f3ec5fea6fc0d325801dcf11"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q13",
+    "question": "Hàm dùng return không kèm biểu thức hoặc chạy đến hết thân hàm trả về gì?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.09938499897543807,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "f2773d7027dc863c17024cb95d5de7e928894c56eb905f45dd2959712339e0e5",
+        "text": "Coming from other languages, you might object that fib is not a function but a procedure since it doesn’t return a\nvalue. In fact, even functions without a return statement do return a value, albeit a rather boring one. This value\nis called None (it’s a built-in name). Writing the value None is normally suppressed by the interpreter if it would be\nthe only value written. You can see it if you really want to using print():\n\n>>> fib(0)\n>>> print(fib(0))\nNone\n\nIt is simple to write a function that returns a list of the numbers of the Fibonacci series, instead of printing it:\n\n>>> def fib2(n): # return Fibonacci series up to n\n...     \"\"\"Return a list containing the Fibonacci series up to n.\"\"\"\n...     result = []\n...     a, b = 0, 1\n...     while a < n:\n...         result.append(a)    # see below\n...         a, b = b, a+b\n...     return result\n...\n>>> f100 = fib2(100)    # call it\n>>> f100                # write the result\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 30,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1676,
+          "end_char": 2653
+        },
+        "score": 0.2675761372721062,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f",
+        "text": "4.7 match Statements\nA match statement takes an expression and compares its value to successive patterns given as one or more case\nblocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s\nmore similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed\nand it can also extract components (sequence elements or object attributes) from the value into variables.\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 27,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 0,
+          "end_char": 820
+        },
+        "score": 0.22339108502205274,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "7317960513d3369e928ebabe7e714f9fb091c1807242f3d8110927e9bdbd74f7",
+        "text": "You might have noticed that methods like insert, remove or sort that only modify the list have no return value\nprinted – they return the default None.1 This is a design principle for all mutable data structures in Python.\nAnother thing you might notice is that not all data can be sorted or compared. For instance, [None, 'hello',\n10] doesn’t sort because integers can’t be compared to strings and None can’t be compared to other types. Also, there\nare some types that don’t have a defined ordering relation. For example, 3+4j < 5+7j isn’t a valid comparison.\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 40,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 696,
+          "end_char": 1257
+        },
+        "score": 0.12716390921038312,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[f2773d7027dc863c17024cb95d5de7e928894c56eb905f45dd2959712339e0e5 | data/tutorial.pdf | page 30]\nComing from other languages, you might object that fib is not a function but a procedure since it doesn’t return a\nvalue. In fact, even functions without a return statement do return a value, albeit a rather boring one. This value\nis called None (it’s a built-in name). Writing the value None is normally suppressed by the interpreter if it would be\nthe only value written. You can see it if you really want to using print():\n\n>>> fib(0)\n>>> print(fib(0))\nNone\n\nIt is simple to write a function that returns a list of the numbers of the Fibonacci series, instead of printing it:\n\n>>> def fib2(n): # return Fibonacci series up to n\n...     \"\"\"Return a list containing the Fibonacci series up to n.\"\"\"\n...     result = []\n...     a, b = 0, 1\n...     while a < n:\n...         result.append(a)    # see below\n...         a, b = b, a+b\n...     return result\n...\n>>> f100 = fib2(100)    # call it\n>>> f100                # write the result\n[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n\n\n\n[86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f | data/tutorial.pdf | page 27]\n4.7 match Statements\nA match statement takes an expression and compares its value to successive patterns given as one or more case\nblocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s\nmore similar to pattern matching in languages like Rust or Haskell. Only the first pattern that matches gets executed\nand it can also extract components (sequence elements or object attributes) from the value into variables.\nThe simplest form compares a subject value against one or more literals:\n\ndef http_error(status):\n    match status:\n        case 400:\n            return \"Bad request\"\n        case 404:\n            return \"Not found\"\n        case 418:\n            return \"I'm a teapot\"\n        case _:\n            return \"Something's wrong with the internet\"\n\n\n\n[7317960513d3369e928ebabe7e714f9fb091c1807242f3d8110927e9bdbd74f7 | data/tutorial.pdf | page 40]\nYou might have noticed that methods like insert, remove or sort that only modify the list have no return value\nprinted – they return the default None.1 This is a design principle for all mutable data structures in Python.\nAnother thing you might notice is that not all data can be sorted or compared. For instance, [None, 'hello',\n10] doesn’t sort because integers can’t be compared to strings and None can’t be compared to other types. Also, there\nare some types that don’t have a defined ordering relation. For example, 3+4j < 5+7j isn’t a valid comparison.\n\n",
+    "context_ids": [
+      "f2773d7027dc863c17024cb95d5de7e928894c56eb905f45dd2959712339e0e5",
+      "86a7ce81ece846d7a8585f4b45ba5d3e63fe6a80aa72d041b578cee2ec4b3a3f",
+      "7317960513d3369e928ebabe7e714f9fb091c1807242f3d8110927e9bdbd74f7"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q14",
+    "question": "Vì sao default argument là list có thể giữ lại các phần tử từ những lần gọi hàm trước?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.15303800137189683,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "2f7b4972d201637f4e62a527070af469586cac7955252df47ea91ad09d7c5713",
+        "text": "This example also introduces the in keyword. This tests whether or not a sequence contains a certain value.\nThe default values are evaluated at the point of function definition in the defining scope, so that\n\ni = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()\n\nwill print 5.\nImportant warning: The default value is evaluated only once. This makes a difference when the default is a mutable\nobject such as a list, dictionary, or instances of most classes. For example, the following function accumulates the\narguments passed to it on subsequent calls:\n\ndef f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))\n\nThis will print",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 31,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1236,
+          "end_char": 1882
+        },
+        "score": 0.2151174874822879,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f",
+        "text": "5.1 More on Lists\nThe list data type has some more methods. Here are all of the methods of list objects:\nlist.append(x)\n      Add an item to the end of the list. Similar to a[len(a):] = [x].\nlist.extend(iterable)\n      Extend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\nlist.insert(i, x)\n      Insert an item at a given position. The first argument is the index of the element before which to insert, so a.\n      insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\nlist.remove(x)\n      Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.\n            []\nlist.pop( i )\n      Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and\n      returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list\n      range.\nlist.clear()\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 39,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 337,
+          "end_char": 1321
+        },
+        "score": 0.19985705916327579,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "01fb247aecb846c2009cea505ef2bc623eb2538c928a65b5c667027fcb1b619e",
+        "text": "      Remove all items from the list. Similar to del a[:].\n                 [     [\nlist.index(x , start , end    ]])\n      Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there\n      is no such item.\n      The optional arguments start and end are interpreted as in the slice notation and are used to limit the search\n      to a particular subsequence of the list. The returned index is computed relative to the beginning of the full\n      sequence rather than the start argument.\nlist.count(x)\n      Return the number of times x appears in the list.\nlist.sort(* (Keyword-only parameters separator (PEP 3102)), key=None, reverse=False)\n      Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their\n      explanation).\nlist.reverse()\n      Reverse the elements of the list in place.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 39,
+        "metadata": {
+          "chapter": 5,
+          "start_char": 1321,
+          "end_char": 2212
+        },
+        "score": 0.18361103129114406,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[2f7b4972d201637f4e62a527070af469586cac7955252df47ea91ad09d7c5713 | data/tutorial.pdf | page 31]\nThis example also introduces the in keyword. This tests whether or not a sequence contains a certain value.\nThe default values are evaluated at the point of function definition in the defining scope, so that\n\ni = 5\n\ndef f(arg=i):\n    print(arg)\n\ni = 6\nf()\n\nwill print 5.\nImportant warning: The default value is evaluated only once. This makes a difference when the default is a mutable\nobject such as a list, dictionary, or instances of most classes. For example, the following function accumulates the\narguments passed to it on subsequent calls:\n\ndef f(a, L=[]):\n    L.append(a)\n    return L\n\nprint(f(1))\nprint(f(2))\nprint(f(3))\n\nThis will print\n\n[389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f | data/tutorial.pdf | page 39]\n5.1 More on Lists\nThe list data type has some more methods. Here are all of the methods of list objects:\nlist.append(x)\n      Add an item to the end of the list. Similar to a[len(a):] = [x].\nlist.extend(iterable)\n      Extend the list by appending all the items from the iterable. Similar to a[len(a):] = iterable.\nlist.insert(i, x)\n      Insert an item at a given position. The first argument is the index of the element before which to insert, so a.\n      insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).\nlist.remove(x)\n      Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.\n            []\nlist.pop( i )\n      Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and\n      returns the last item in the list. It raises an IndexError if the list is empty or the index is outside the list\n      range.\nlist.clear()\n\n\n[01fb247aecb846c2009cea505ef2bc623eb2538c928a65b5c667027fcb1b619e | data/tutorial.pdf | page 39]\n      Remove all items from the list. Similar to del a[:].\n                 [     [\nlist.index(x , start , end    ]])\n      Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there\n      is no such item.\n      The optional arguments start and end are interpreted as in the slice notation and are used to limit the search\n      to a particular subsequence of the list. The returned index is computed relative to the beginning of the full\n      sequence rather than the start argument.\nlist.count(x)\n      Return the number of times x appears in the list.\nlist.sort(* (Keyword-only parameters separator (PEP 3102)), key=None, reverse=False)\n      Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their\n      explanation).\nlist.reverse()\n      Reverse the elements of the list in place.",
+    "context_ids": [
+      "2f7b4972d201637f4e62a527070af469586cac7955252df47ea91ad09d7c5713",
+      "389ddfdcb5ccdebd2d1ee87d1d998397740592266de68754863c71582aa8325f",
+      "01fb247aecb846c2009cea505ef2bc623eb2538c928a65b5c667027fcb1b619e"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "q15",
+    "question": "Tham số nằm trước dấu / trong định nghĩa hàm có thể được truyền bằng keyword không?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.10435800140840001,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "283abbf4db4d7c199b214c107fc71ed7ca580910768859041d46104c74b5e7a2",
+        "text": "4.9.3 Special parameters\nBy default, arguments may be passed to a Python function either by position or explicitly by keyword. For readability\nand performance, it makes sense to restrict the way arguments can be passed so that a developer need only look at\nthe function definition to determine if items are passed by position, by position or keyword, or by keyword.\nA function definition may look like:\n\ndef f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n      -----------     ----------     ----------\n        |              |                  |\n        |         Positional or keyword   |\n        |                                 - Keyword only\n          -- Positional only\n\nwhere / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed\nto the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to\nas named parameters.\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 33,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 933,
+          "end_char": 1863
+        },
+        "score": 0.4151099706657999,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "935f124a71fcdac65a3d94c544a8ef5c586e969233dd49a0bd8e6a9f9c4a3abf",
+        "text": "Positional-or-Keyword Arguments\nIf / and * are not present in the function definition, arguments may be passed to a function by position or by keyword.",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 33,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1863,
+          "end_char": 2014
+        },
+        "score": 0.37539063369282727,
+        "strategy": "tfidf",
+        "rank": 2
+      },
+      {
+        "id": "9cc08d040d10d0dad2854d84082d3c53ce3dffb4f9b5d0ce1c7654673ada36d7",
+        "text": "parrot(1000)                                                                # 1 positional argument\nparrot(voltage=1000)                                                        # 1 keyword argument\nparrot(voltage=1000000, action='VOOOOOM')                                   # 2 keyword arguments\nparrot(action='VOOOOOM', voltage=1000000)                                   # 2 keyword arguments\nparrot('a million', 'bereft of life', 'jump')                               # 3 positional arguments\nparrot('a thousand', state='pushing up the daisies')                        # 1 positional, 1 keyword\n\nbut all the following calls would be invalid:\n\nparrot()                                 # required argument missing\nparrot(voltage=5.0, 'dead')              # non-keyword argument after a keyword argument\nparrot(110, voltage=220)                 # duplicate value for the same argument\nparrot(actor='John Cleese')              # unknown keyword argument\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 32,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 777,
+          "end_char": 1729
+        },
+        "score": 0.2883917118711687,
+        "strategy": "tfidf",
+        "rank": 3
+      }
+    ],
+    "context": "[283abbf4db4d7c199b214c107fc71ed7ca580910768859041d46104c74b5e7a2 | data/tutorial.pdf | page 33]\n4.9.3 Special parameters\nBy default, arguments may be passed to a Python function either by position or explicitly by keyword. For readability\nand performance, it makes sense to restrict the way arguments can be passed so that a developer need only look at\nthe function definition to determine if items are passed by position, by position or keyword, or by keyword.\nA function definition may look like:\n\ndef f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n      -----------     ----------     ----------\n        |              |                  |\n        |         Positional or keyword   |\n        |                                 - Keyword only\n          -- Positional only\n\nwhere / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed\nto the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to\nas named parameters.\n\n\n\n[935f124a71fcdac65a3d94c544a8ef5c586e969233dd49a0bd8e6a9f9c4a3abf | data/tutorial.pdf | page 33]\nPositional-or-Keyword Arguments\nIf / and * are not present in the function definition, arguments may be passed to a function by position or by keyword.\n\n[9cc08d040d10d0dad2854d84082d3c53ce3dffb4f9b5d0ce1c7654673ada36d7 | data/tutorial.pdf | page 32]\nparrot(1000)                                                                # 1 positional argument\nparrot(voltage=1000)                                                        # 1 keyword argument\nparrot(voltage=1000000, action='VOOOOOM')                                   # 2 keyword arguments\nparrot(action='VOOOOOM', voltage=1000000)                                   # 2 keyword arguments\nparrot('a million', 'bereft of life', 'jump')                               # 3 positional arguments\nparrot('a thousand', state='pushing up the daisies')                        # 1 positional, 1 keyword\n\nbut all the following calls would be invalid:\n\nparrot()                                 # required argument missing\nparrot(voltage=5.0, 'dead')              # non-keyword argument after a keyword argument\nparrot(110, voltage=220)                 # duplicate value for the same argument\nparrot(actor='John Cleese')              # unknown keyword argument\n\n",
+    "context_ids": [
+      "283abbf4db4d7c199b214c107fc71ed7ca580910768859041d46104c74b5e7a2",
+      "935f124a71fcdac65a3d94c544a8ef5c586e969233dd49a0bd8e6a9f9c4a3abf",
+      "9cc08d040d10d0dad2854d84082d3c53ce3dffb4f9b5d0ce1c7654673ada36d7"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "absent01",
+    "question": "asyncio.TaskGroup bảo đảm hủy task còn lại thế nào khi một task lỗi?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.05795499964733608,
+    "status": "ok",
+    "error": null,
+    "results": [],
+    "context": "",
+    "context_ids": [],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  },
+  {
+    "query_id": "absent02",
+    "question": "Theo tài liệu, cấu hình isolation level của sqlite3.connect như thế nào?",
+    "method": "tfidf",
+    "filter": null,
+    "filter_origin": null,
+    "top_k": 3,
+    "search_ms": 0.10098900020238943,
+    "status": "ok",
+    "error": null,
+    "results": [
+      {
+        "id": "f161b44d827987b5a421a062fa3f6525c911356b0a6c79a62255fb6d309b3b8f",
+        "text": "(continued from previous page)\n...      -H hostname                              Hostname to connect to\n... \"\"\")\nUsage: thingy [OPTIONS]\n     -h                                     Display this usage message\n     -H hostname                            Hostname to connect to\n\n>>>\n\nStrings can be concatenated (glued together) with the + operator, and repeated with *:\n\n>>> # 3 times 'un', followed by 'ium'\n>>> 3 * 'un' + 'ium'\n'unununium'\n\nTwo or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.\n\n>>> 'Py' 'thon'\n'Python'\n\nThis feature is particularly useful when you want to break long strings:\n\n>>> text = ('Put several strings within parentheses '\n...         'to have them joined together.')\n>>> text\n'Put several strings within parentheses to have them joined together.'\n\nThis only works with two literals though, not with variables or expressions:\n\n",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 16,
+        "metadata": {
+          "chapter": 3,
+          "start_char": 0,
+          "end_char": 919
+        },
+        "score": 0.13580759998176647,
+        "strategy": "tfidf",
+        "rank": 1
+      },
+      {
+        "id": "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd",
+        "text": "4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+        "source_id": "python-tutorial-3.12.11",
+        "source": "data/tutorial.pdf",
+        "page": 26,
+        "metadata": {
+          "chapter": 4,
+          "start_char": 1500,
+          "end_char": 2114
+        },
+        "score": 0.0787611031813594,
+        "strategy": "tfidf",
+        "rank": 2
+      }
+    ],
+    "context": "[f161b44d827987b5a421a062fa3f6525c911356b0a6c79a62255fb6d309b3b8f | data/tutorial.pdf | page 16]\n(continued from previous page)\n...      -H hostname                              Hostname to connect to\n... \"\"\")\nUsage: thingy [OPTIONS]\n     -h                                     Display this usage message\n     -H hostname                            Hostname to connect to\n\n>>>\n\nStrings can be concatenated (glued together) with the + operator, and repeated with *:\n\n>>> # 3 times 'un', followed by 'ium'\n>>> 3 * 'un' + 'ium'\n'unununium'\n\nTwo or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.\n\n>>> 'Py' 'thon'\n'Python'\n\nThis feature is particularly useful when you want to break long strings:\n\n>>> text = ('Put several strings within parentheses '\n...         'to have them joined together.')\n>>> text\n'Put several strings within parentheses to have them joined together.'\n\nThis only works with two literals though, not with variables or expressions:\n\n\n\n[6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd | data/tutorial.pdf | page 26]\n4.6 pass Statements\nThe pass statement does nothing. It can be used when a statement is required syntactically but the program requires\nno action. For example:\n\n>>> while True:\n...     pass # Busy-wait for keyboard interrupt (Ctrl+C)\n...\n\nThis is commonly used for creating minimal classes:\n\n>>> class MyEmptyClass:\n...     pass\n...\n\nAnother place pass can be used is as a place-holder for a function or conditional body when you are working on new\ncode, allowing you to keep thinking at a more abstract level. The pass is silently ignored:\n\n>>> def initlog(*args):\n...     pass   # Remember to implement this!\n...",
+    "context_ids": [
+      "f161b44d827987b5a421a062fa3f6525c911356b0a6c79a62255fb6d309b3b8f",
+      "6b556fee83261bb2ecce3b21c556280b13d6b63742f76599a05f27a4a3a890cd"
+    ],
+    "candidate_stages": null,
+    "budget_chars": 6000
+  }
+]

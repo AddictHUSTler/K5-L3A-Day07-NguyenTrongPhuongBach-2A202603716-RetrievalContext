@@ -1,0 +1,33 @@
+{
+  "source": "data/tutorial.pdf",
+  "source_id": "python-tutorial-3.12.11-full",
+  "sha256": "7ed5678593803de4560b4094e4aa2e4b873bd79d65f7270acedb9e203c5a3669",
+  "version": "3.12.11",
+  "snapshot_date": "2025-09-29",
+  "license": "PSF-2.0; example code also 0BSD",
+  "license_file": "data/LICENSE-PYTHON.txt",
+  "physical_pages": 161,
+  "indexed_pages": 149,
+  "chunks": 149,
+  "excluded_pages": [
+    2,
+    8,
+    22,
+    58,
+    90,
+    104,
+    108,
+    110,
+    112,
+    118,
+    138,
+    158
+  ],
+  "chunking": "One complete nonempty page per chunk; layout whitespace preserved.",
+  "extraction": "Poppler pdftotext -layout and -bbox-layout; no OCR or generated content.",
+  "scope": "All pages, including front matter, appendices, glossary, license and index.",
+  "visual_support": "Text tables and ASCII diagrams retain their layout; block coordinates saved.",
+  "embedded_images": 0,
+  "bonus_status": "Supported subset only; required chart/image benchmark coverage is missing.",
+  "basic_index_unchanged": true
+}

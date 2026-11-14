@@ -1,0 +1,23 @@
+[
+  {
+    "query_id": "q01",
+    "question": "Ký tự nào bắt đầu comment trong Python, comment kết thúc ở đâu và dấu đó trong string có phải comment không?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "error",
+    "events": [],
+    "model_calls": [],
+    "context": "",
+    "context_ids": [],
+    "answer": "",
+    "citations": [],
+    "error": "Model API connection failed",
+    "elapsed_ms": 25.284551000368083,
+    "estimated_model_cost_usd": 0
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "test01",
+    "question": "Trong câu lệnh if, có thể có bao nhiêu phần elif và có bắt buộc else không?"
+  },
+  {
+    "id": "test02",
+    "question": "Vòng for của Python duyệt các phần tử của một sequence theo thứ tự nào?"
+  },
+  {
+    "id": "test03",
+    "question": "Dùng list làm stack LIFO: thêm vào đỉnh và lấy khỏi đỉnh bằng thao tác nào?"
+  },
+  {
+    "id": "test04",
+    "question": "Khi duyệt dictionary, phương thức nào lấy đồng thời key và value?"
+  },
+  {
+    "id": "test05",
+    "question": "Hàm nào lấy đồng thời vị trí index và giá trị khi duyệt sequence?"
+  },
+  {
+    "id": "absent03",
+    "question": "Theo tài liệu, dùng tracemalloc để đo peak memory của một list như thế nào?"
+  },
+  {
+    "id": "absent04",
+    "question": "Theo tài liệu, ProcessPoolExecutor.map đặt chunksize thế nào để tăng tốc?"
+  }
+]

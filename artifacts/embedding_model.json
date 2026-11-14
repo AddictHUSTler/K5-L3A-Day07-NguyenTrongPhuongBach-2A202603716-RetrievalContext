@@ -1,0 +1,13 @@
+{
+  "provider": "OpenAI",
+  "name": "text-embedding-3-small",
+  "dimensions": 1536,
+  "endpoint": "https://api.openai.com/v1/embeddings",
+  "encoding_format": "float",
+  "document_processing": "normalized chunk text, no prefix",
+  "query_processing": "question text, no prefix",
+  "price_usd_per_million_tokens": 0.02,
+  "price_checked_at": "2026-11-13",
+  "reference": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+  "version_note": "Hosted model ID; no separate immutable weight revision exposed. Returned model ID is logged."
+}

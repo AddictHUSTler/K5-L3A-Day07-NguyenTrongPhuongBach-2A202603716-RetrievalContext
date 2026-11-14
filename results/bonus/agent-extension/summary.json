@@ -1,0 +1,24 @@
+{
+  "scope": "Six additional cases, separate from the original 20-case test",
+  "passed": 3,
+  "total": 6,
+  "rate_percent": 50.0,
+  "groups": {
+    "image_diagram": {
+      "n": 3,
+      "N": 5
+    },
+    "multi_hop": {
+      "n": 0,
+      "N": 1
+    }
+  },
+  "errors": 0,
+  "elapsed_ms": 18476.782715000125,
+  "model_cost_usd": 0.01284,
+  "embedding_cost_usd": 0,
+  "search_count_distribution": {
+    "1": 6
+  },
+  "qualifies_for_bonus": false
+}

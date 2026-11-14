@@ -1,0 +1,36 @@
+{
+  "scope": "supported subset only; not an ADVANCED.md bonus pass rate",
+  "groups": {
+    "table": {
+      "n": 3,
+      "N": 3
+    },
+    "text": {
+      "n": 6,
+      "N": 8
+    },
+    "multi_hop": {
+      "n": 1,
+      "N": 4
+    },
+    "unanswerable": {
+      "n": 2,
+      "N": 3
+    }
+  },
+  "passed": 12,
+  "total": 18,
+  "errors": 2,
+  "elapsed_ms": 40131.79033700362,
+  "model_cost_usd": 0.036891200000000006,
+  "embedding_cost_usd": 0,
+  "search_count_distribution": {
+    "1": 17,
+    "0": 1
+  },
+  "missing_test_groups": {
+    "image_diagram": 5,
+    "chart": 5
+  },
+  "qualifies_for_bonus": false
+}

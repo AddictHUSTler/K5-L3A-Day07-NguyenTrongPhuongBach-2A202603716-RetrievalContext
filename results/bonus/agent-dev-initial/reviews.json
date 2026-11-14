@@ -1,0 +1,238 @@
+[
+  {
+    "query_id": "bonus-dev-01",
+    "passed": false,
+    "reason": "Đáp án CNRI/1995–1999 đúng nhưng cite trang 4 là mục lục; evidence bảng ở trang 139.",
+    "citation_review": [
+      {
+        "id": "7cf98a43d11f474a4bb10f2a1ae5b015312ca60c4c98a08fa84ab5b56206a59a",
+        "page": 4,
+        "supports_complete_claim": false,
+        "reason": "Đáp án CNRI/1995–1999 đúng nhưng cite trang 4 là mục lục; evidence bảng ở trang 139."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-02",
+    "passed": true,
+    "reason": "Đúng Derived from=2.1.1; năm và owner bổ sung khớp bảng trang 139.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": true,
+        "reason": "Đúng Derived from=2.1.1; năm và owner bổ sung khớp bảng trang 139."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-03",
+    "passed": true,
+    "reason": "Đúng chú thích (1) trang 139; phân biệt GPL-compatible và phân phối theo GPL.",
+    "citation_review": [
+      {
+        "id": "34164f754ddb90c2c2118f1a7015bd6dc880766305842624c48bcad5dfc4b055",
+        "page": 139,
+        "supports_complete_claim": true,
+        "reason": "Đúng chú thích (1) trang 139; phân biệt GPL-compatible và phân phối theo GPL."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-04",
+    "passed": false,
+    "reason": "Đáp án dumps đúng nhưng chỉ cite trang 66; ví dụ dumps nằm ở trang 65.",
+    "citation_review": [
+      {
+        "id": "21a353abd1b843a160004b23616576970d00d13d4f03095f3c77e6867100e6d7",
+        "page": 66,
+        "supports_complete_claim": false,
+        "reason": "Đáp án dumps đúng nhưng chỉ cite trang 66; ví dụ dumps nằm ở trang 65."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-05",
+    "passed": false,
+    "reason": "Từ chối câu có đáp án do không có lexical match; evidence pickle ở trang 66.",
+    "citation_review": [],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-06",
+    "passed": true,
+    "reason": "Đủ điều kiện EOF chuỗi rỗng và dòng trống newline; cite trang 64.",
+    "citation_review": [
+      {
+        "id": "12598759734dededb283d8a804387dcefa3725c8ca359bb44e0b164825734a5a",
+        "page": 64,
+        "supports_complete_claim": true,
+        "reason": "Đủ điều kiện EOF chuỗi rỗng và dòng trống newline; cite trang 64."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-07",
+    "passed": true,
+    "reason": "Biến cục bộ, trạng thái và điểm tiếp tục được hỗ trợ bởi mục 9.9 trang 88.",
+    "citation_review": [
+      {
+        "id": "75f0fc478f2a3aad2b1e218ab61048866b968fe8f4ef77f351b287592c3740c5",
+        "page": 88,
+        "supports_complete_claim": true,
+        "reason": "Biến cục bộ, trạng thái và điểm tiếp tục được hỗ trợ bởi mục 9.9 trang 88."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-08",
+    "passed": true,
+    "reason": "Lệnh python -m venv tutorial-env đúng nguyên văn trang 105.",
+    "citation_review": [
+      {
+        "id": "545069ca75e105872154c232a8b119147def6418f7683004b195d6e346cad68d",
+        "page": 105,
+        "supports_complete_claim": true,
+        "reason": "Lệnh python -m venv tutorial-env đúng nguyên văn trang 105."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-09",
+    "passed": true,
+    "reason": "random.sample là lấy mẫu không hoàn lại; ví dụ range và số lượng đúng trang 93.",
+    "citation_review": [
+      {
+        "id": "eb2f5aa529b1d12d7cdd978a9f830ec2b34cbf52bb0e3fe679c015ac55a00b4e",
+        "page": 93,
+        "supports_complete_claim": true,
+        "reason": "random.sample là lấy mẫu không hoàn lại; ví dụ range và số lượng đúng trang 93."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-10",
+    "passed": true,
+    "reason": "Phân biệt phạm vi timeit và profile/pstats đúng mục 10.10 trang 94.",
+    "citation_review": [
+      {
+        "id": "8022811022f1c12a6d64fff46dcdb2d74b2ea389d7c2a63842893dc83777e000",
+        "page": 94,
+        "supports_complete_claim": true,
+        "reason": "Phân biệt phạm vi timeit và profile/pstats đúng mục 10.10 trang 94."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-11",
+    "passed": true,
+    "reason": "Ví dụ ở docstring, doctest quét/xác thực module; đúng trang 95.",
+    "citation_review": [
+      {
+        "id": "3685297776343d1e39571279e84eb23ec4d2f1d9ce472a2cbf169ad9aa884a2a",
+        "page": 95,
+        "supports_complete_claim": true,
+        "reason": "Ví dụ ở docstring, doctest quét/xác thực module; đúng trang 95."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-12",
+    "passed": false,
+    "reason": "Nội dung đúng nhưng chỉ cite trang 66, thiếu trang 65 cho json.dump(x,f).",
+    "citation_review": [
+      {
+        "id": "21a353abd1b843a160004b23616576970d00d13d4f03095f3c77e6867100e6d7",
+        "page": 66,
+        "supports_complete_claim": false,
+        "reason": "Nội dung đúng nhưng chỉ cite trang 66, thiếu trang 65 cho json.dump(x,f)."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-13",
+    "passed": false,
+    "reason": "Nội dung đúng nhưng chỉ cite trang 106 cho cả hai lệnh; thiếu trang 105 chứa lệnh activate theo đường dẫn được hỏi.",
+    "citation_review": [
+      {
+        "id": "b31b5a0b118b1c261235db7745252bc0dedfa4bec5bab65380f158d7cd830271",
+        "page": 106,
+        "supports_complete_claim": false,
+        "reason": "Nội dung đúng nhưng chỉ cite trang 106 cho cả hai lệnh; thiếu trang 105 chứa lệnh activate theo đường dẫn được hỏi."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-14",
+    "passed": true,
+    "reason": "Đủ quy tắc iterator hết phần tử ở glossary trang 128 và generator ở trang 88; evidence thay thế hợp lệ cho trang 87.",
+    "citation_review": [
+      {
+        "id": "75f0fc478f2a3aad2b1e218ab61048866b968fe8f4ef77f351b287592c3740c5",
+        "page": 88,
+        "supports_complete_claim": true,
+        "reason": "Đủ quy tắc iterator hết phần tử ở glossary trang 128 và generator ở trang 88; evidence thay thế hợp lệ cho trang 87."
+      },
+      {
+        "id": "e54d6c9ea15bc8a66ab2ce29105f082374f7ed26ae64f4b3b770c4de3a6b7d03",
+        "page": 128,
+        "supports_complete_claim": true,
+        "reason": "Đủ quy tắc iterator hết phần tử ở glossary trang 128 và generator ở trang 88; evidence thay thế hợp lệ cho trang 87."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-15",
+    "passed": true,
+    "reason": "Decimal 0.74 và precision=36 đúng; cite đủ hai trang 102,103.",
+    "citation_review": [
+      {
+        "id": "1503661818bcaab8d71afb30824529d16cac079d108287fb351815cbdab97692",
+        "page": 102,
+        "supports_complete_claim": true,
+        "reason": "Decimal 0.74 và precision=36 đúng; cite đủ hai trang 102,103."
+      },
+      {
+        "id": "f0be558e8ec46a5173fe886f90606fb201e993c3e53479d0162c602c2f1b66db",
+        "page": 103,
+        "supports_complete_claim": true,
+        "reason": "Decimal 0.74 và precision=36 đúng; cite đủ hai trang 102,103."
+      }
+    ],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-16",
+    "passed": true,
+    "reason": "Từ chối rõ ràng, không thêm giải pháp FastAPI ngoài nguồn; kiểm tra toàn PDF không có API.",
+    "citation_review": [],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-17",
+    "passed": false,
+    "reason": "Model API HTTP 400; không có câu trả lời, tính không đạt và giữ trong mẫu số.",
+    "citation_review": [],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  },
+  {
+    "query_id": "bonus-dev-18",
+    "passed": true,
+    "reason": "Từ chối rõ ràng; toàn PDF không có AdamW/weight_decay, không suy đoán.",
+    "citation_review": [],
+    "source_check": "PDF trang được nêu trong gold/citation; bảng 62 và 139 đã đối chiếu bản render gốc."
+  }
+]

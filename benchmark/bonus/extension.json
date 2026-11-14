@@ -1,0 +1,146 @@
+[
+  {
+    "id": "bonus-extension-01",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "Trong sơ đồ các ô ký tự Python, hai hàng số chỉ vị trí bên trong ô hay ranh giới giữa các ô? Ranh giới phải cuối cùng mang chỉ số dương nào?",
+    "expected_answer": "Các chỉ số chỉ ranh giới giữa các ô; ranh giới phải cuối cùng là 6.",
+    "evidence_policy": "all_required",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 17,
+        "evidence": "+---+---+---+---+---+---+\n | P | y | t | h | o | n |\n +---+---+---+---+---+---+\n 0   1   2   3   4   5   6\n-6 -5 -4 -3 -2 -1",
+        "region": "string-indices",
+        "crop": "data/bonus/regions/string-indices.png",
+        "bbox_points": [
+          64.8,
+          507.6,
+          223.2,
+          583.2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bonus-extension-02",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "Trong sơ đồ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2), các nhánh nối ba nhóm tham số với những kiểu truyền đối số nào?",
+    "expected_answer": "pos1/pos2: positional only; pos_or_kwd: positional or keyword; kwd1/kwd2: keyword only.",
+    "evidence_policy": "all_required",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 33,
+        "evidence": "def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n      -----------     ----------     ----------\n        |              |                  |\n        |         Positional or keyword   |\n        |                                 - Keyword only\n          -- Positional only",
+        "region": "parameter-kinds",
+        "crop": "data/bonus/regions/parameter-kinds.png",
+        "bbox_points": [
+          64.8,
+          525.6,
+          381.6,
+          615.6
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bonus-extension-03",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "Trong cây traceback ExceptionGroup có nhãn there were problems, nhánh 1 và nhánh 2 chứa loại exception cùng thông báo nào?",
+    "expected_answer": "Nhánh 1: OSError: error 1; nhánh 2: SystemError: error 2.",
+    "evidence_policy": "all_required",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 74,
+        "evidence": "| ExceptionGroup: there were problems\n  +-+---------------- 1 ----------------\n    | OSError: error 1\n    +---------------- 2 ----------------\n    | SystemError: error 2",
+        "region": "exception-branches",
+        "crop": "data/bonus/regions/exception-branches.png",
+        "bbox_points": [
+          64.8,
+          266.4,
+          399.6,
+          403.2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bonus-extension-04",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "Trong cây traceback còn lại sau hai except*, đường đi từ group1 qua group2 kết thúc bằng exception nào và giá trị nào?",
+    "expected_answer": "group1 → group2 → RecursionError: 4.",
+    "evidence_policy": "all_required",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 75,
+        "evidence": "| ExceptionGroup: group1\n  +-+---------------- 1 ----------------\n    | ExceptionGroup: group2\n    +-+---------------- 1 ----------------\n      | RecursionError: 4",
+        "region": "nested-exception",
+        "crop": "data/bonus/regions/nested-exception.png",
+        "bbox_points": [
+          64.8,
+          122.4,
+          374.4,
+          262.8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bonus-extension-05",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "Trong cây We have some problems, có bao nhiêu nhánh con, chúng có cùng loại lỗi nào và ghi chú iteration phân biệt chúng ra sao?",
+    "expected_answer": "Ba nhánh đều là OSError: operation failed, với Happened in Iteration 1, 2, 3 tương ứng.",
+    "evidence_policy": "all_required",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 76,
+        "evidence": "| ExceptionGroup: We have some problems (3 sub-exceptions)\n  +-+---------------- 1 ----------------\n    | Traceback (most recent call last):\n    |   File \"<stdin>\", line 3, in <module>\n    |   File \"<stdin>\", line 2, in f\n    | OSError: operation failed\n    | Happened in Iteration 1\n    +---------------- 2 ----------------\n    | Traceback (most recent call last):\n    |   File \"<stdin>\", line 3, in <module>\n    |   File \"<stdin>\", line 2, in f\n    | OSError: operation failed\n    | Happened in Iteration 2\n    +---------------- 3 ----------------\n    | Traceback (most recent call last):\n    |   File \"<stdin>\", line 3, in <module>\n    |   File \"<stdin>\", line 2, in f\n    | OSError: operation failed\n    | Happened in Iteration 3",
+        "region": "exception-notes",
+        "crop": "data/bonus/regions/exception-notes.png",
+        "bbox_points": [
+          64.8,
+          208.8,
+          406.8,
+          489.6
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bonus-extension-06",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Trong ví dụ AsyncZip, lớp dùng lệnh nào để nén file trong run(), và chương trình chính dùng lệnh nào để đợi tác vụ nền hoàn tất?",
+    "expected_answer": "ZipFile(..., 'w', ZIP_DEFLATED), f.write(self.infile); background.join().",
+    "evidence_policy": "all_required",
+    "gold": [
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 99,
+        "evidence": "f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)",
+        "region": "11.4 Multi-threading; AsyncZip example"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 99,
+        "evidence": "f.write(self.infile)",
+        "region": "11.4 Multi-threading; AsyncZip example"
+      },
+      {
+        "source_id": "python-tutorial-3.12.11-full",
+        "page": 100,
+        "evidence": "background.join()    # Wait for the background task to finish",
+        "region": "11.4 Multi-threading; AsyncZip example"
+      }
+    ],
+    "reason": "Page 99 defines compression; page 100 supplies the separate waiting call."
+  }
+]

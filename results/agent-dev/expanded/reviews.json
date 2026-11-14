@@ -1,0 +1,149 @@
+[
+  {
+    "query_id": "q01",
+    "reason": "Ví dụ trang 13 thể hiện # comment và # trong string; câu trả lời phù hợp, prose đầy đủ cũng nằm trong context.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q02",
+    "reason": "Đúng phép ưu tiên và cách đặt ngoặc; citation trỏ footnote thực sự hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "reason": "Đúng điều kiện số lẻ backslash; citation trang 15 nêu trực tiếp.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q04",
+    "reason": "Đúng literal tự nối và biến cần +; hai citation trang 16 bổ sung quy tắc và ví dụ SyntaxError.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "reason": "Đúng lấy i, loại j; nguồn trang 17 nêu trực tiếp, không thêm quy tắc độ dài thiếu điều kiện.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "reason": "rgba[:] đúng; ví dụ sửa phần tử string trong copy không đổi rgba được nguồn trang 19 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q07",
+    "reason": "Đúng dãy 5–9 và loại stop; trang 24 có cả quy tắc và ví dụ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q08",
+    "reason": "Đúng cơ chế trả lần lượt thay vì tạo list; citation trang 25 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "reason": "Đúng innermost, không thoát vòng ngoài; nguồn trang 25 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q10",
+    "reason": "Đủ break, return, exception; citation trang 25–26 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "reason": "Đúng pass không hành động và các ví dụ; trang 26 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q12",
+    "reason": "Đủ wildcard và không case khớp; prose và ví dụ trang 27 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q13",
+    "reason": "Đủ cả return không biểu thức và hết thân hàm; citation đúng bullet trang 30.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q14",
+    "reason": "Đủ evaluated once, mutable dùng chung và giải pháp None; trang 31–32 hỗ trợ.",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "context_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "reason": "Trả lời đúng tham số trước /, nhưng phần thêm nói mọi tham số sau / có thể truyền vị trí hoặc keyword bỏ trường hợp keyword-only được nguồn nêu rõ.",
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 1,
+    "context_grade": 2
+  },
+  {
+    "query_id": "absent01",
+    "reason": "Từ chối rõ ràng, không thêm cơ chế TaskGroup; corpus đã kiểm tra không có API này.",
+    "citation_support": [],
+    "abstention_correct": true
+  },
+  {
+    "query_id": "absent02",
+    "reason": "Từ chối rõ ràng, không suy đoán sqlite3; corpus đã kiểm tra thiếu nội dung này.",
+    "citation_support": [],
+    "abstention_correct": true
+  }
+]

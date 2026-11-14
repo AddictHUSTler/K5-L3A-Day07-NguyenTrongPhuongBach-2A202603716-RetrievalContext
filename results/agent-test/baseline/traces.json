@@ -1,0 +1,1247 @@
+[
+  {
+    "query_id": "test01",
+    "question": "Trong câu lệnh if, có thể có bao nhiêu phần elif và có bắt buộc else không?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_xsRY8NhhoI7d65vHsok8yrEu",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Trong câu lệnh if, có thể có bao nhiêu phần elif và có bắt buộc else không?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 25,
+            "text": "4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.",
+            "metadata": {
+              "chapter": 4,
+              "start_char": 1557,
+              "end_char": 1928
+            },
+            "score": 0.45579872297321544,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 26,
+            "text": "(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n",
+            "metadata": {
+              "chapter": 4,
+              "start_char": 723,
+              "end_char": 1500
+            },
+            "score": 0.4351974136415725,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 23,
+            "text": "4.1 if Statements\nPerhaps the most well-known statement type is the if statement. For example:\n\n>>> x = int(input(\"Please enter an integer: \"))\nPlease enter an integer: 42\n>>> if x < 0:\n...     x = 0\n...     print('Negative changed to zero')\n... elif x == 0:\n...     print('Zero')\n... elif x == 1:\n...     print('Single')\n... else:\n...     print('More')\n...\nMore\n\nThere can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’, and is\nuseful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the switch or case\nstatements found in other languages.\nIf you’re comparing the same value to several constants, or checking for specific types or attributes, you may also\nfind the match statement useful. For more details see match Statements.\n\n",
+            "metadata": {
+              "chapter": 4,
+              "start_char": 328,
+              "end_char": 1146
+            },
+            "score": 0.3970019328791661,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Trong câu lệnh if, có thể có bao nhiêu phần elif và có bắt buộc else không?",
+        "candidate_stages": null,
+        "context": "[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c | data/tutorial.pdf | page 26]\n(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n\n\n[ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458 | data/tutorial.pdf | page 23]\n4.1 if Statements\nPerhaps the most well-known statement type is the if statement. For example:\n\n>>> x = int(input(\"Please enter an integer: \"))\nPlease enter an integer: 42\n>>> if x < 0:\n...     x = 0\n...     print('Negative changed to zero')\n... elif x == 0:\n...     print('Zero')\n... elif x == 1:\n...     print('Single')\n... else:\n...     print('More')\n...\nMore\n\nThere can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’, and is\nuseful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the switch or case\nstatements found in other languages.\nIf you’re comparing the same value to several constants, or checking for specific types or attributes, you may also\nfind the match statement useful. For more details see match Statements.\n\n",
+        "context_ids": [
+          "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+          "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c",
+          "ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458"
+        ],
+        "elapsed_ms": 2741.5016009999817
+      },
+      {
+        "event": "citation_format",
+        "appended": [
+          "ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458"
+        ]
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_2ad9b6692416414e96b65bd5cb31f45e",
+        "usage": {
+          "prompt_tokens": 316,
+          "completion_tokens": 34,
+          "total_tokens": 350,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001808,
+        "elapsed_ms": 1256.0383689997252,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_xsRY8NhhoI7d65vHsok8yrEu",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Trong câu lệnh if, có thể có bao nhiêu phần elif và có bắt buộc else không?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_ddc7789a92fe4d509bfb417d1aad7939",
+        "usage": {
+          "prompt_tokens": 1137,
+          "completion_tokens": 150,
+          "total_tokens": 1287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0006948,
+        "elapsed_ms": 1926.420309000605,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"answered\",\"answer\":\"Trong câu lệnh if, có thể có số lượng phần elif từ 0 đến nhiều phần (không giới hạn số lượng). Phần else là tùy chọn, không bắt buộc phải có. Từ khóa 'elif' là viết tắt của 'else if' và giúp tránh việc thụt lề quá nhiều. Cấu trúc if ... elif ... elif ... là cách thay thế cho các câu lệnh switch hoặc case trong các ngôn ngữ khác.\",\"citations\":[\"ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458\"]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a | data/tutorial.pdf | page 25]\n4.5 else Clauses on Loops\nIn a for or while loop the break statement may be paired with an else clause. If the loop finishes without\nexecuting the break, the else clause executes.\nIn a for loop, the else clause is executed after the loop finishes its final iteration, that is, if no break occurred.\nIn a while loop, it’s executed after the loop’s condition becomes false.\n\n[555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c | data/tutorial.pdf | page 26]\n(Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement.)\nOne way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will\nrun a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever\ntrue, a break will happen. If the condition is never true, the else clause outside the loop will execute.\nWhen used with a loop, the else clause has more in common with the else clause of a try statement than it does\nwith that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause\nruns when no break occurs. For more on the try statement and exceptions, see Handling Exceptions.\n\n\n\n[ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458 | data/tutorial.pdf | page 23]\n4.1 if Statements\nPerhaps the most well-known statement type is the if statement. For example:\n\n>>> x = int(input(\"Please enter an integer: \"))\nPlease enter an integer: 42\n>>> if x < 0:\n...     x = 0\n...     print('Negative changed to zero')\n... elif x == 0:\n...     print('Zero')\n... elif x == 1:\n...     print('Single')\n... else:\n...     print('More')\n...\nMore\n\nThere can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’, and is\nuseful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the switch or case\nstatements found in other languages.\nIf you’re comparing the same value to several constants, or checking for specific types or attributes, you may also\nfind the match statement useful. For more details see match Statements.\n\n",
+    "context_ids": [
+      "3142b5be539660a99718454cd7e4d3b0ad291c7653bfd9fdf4ed065f29c9852a",
+      "555acf832e632900ab7154dbad430d5b90fbfa70b739e89bfcf89fb071c4a97c",
+      "ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458"
+    ],
+    "answer": "Trong câu lệnh if, có thể có số lượng phần elif từ 0 đến nhiều phần (không giới hạn số lượng). Phần else là tùy chọn, không bắt buộc phải có. Từ khóa 'elif' là viết tắt của 'else if' và giúp tránh việc thụt lề quá nhiều. Cấu trúc if ... elif ... elif ... là cách thay thế cho các câu lệnh switch hoặc case trong các ngôn ngữ khác. [ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458]",
+    "citations": [
+      "ccad06ebfe2c4107b0b8e8d83ef2b8841795acba6c88902da6835c200e7e4458"
+    ],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 5924.5524010002555,
+    "estimated_model_cost_usd": 0.0008756
+  },
+  {
+    "query_id": "test02",
+    "question": "Vòng for của Python duyệt các phần tử của một sequence theo thứ tự nào?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_2EbSVVUgY2tjmFn1wQmBNeai",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Vòng for của Python duyệt các phần tử của một sequence theo thứ tự nào?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "1f0542532f49657aacca46c843586a59ebf653ba6b81248cec264e801c675fae",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 44,
+            "text": "5.3 Tuples and Sequences\nWe saw that lists and strings have many common properties, such as indexing and slicing operations. They are two\nexamples of sequence data types (see typesseq). Since Python is an evolving language, other sequence data types may\nbe added. There is also another standard sequence data type: the tuple.\nA tuple consists of a number of values separated by commas, for instance:\n\n>>> t = 12345, 54321, 'hello!'\n>>> t[0]\n12345\n>>> t\n(12345, 54321, 'hello!')\n>>> # Tuples may be nested:\n>>> u = t, (1, 2, 3, 4, 5)\n>>> u\n((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))\n>>> # Tuples are immutable:\n>>> t[0] = 88888\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'tuple' object does not support item assignment\n>>> # but they can contain mutable objects:\n>>> v = ([1, 2, 3], [3, 2, 1])\n>>> v\n([1, 2, 3], [3, 2, 1])\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 0,
+              "end_char": 865
+            },
+            "score": 0.44608472041475544,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 23,
+            "text": "4.2 for Statements\nThe for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating\nover an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration\nstep and halting condition (as C), Python’s for statement iterates over the items of any sequence (a list or a string),\nin the order that they appear in the sequence. For example (no pun intended):\n\n>>> # Measure some strings:\n>>> words = ['cat', 'window', 'defenestrate']\n>>> for w in words:\n...     print(w, len(w))\n...\ncat 3\nwindow 6\ndefenestrate 12\n\nCode that modifies a collection while iterating over that same collection can be tricky to get right. Instead, it is usually\nmore straight-forward to loop over a copy of the collection or to create a new collection:",
+            "metadata": {
+              "chapter": 4,
+              "start_char": 1146,
+              "end_char": 1970
+            },
+            "score": 0.4073558504645799,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 16,
+            "text": ">>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+            "metadata": {
+              "chapter": 3,
+              "start_char": 919,
+              "end_char": 1819
+            },
+            "score": 0.3786458789665788,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Vòng for của Python duyệt các phần tử của một sequence theo thứ tự nào?",
+        "candidate_stages": null,
+        "context": "[1f0542532f49657aacca46c843586a59ebf653ba6b81248cec264e801c675fae | data/tutorial.pdf | page 44]\n5.3 Tuples and Sequences\nWe saw that lists and strings have many common properties, such as indexing and slicing operations. They are two\nexamples of sequence data types (see typesseq). Since Python is an evolving language, other sequence data types may\nbe added. There is also another standard sequence data type: the tuple.\nA tuple consists of a number of values separated by commas, for instance:\n\n>>> t = 12345, 54321, 'hello!'\n>>> t[0]\n12345\n>>> t\n(12345, 54321, 'hello!')\n>>> # Tuples may be nested:\n>>> u = t, (1, 2, 3, 4, 5)\n>>> u\n((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))\n>>> # Tuples are immutable:\n>>> t[0] = 88888\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'tuple' object does not support item assignment\n>>> # but they can contain mutable objects:\n>>> v = ([1, 2, 3], [3, 2, 1])\n>>> v\n([1, 2, 3], [3, 2, 1])\n\n\n\n[31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609 | data/tutorial.pdf | page 23]\n4.2 for Statements\nThe for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating\nover an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration\nstep and halting condition (as C), Python’s for statement iterates over the items of any sequence (a list or a string),\nin the order that they appear in the sequence. For example (no pun intended):\n\n>>> # Measure some strings:\n>>> words = ['cat', 'window', 'defenestrate']\n>>> for w in words:\n...     print(w, len(w))\n...\ncat 3\nwindow 6\ndefenestrate 12\n\nCode that modifies a collection while iterating over that same collection can be tricky to get right. Instead, it is usually\nmore straight-forward to loop over a copy of the collection or to create a new collection:\n\n[2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346 | data/tutorial.pdf | page 16]\n>>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+        "context_ids": [
+          "1f0542532f49657aacca46c843586a59ebf653ba6b81248cec264e801c675fae",
+          "31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609",
+          "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346"
+        ],
+        "elapsed_ms": 925.4269239991118
+      },
+      {
+        "event": "citation_format",
+        "appended": [
+          "31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609"
+        ]
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_6ca3ffb4d85a4030a601ca91773621af",
+        "usage": {
+          "prompt_tokens": 308,
+          "completion_tokens": 30,
+          "total_tokens": 338,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001712,
+        "elapsed_ms": 1125.8188219999283,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_2EbSVVUgY2tjmFn1wQmBNeai",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Vòng for của Python duyệt các phần tử của một sequence theo thứ tự nào?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_f1edaab565994c76a645c489786641fd",
+        "usage": {
+          "prompt_tokens": 1376,
+          "completion_tokens": 75,
+          "total_tokens": 1451,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0006703999999999999,
+        "elapsed_ms": 1179.7684599987406,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"answered\",\"answer\":\"Vòng for của Python duyệt các phần tử của một sequence theo thứ tự mà chúng xuất hiện trong sequence đó.\",\"citations\":[\"31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609\"]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[1f0542532f49657aacca46c843586a59ebf653ba6b81248cec264e801c675fae | data/tutorial.pdf | page 44]\n5.3 Tuples and Sequences\nWe saw that lists and strings have many common properties, such as indexing and slicing operations. They are two\nexamples of sequence data types (see typesseq). Since Python is an evolving language, other sequence data types may\nbe added. There is also another standard sequence data type: the tuple.\nA tuple consists of a number of values separated by commas, for instance:\n\n>>> t = 12345, 54321, 'hello!'\n>>> t[0]\n12345\n>>> t\n(12345, 54321, 'hello!')\n>>> # Tuples may be nested:\n>>> u = t, (1, 2, 3, 4, 5)\n>>> u\n((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))\n>>> # Tuples are immutable:\n>>> t[0] = 88888\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: 'tuple' object does not support item assignment\n>>> # but they can contain mutable objects:\n>>> v = ([1, 2, 3], [3, 2, 1])\n>>> v\n([1, 2, 3], [3, 2, 1])\n\n\n\n[31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609 | data/tutorial.pdf | page 23]\n4.2 for Statements\nThe for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating\nover an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration\nstep and halting condition (as C), Python’s for statement iterates over the items of any sequence (a list or a string),\nin the order that they appear in the sequence. For example (no pun intended):\n\n>>> # Measure some strings:\n>>> words = ['cat', 'window', 'defenestrate']\n>>> for w in words:\n...     print(w, len(w))\n...\ncat 3\nwindow 6\ndefenestrate 12\n\nCode that modifies a collection while iterating over that same collection can be tricky to get right. Instead, it is usually\nmore straight-forward to loop over a copy of the collection or to create a new collection:\n\n[2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346 | data/tutorial.pdf | page 16]\n>>> prefix = 'Py'\n>>> prefix 'thon' # can't concatenate a variable and a string literal\n  File \"<stdin>\", line 1\n    prefix 'thon'\n           ^^^^^^\nSyntaxError: invalid syntax\n>>> ('un' * 3) 'ium'\n  File \"<stdin>\", line 1\n    ('un' * 3) 'ium'\n               ^^^^^\nSyntaxError: invalid syntax\n\nIf you want to concatenate variables or a variable and a literal, use +:\n\n>>> prefix + 'thon'\n'Python'\n\nStrings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a\ncharacter is simply a string of size one:\n\n>>> word = 'Python'\n>>> word[0] # character in position 0\n'P'\n>>> word[5] # character in position 5\n'n'\n\nIndices may also be negative numbers, to start counting from the right:\n\n>>> word[-1]        # last character\n'n'\n                                                                                                  (continues on next page)",
+    "context_ids": [
+      "1f0542532f49657aacca46c843586a59ebf653ba6b81248cec264e801c675fae",
+      "31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609",
+      "2edc57a5005b3ef4d131032349bd1c02e426b5dbdef175a22722ab9854639346"
+    ],
+    "answer": "Vòng for của Python duyệt các phần tử của một sequence theo thứ tự mà chúng xuất hiện trong sequence đó. [31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609]",
+    "citations": [
+      "31d34a4a38e3f40adca7e7a0c55989453fef5fd3f200016874284a2a0d590609"
+    ],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 3231.3565099993866,
+    "estimated_model_cost_usd": 0.0008415999999999999
+  },
+  {
+    "query_id": "test03",
+    "question": "Dùng list làm stack LIFO: thêm vào đỉnh và lấy khỏi đỉnh bằng thao tác nào?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_IBVOy075EzAgmu3KbUzsrdUG",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Dùng list làm stack LIFO: thêm vào đỉnh và lấy khỏi đỉnh bằng thao tác nào?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 40,
+            "text": "5.1.1 Using Lists as Stacks\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved\n(“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index. For example:\n\n>>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n  1 Other languages may return the mutated object, which allows method chaining, such as d->insert(\"a\")->remove(\"b\")->sort();.",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 1257,
+              "end_char": 1891
+            },
+            "score": 0.5899020742201835,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 41,
+            "text": "5.1.2 Using Lists as Queues\nIt is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-\nout”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing\ninserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both\nends. For example:\n\n>>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 0,
+              "end_char": 963
+            },
+            "score": 0.3963862263622538,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 40,
+            "text": "list.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 0,
+              "end_char": 696
+            },
+            "score": 0.3739619101549482,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Dùng list làm stack LIFO: thêm vào đỉnh và lấy khỏi đỉnh bằng thao tác nào?",
+        "candidate_stages": null,
+        "context": "[6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922 | data/tutorial.pdf | page 40]\n5.1.1 Using Lists as Stacks\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved\n(“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index. For example:\n\n>>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n  1 Other languages may return the mutated object, which allows method chaining, such as d->insert(\"a\")->remove(\"b\")->sort();.\n\n[1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e | data/tutorial.pdf | page 41]\n5.1.2 Using Lists as Queues\nIt is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-\nout”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing\ninserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both\nends. For example:\n\n>>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n\n\n[21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681 | data/tutorial.pdf | page 40]\nlist.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n",
+        "context_ids": [
+          "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922",
+          "1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e",
+          "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681"
+        ],
+        "elapsed_ms": 368.38560800060804
+      },
+      {
+        "event": "citation_format",
+        "appended": [
+          "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922"
+        ]
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_2ce80b98820742abbede9a8a6c828ef9",
+        "usage": {
+          "prompt_tokens": 316,
+          "completion_tokens": 34,
+          "total_tokens": 350,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001808,
+        "elapsed_ms": 998.2542830002785,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_IBVOy075EzAgmu3KbUzsrdUG",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Dùng list làm stack LIFO: thêm vào đỉnh và lấy khỏi đỉnh bằng thao tác nào?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_4e119172f3a04ea980fca057c275278e",
+        "usage": {
+          "prompt_tokens": 1323,
+          "completion_tokens": 90,
+          "total_tokens": 1413,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0006732,
+        "elapsed_ms": 1338.2754790000035,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"answered\",\"answer\":\"Dùng list làm stack LIFO, để thêm vào đỉnh stack thì dùng phương thức append(), còn để lấy khỏi đỉnh stack thì dùng phương thức pop() không có chỉ số.\",\"citations\":[\"6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922\"]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922 | data/tutorial.pdf | page 40]\n5.1.1 Using Lists as Stacks\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved\n(“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index. For example:\n\n>>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n  1 Other languages may return the mutated object, which allows method chaining, such as d->insert(\"a\")->remove(\"b\")->sort();.\n\n[1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e | data/tutorial.pdf | page 41]\n5.1.2 Using Lists as Queues\nIt is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-\nout”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing\ninserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both\nends. For example:\n\n>>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n\n\n[21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681 | data/tutorial.pdf | page 40]\nlist.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n",
+    "context_ids": [
+      "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922",
+      "1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e",
+      "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681"
+    ],
+    "answer": "Dùng list làm stack LIFO, để thêm vào đỉnh stack thì dùng phương thức append(), còn để lấy khỏi đỉnh stack thì dùng phương thức pop() không có chỉ số. [6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922]",
+    "citations": [
+      "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922"
+    ],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 2705.2498600005492,
+    "estimated_model_cost_usd": 0.0008539999999999999
+  },
+  {
+    "query_id": "test04",
+    "question": "Khi duyệt dictionary, phương thức nào lấy đồng thời key và value?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_ix2kKRDRrJD7KnpZdrVfVh8h",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Khi duyệt dictionary, phương thức nào lấy đồng thời key và value?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "e8e041a1fb218cb95ef1b9a6df5c78c22101b0076e5965cef01b66be40111029",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 45,
+            "text": "within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.\nThe main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also\npossible to delete a key:value pair with del. If you store using a key that is already in use, the old value associated\nwith that key is forgotten. It is an error to extract a value using a non-existent key.\nPerforming list(d) on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you\nwant it sorted, just use sorted(d) instead). To check whether a single key is in the dictionary, use the in keyword.",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 2491,
+              "end_char": 3176
+            },
+            "score": 0.3271849186382623,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 46,
+            "text": "5.6 Looping Techniques\nWhen looping through dictionaries, the key and corresponding value can be retrieved at the same time using the\nitems() method.\n\n>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n>>> for k, v in knights.items():\n...     print(k, v)\n...\ngallahad the pure\nrobin the brave\n\nWhen looping through a sequence, the position index and corresponding value can be retrieved at the same time using\nthe enumerate() function.\n\n>>> for i, v in enumerate(['tic', 'tac', 'toe']):\n...     print(i, v)\n...\n0 tic\n1 tac\n2 toe",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 954,
+              "end_char": 1492
+            },
+            "score": 0.32294560895484803,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "2cc88a6abf84fd9176dd1d3b292dc006330aa76acb28bca008928b18ddfd773c",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 45,
+            "text": "5.5 Dictionaries\nAnother useful data type built into Python is the dictionary (see typesmapping). Dictionaries are sometimes found\nin other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range\nof numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be\nkeys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable\nobject either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified\nin place using index assignments, slice assignments, or methods like append() and extend().\nIt is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within\none dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 1563,
+              "end_char": 2491
+            },
+            "score": 0.31980474755564625,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Khi duyệt dictionary, phương thức nào lấy đồng thời key và value?",
+        "candidate_stages": null,
+        "context": "[e8e041a1fb218cb95ef1b9a6df5c78c22101b0076e5965cef01b66be40111029 | data/tutorial.pdf | page 45]\nwithin the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.\nThe main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also\npossible to delete a key:value pair with del. If you store using a key that is already in use, the old value associated\nwith that key is forgotten. It is an error to extract a value using a non-existent key.\nPerforming list(d) on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you\nwant it sorted, just use sorted(d) instead). To check whether a single key is in the dictionary, use the in keyword.\n\n[45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f | data/tutorial.pdf | page 46]\n5.6 Looping Techniques\nWhen looping through dictionaries, the key and corresponding value can be retrieved at the same time using the\nitems() method.\n\n>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n>>> for k, v in knights.items():\n...     print(k, v)\n...\ngallahad the pure\nrobin the brave\n\nWhen looping through a sequence, the position index and corresponding value can be retrieved at the same time using\nthe enumerate() function.\n\n>>> for i, v in enumerate(['tic', 'tac', 'toe']):\n...     print(i, v)\n...\n0 tic\n1 tac\n2 toe\n\n[2cc88a6abf84fd9176dd1d3b292dc006330aa76acb28bca008928b18ddfd773c | data/tutorial.pdf | page 45]\n5.5 Dictionaries\nAnother useful data type built into Python is the dictionary (see typesmapping). Dictionaries are sometimes found\nin other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range\nof numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be\nkeys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable\nobject either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified\nin place using index assignments, slice assignments, or methods like append() and extend().\nIt is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within\none dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs\n",
+        "context_ids": [
+          "e8e041a1fb218cb95ef1b9a6df5c78c22101b0076e5965cef01b66be40111029",
+          "45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f",
+          "2cc88a6abf84fd9176dd1d3b292dc006330aa76acb28bca008928b18ddfd773c"
+        ],
+        "elapsed_ms": 311.96213900147995
+      },
+      {
+        "event": "citation_format",
+        "appended": [
+          "45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f"
+        ]
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_b7b440407e8c4a7b8d08b4498f9407c6",
+        "usage": {
+          "prompt_tokens": 304,
+          "completion_tokens": 28,
+          "total_tokens": 332,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001664,
+        "elapsed_ms": 919.8556610008382,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_ix2kKRDRrJD7KnpZdrVfVh8h",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Khi duyệt dictionary, phương thức nào lấy đồng thời key và value?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_7cb3bfef5e2b43c883d8620867f9a280",
+        "usage": {
+          "prompt_tokens": 1129,
+          "completion_tokens": 67,
+          "total_tokens": 1196,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0005588,
+        "elapsed_ms": 1326.8643629999133,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"answered\",\"answer\":\"Phương thức items() được sử dụng để duyệt dictionary và lấy đồng thời key và value.\",\"citations\":[\"45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f\"]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[e8e041a1fb218cb95ef1b9a6df5c78c22101b0076e5965cef01b66be40111029 | data/tutorial.pdf | page 45]\nwithin the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.\nThe main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also\npossible to delete a key:value pair with del. If you store using a key that is already in use, the old value associated\nwith that key is forgotten. It is an error to extract a value using a non-existent key.\nPerforming list(d) on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you\nwant it sorted, just use sorted(d) instead). To check whether a single key is in the dictionary, use the in keyword.\n\n[45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f | data/tutorial.pdf | page 46]\n5.6 Looping Techniques\nWhen looping through dictionaries, the key and corresponding value can be retrieved at the same time using the\nitems() method.\n\n>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n>>> for k, v in knights.items():\n...     print(k, v)\n...\ngallahad the pure\nrobin the brave\n\nWhen looping through a sequence, the position index and corresponding value can be retrieved at the same time using\nthe enumerate() function.\n\n>>> for i, v in enumerate(['tic', 'tac', 'toe']):\n...     print(i, v)\n...\n0 tic\n1 tac\n2 toe\n\n[2cc88a6abf84fd9176dd1d3b292dc006330aa76acb28bca008928b18ddfd773c | data/tutorial.pdf | page 45]\n5.5 Dictionaries\nAnother useful data type built into Python is the dictionary (see typesmapping). Dictionaries are sometimes found\nin other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range\nof numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be\nkeys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable\nobject either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified\nin place using index assignments, slice assignments, or methods like append() and extend().\nIt is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within\none dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs\n",
+    "context_ids": [
+      "e8e041a1fb218cb95ef1b9a6df5c78c22101b0076e5965cef01b66be40111029",
+      "45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f",
+      "2cc88a6abf84fd9176dd1d3b292dc006330aa76acb28bca008928b18ddfd773c"
+    ],
+    "answer": "Phương thức items() được sử dụng để duyệt dictionary và lấy đồng thời key và value. [45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f]",
+    "citations": [
+      "45270e562a29e1999186950a6286c0f3ba229514358517845c9de62b9db4b68f"
+    ],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 2558.9921130012954,
+    "estimated_model_cost_usd": 0.0007252000000000001
+  },
+  {
+    "query_id": "test05",
+    "question": "Hàm nào lấy đồng thời vị trí index và giá trị khi duyệt sequence?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_RmAaFkABRJZ260kvMv7RTZvH",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Hàm nào lấy đồng thời vị trí index và giá trị khi duyệt sequence?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 24,
+            "text": "4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n",
+            "metadata": {
+              "chapter": 4,
+              "start_char": 400,
+              "end_char": 1270
+            },
+            "score": 0.26830914888602286,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "2e589e8eb1c1ad64abd64025787f34bbc421335f717d9d0eb5211a6483913ab9",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 48,
+            "text": "5.8 Comparing Sequences and Other Types\nSequence objects typically may be compared to other objects with the same sequence type. The comparison uses\nlexicographical ordering: first the first two items are compared, and if they differ this determines the outcome of\nthe comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted.\nIf two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried\nout recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence\nis an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for\nstrings uses the Unicode code point number to order individual characters. Some examples of comparisons between\nsequences of the same type:\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 1916,
+              "end_char": 2784
+            },
+            "score": 0.2375413183664054,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 14,
+            "text": "12.5625\n>>> price + _\n",
+            "metadata": {
+              "chapter": 3,
+              "start_char": 1258,
+              "end_char": 1280
+            },
+            "score": 0.2331435120341509,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Hàm nào lấy đồng thời vị trí index và giá trị khi duyệt sequence?",
+        "candidate_stages": null,
+        "context": "[9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0 | data/tutorial.pdf | page 24]\n4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n\n\n[2e589e8eb1c1ad64abd64025787f34bbc421335f717d9d0eb5211a6483913ab9 | data/tutorial.pdf | page 48]\n5.8 Comparing Sequences and Other Types\nSequence objects typically may be compared to other objects with the same sequence type. The comparison uses\nlexicographical ordering: first the first two items are compared, and if they differ this determines the outcome of\nthe comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted.\nIf two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried\nout recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence\nis an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for\nstrings uses the Unicode code point number to order individual characters. Some examples of comparisons between\nsequences of the same type:\n\n\n\n[239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7 | data/tutorial.pdf | page 14]\n12.5625\n>>> price + _\n",
+        "context_ids": [
+          "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+          "2e589e8eb1c1ad64abd64025787f34bbc421335f717d9d0eb5211a6483913ab9",
+          "239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7"
+        ],
+        "elapsed_ms": 299.7927960004745
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_70497d1410604c96958d6c83b611d162",
+        "usage": {
+          "prompt_tokens": 306,
+          "completion_tokens": 29,
+          "total_tokens": 335,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001688,
+        "elapsed_ms": 919.6595070006879,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_RmAaFkABRJZ260kvMv7RTZvH",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Hàm nào lấy đồng thời vị trí index và giá trị khi duyệt sequence?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_2505ce02cb764346ac2af4ee88e9b59b",
+        "usage": {
+          "prompt_tokens": 1113,
+          "completion_tokens": 258,
+          "total_tokens": 1371,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.000858,
+        "elapsed_ms": 2751.2829520001105,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"answered\",\"answer\":\"Hàm dùng để lấy đồng thời vị trí index và giá trị khi duyệt sequence là hàm enumerate(). Tuy nhiên, trong tài liệu có ví dụ dùng kết hợp range() và len() để lấy vị trí và giá trị như sau: \\n\\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\\n>>> for i in range(len(a)):\\n...     print(i, a[i])\\n...\\n0 Mary\\n1 had\\n2 a\\n3 little\\n4 lamb\\n\\nCách này cho phép lấy vị trí index (i) và giá trị (a[i]) khi duyệt sequence [9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0]. Tuy nhiên, hàm enumerate() là cách chuẩn và tiện lợi hơn để làm việc này, mặc dù không được nhắc đến trong đoạn trích dẫn.\",\"citations\":[\"9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0\"]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0 | data/tutorial.pdf | page 24]\n4.3 The range() Function\nIf you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates\narithmetic progressions:\n\n>>> for i in range(5):\n...     print(i)\n...\n0\n1\n2\n3\n4\n\nThe given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for\nitems of a sequence of length 10. It is possible to let the range start at another number, or to specify a different\nincrement (even negative; sometimes this is called the ‘step’):\n\n>>> list(range(5, 10))\n[5, 6, 7, 8, 9]\n\n>>> list(range(0, 10, 3))\n[0, 3, 6, 9]\n\n>>> list(range(-10, -100, -30))\n[-10, -40, -70]\n\nTo iterate over the indices of a sequence, you can combine range() and len() as follows:\n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\n\n\n[2e589e8eb1c1ad64abd64025787f34bbc421335f717d9d0eb5211a6483913ab9 | data/tutorial.pdf | page 48]\n5.8 Comparing Sequences and Other Types\nSequence objects typically may be compared to other objects with the same sequence type. The comparison uses\nlexicographical ordering: first the first two items are compared, and if they differ this determines the outcome of\nthe comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted.\nIf two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried\nout recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence\nis an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for\nstrings uses the Unicode code point number to order individual characters. Some examples of comparisons between\nsequences of the same type:\n\n\n\n[239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7 | data/tutorial.pdf | page 14]\n12.5625\n>>> price + _\n",
+    "context_ids": [
+      "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0",
+      "2e589e8eb1c1ad64abd64025787f34bbc421335f717d9d0eb5211a6483913ab9",
+      "239addfb62a68a321add49532948fec7021d8769eda125cb3728506b4e8dd0d7"
+    ],
+    "answer": "Hàm dùng để lấy đồng thời vị trí index và giá trị khi duyệt sequence là hàm enumerate(). Tuy nhiên, trong tài liệu có ví dụ dùng kết hợp range() và len() để lấy vị trí và giá trị như sau: \n\n>>> a = ['Mary', 'had', 'a', 'little', 'lamb']\n>>> for i in range(len(a)):\n...     print(i, a[i])\n...\n0 Mary\n1 had\n2 a\n3 little\n4 lamb\n\nCách này cho phép lấy vị trí index (i) và giá trị (a[i]) khi duyệt sequence [9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0]. Tuy nhiên, hàm enumerate() là cách chuẩn và tiện lợi hơn để làm việc này, mặc dù không được nhắc đến trong đoạn trích dẫn.",
+    "citations": [
+      "9103c53d9cc661d59be7cdf09fbc2c90cebc5ed562969ec1d095b7c2f2a677f0"
+    ],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 3971.0463549999986,
+    "estimated_model_cost_usd": 0.0010268
+  },
+  {
+    "query_id": "absent03",
+    "question": "Theo tài liệu, dùng tracemalloc để đo peak memory của một list như thế nào?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_GVn5KrqYZFzf6Z4LKHl9mrME",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Theo tài liệu, dùng tracemalloc để đo peak memory của một list như thế nào?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 40,
+            "text": "5.1.1 Using Lists as Stacks\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved\n(“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index. For example:\n\n>>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n  1 Other languages may return the mutated object, which allows method chaining, such as d->insert(\"a\")->remove(\"b\")->sort();.",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 1257,
+              "end_char": 1891
+            },
+            "score": 0.2395331382479044,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 40,
+            "text": "list.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 0,
+              "end_char": 696
+            },
+            "score": 0.22912699486492652,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 41,
+            "text": "5.1.2 Using Lists as Queues\nIt is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-\nout”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing\ninserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both\nends. For example:\n\n>>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 0,
+              "end_char": 963
+            },
+            "score": 0.21624105458329979,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Theo tài liệu, dùng tracemalloc để đo peak memory của một list như thế nào?",
+        "candidate_stages": null,
+        "context": "[6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922 | data/tutorial.pdf | page 40]\n5.1.1 Using Lists as Stacks\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved\n(“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index. For example:\n\n>>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n  1 Other languages may return the mutated object, which allows method chaining, such as d->insert(\"a\")->remove(\"b\")->sort();.\n\n[21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681 | data/tutorial.pdf | page 40]\nlist.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n\n\n[1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e | data/tutorial.pdf | page 41]\n5.1.2 Using Lists as Queues\nIt is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-\nout”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing\ninserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both\nends. For example:\n\n>>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n",
+        "context_ids": [
+          "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922",
+          "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681",
+          "1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e"
+        ],
+        "elapsed_ms": 312.38298100106476
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_bbf8463567824fbb86ebafcfb09b1a13",
+        "usage": {
+          "prompt_tokens": 310,
+          "completion_tokens": 31,
+          "total_tokens": 341,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001736,
+        "elapsed_ms": 1143.6136079992139,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_GVn5KrqYZFzf6Z4LKHl9mrME",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Theo tài liệu, dùng tracemalloc để đo peak memory của một list như thế nào?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_2d59e92b2f5c4e22b33db06ec36021d7",
+        "usage": {
+          "prompt_tokens": 1314,
+          "completion_tokens": 39,
+          "total_tokens": 1353,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.000588,
+        "elapsed_ms": 940.5898659988452,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"abstain\",\"answer\":\"Không đủ bằng chứng trong tài liệu để trả lời câu hỏi về cách dùng tracemalloc để đo peak memory của một list.\",\"citations\":[]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922 | data/tutorial.pdf | page 40]\n5.1.1 Using Lists as Stacks\nThe list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved\n(“last-in, first-out”). To add an item to the top of the stack, use append(). To retrieve an item from the top of the\nstack, use pop() without an explicit index. For example:\n\n>>> stack = [3, 4, 5]\n>>> stack.append(6)\n>>> stack.append(7)\n>>> stack\n[3, 4, 5, 6, 7]\n>>> stack.pop()\n7\n>>> stack\n[3, 4, 5, 6]\n>>> stack.pop()\n6\n>>> stack.pop()\n5\n>>> stack\n[3, 4]\n\n  1 Other languages may return the mutated object, which allows method chaining, such as d->insert(\"a\")->remove(\"b\")->sort();.\n\n[21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681 | data/tutorial.pdf | page 40]\nlist.copy()\n      Return a shallow copy of the list. Similar to a[:].\nAn example that uses most of the list methods:\n\n>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']\n>>> fruits.count('apple')\n2\n>>> fruits.count('tangerine')\n0\n>>> fruits.index('banana')\n3\n>>> fruits.index('banana', 4) # Find next banana starting at position 4\n6\n>>> fruits.reverse()\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']\n>>> fruits.append('grape')\n>>> fruits\n['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']\n>>> fruits.sort()\n>>> fruits\n['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']\n>>> fruits.pop()\n'pear'\n\n\n\n[1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e | data/tutorial.pdf | page 41]\n5.1.2 Using Lists as Queues\nIt is also possible to use a list as a queue, where the first element added is the first element retrieved (“first-in, first-\nout”); however, lists are not efficient for this purpose. While appends and pops from the end of list are fast, doing\ninserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both\nends. For example:\n\n>>> from collections import deque\n>>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n>>> queue.append(\"Terry\")           # Terry arrives\n>>> queue.append(\"Graham\")          # Graham arrives\n>>> queue.popleft()                 # The first to arrive now leaves\n'Eric'\n>>> queue.popleft()                 # The second to arrive now leaves\n'John'\n>>> queue                           # Remaining queue in order of arrival\ndeque(['Michael', 'Terry', 'Graham'])\n\n",
+    "context_ids": [
+      "6c85d69edc4625d93fe863f7f45dcd0e956c2d71a86b5681ec3972d0a951e922",
+      "21afadcf193d2742ef8cd0890126e72310c316d95f8477ab539ba60c8226d681",
+      "1164b4e90f8a93b3a832583629bb4610d248af9f1af5392d29ab688c4cd9b33e"
+    ],
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời câu hỏi về cách dùng tracemalloc để đo peak memory của một list.",
+    "citations": [],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 2396.9151159999456,
+    "estimated_model_cost_usd": 0.0007616
+  },
+  {
+    "query_id": "absent04",
+    "question": "Theo tài liệu, ProcessPoolExecutor.map đặt chunksize thế nào để tăng tốc?",
+    "config": {
+      "method": "dense",
+      "top_k": 3,
+      "max_searches": 1,
+      "budget": 6000,
+      "dedup_text": false
+    },
+    "status": "abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool_call_id": "call_mLCpWsAuxoNoHaY3ZB9hqZSi",
+        "arguments": {
+          "name": "search",
+          "arguments": "{\"query\":\"Theo tài liệu, ProcessPoolExecutor.map đặt chunksize thế nào để tăng tốc?\"}"
+        },
+        "filter": null,
+        "filter_origin": "explicit runtime input",
+        "results": [
+          {
+            "id": "1952532032ed3342afe7d2703d5d8d9233fc1c81dda0170f42211d4a9b9eb135",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 48,
+            "text": "(continued from previous page)\n...\n>>> filtered_data\n[56.2, 51.7, 55.3, 52.5, 47.8]\n\n",
+            "metadata": {
+              "chapter": 5,
+              "start_char": 0,
+              "end_char": 85
+            },
+            "score": 0.19147517382481416,
+            "rank": 1,
+            "strategy": "dense"
+          },
+          {
+            "id": "a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 21,
+            "text": "     >>> i = 256*256\n     >>> print('The value of i is', i)\n     The value of i is 65536\n\n     The keyword argument end can be used to avoid the newline after the output, or end the output with a different\n     string:\n\n     >>> a, b = 0, 1\n     >>> while a < 1000:\n     ...     print(a, end=',')\n     ...     a, b = b, a+b\n     ...\n     0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,",
+            "metadata": {
+              "chapter": 3,
+              "start_char": 1321,
+              "end_char": 1708
+            },
+            "score": 0.18980100676785733,
+            "rank": 2,
+            "strategy": "dense"
+          },
+          {
+            "id": "6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d",
+            "source_id": "python-tutorial-3.12.11",
+            "source": "data/tutorial.pdf",
+            "page": 23,
+            "text": "CHAPTER\n\n                                                                                                                FOUR\n\n                                                                MORE CONTROL FLOW TOOLS\n\nAs well as the while statement just introduced, Python uses a few more that we will encounter in this chapter.\n\n",
+            "metadata": {
+              "chapter": 4,
+              "start_char": 0,
+              "end_char": 328
+            },
+            "score": 0.18813712157393073,
+            "rank": 3,
+            "strategy": "dense"
+          }
+        ],
+        "error": null,
+        "top_k": 3,
+        "method": "dense",
+        "query": "Theo tài liệu, ProcessPoolExecutor.map đặt chunksize thế nào để tăng tốc?",
+        "candidate_stages": null,
+        "context": "[1952532032ed3342afe7d2703d5d8d9233fc1c81dda0170f42211d4a9b9eb135 | data/tutorial.pdf | page 48]\n(continued from previous page)\n...\n>>> filtered_data\n[56.2, 51.7, 55.3, 52.5, 47.8]\n\n\n\n[a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2 | data/tutorial.pdf | page 21]\n     >>> i = 256*256\n     >>> print('The value of i is', i)\n     The value of i is 65536\n\n     The keyword argument end can be used to avoid the newline after the output, or end the output with a different\n     string:\n\n     >>> a, b = 0, 1\n     >>> while a < 1000:\n     ...     print(a, end=',')\n     ...     a, b = b, a+b\n     ...\n     0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,\n\n[6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d | data/tutorial.pdf | page 23]\nCHAPTER\n\n                                                                                                                FOUR\n\n                                                                MORE CONTROL FLOW TOOLS\n\nAs well as the while statement just introduced, Python uses a few more that we will encounter in this chapter.\n\n",
+        "context_ids": [
+          "1952532032ed3342afe7d2703d5d8d9233fc1c81dda0170f42211d4a9b9eb135",
+          "a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2",
+          "6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d"
+        ],
+        "elapsed_ms": 314.37684999946214
+      }
+    ],
+    "model_calls": [
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_aeb04bb2f7264c568a54567e33233a70",
+        "usage": {
+          "prompt_tokens": 306,
+          "completion_tokens": 29,
+          "total_tokens": 335,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.0001688,
+        "elapsed_ms": 896.0408580005605,
+        "tool_choice": "required",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_mLCpWsAuxoNoHaY3ZB9hqZSi",
+                "type": "function",
+                "function": {
+                  "name": "search",
+                  "arguments": "{\"query\":\"Theo tài liệu, ProcessPoolExecutor.map đặt chunksize thế nào để tăng tốc?\"}"
+                }
+              }
+            ],
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      },
+      {
+        "model": "gpt-4.1-mini-2025-04-14",
+        "request_id": "req_29b26abaad704173bda6cec7a669a743",
+        "usage": {
+          "prompt_tokens": 862,
+          "completion_tokens": 38,
+          "total_tokens": 900,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "estimated_cost_usd": 0.00040560000000000005,
+        "elapsed_ms": 1016.5394250016107,
+        "tool_choice": "none",
+        "response": {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"status\":\"abstain\",\"answer\":\"Không đủ bằng chứng trong tài liệu để trả lời câu hỏi về cách ProcessPoolExecutor.map đặt chunksize để tăng tốc.\",\"citations\":[]}",
+            "refusal": null,
+            "annotations": []
+          },
+          "logprobs": null,
+          "finish_reason": "stop"
+        }
+      }
+    ],
+    "context": "[1952532032ed3342afe7d2703d5d8d9233fc1c81dda0170f42211d4a9b9eb135 | data/tutorial.pdf | page 48]\n(continued from previous page)\n...\n>>> filtered_data\n[56.2, 51.7, 55.3, 52.5, 47.8]\n\n\n\n[a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2 | data/tutorial.pdf | page 21]\n     >>> i = 256*256\n     >>> print('The value of i is', i)\n     The value of i is 65536\n\n     The keyword argument end can be used to avoid the newline after the output, or end the output with a different\n     string:\n\n     >>> a, b = 0, 1\n     >>> while a < 1000:\n     ...     print(a, end=',')\n     ...     a, b = b, a+b\n     ...\n     0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,\n\n[6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d | data/tutorial.pdf | page 23]\nCHAPTER\n\n                                                                                                                FOUR\n\n                                                                MORE CONTROL FLOW TOOLS\n\nAs well as the while statement just introduced, Python uses a few more that we will encounter in this chapter.\n\n",
+    "context_ids": [
+      "1952532032ed3342afe7d2703d5d8d9233fc1c81dda0170f42211d4a9b9eb135",
+      "a325e8236bed9dded8c9fb5254bfc1bde7adee081515f641b047d47b4d4c81d2",
+      "6ffed809b1f758ade38e98236ca2373638a9bb9420755fd0116a2a5d2006e41d"
+    ],
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời câu hỏi về cách ProcessPoolExecutor.map đặt chunksize để tăng tốc.",
+    "citations": [],
+    "error": null,
+    "stop_reason": "model_final",
+    "elapsed_ms": 2227.236245000313,
+    "estimated_model_cost_usd": 0.0005744000000000001
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.0003589993866626173
+  },
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.0003349996404722333
+  },
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.00040200029616244137
+  },
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.00039800033846404403
+  },
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.00039600126910954714
+  },
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.0004049998096888885
+  },
+  {
+    "model": "text-embedding-3-small",
+    "dimensions": 1536,
+    "inputs": 1,
+    "cache_hits": 1,
+    "api_requests": 0,
+    "new_tokens": 0,
+    "estimated_new_cost_usd": 0,
+    "price_usd_per_million_tokens": 0.02,
+    "price_source": "artifacts/embedding_model.json",
+    "elapsed_ms": 0.00044099942897446454
+  }
+]
